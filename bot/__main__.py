@@ -48,7 +48,7 @@ async def start(client, message):
     buttons.ubutton(BotTheme('ST_BN2_NAME'), BotTheme('ST_BN2_URL'))
     buttons.ubutton(BotTheme('ST_BN3 _NAME'), BotTheme('ST_BN3_URL'))
     buttons.ubutton(BotTheme('ST_BN4_NAME'), BotTheme('ST_BN4_URL'))
-    reply_markup = buttons.build_menu(2)
+    reply_markup = buttons.build_menu(4)
     if len(message.command) > 1 and message.command[1] == "wzmlx":
         await deleteMessage(message)
     elif len(message.command) > 1 and config_dict['TOKEN_TIMEOUT']:
