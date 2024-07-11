@@ -106,6 +106,8 @@ You can set start and end of the links from the bulk with -b start:end or only e
 
 ➲ <b>NOTES:</b>
 Check all yt-dlp API options from this <a href='https://github.com/yt-dlp/yt-dlp/blob/master/yt_dlp/YoutubeDL.py#L184'>FILE</a>
+
+<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
 """]
 
 MIRROR_HELP_MESSAGE = ["""<i>Send links/files along with cmd or reply to cmd to mirror or leech on Telegram or GDrive or DDLs with different Engines like RClone, Aria2 or qBit</i>
@@ -131,6 +133,8 @@ MIRROR_HELP_MESSAGE = ["""<i>Send links/files along with cmd or reply to cmd to 
 19. <b>-ud or -dump :</b> Dump category to Upload, Specific Name (case insensitive) or chat_id or chat_username
 20. <b>-ss or -screenshots :</b> Generate Screenshots for Leeched Files
 21. <b>-t or -thumb :</b> Custom Thumb for Specific Leech
+
+<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
 """, """
 ➲ <b><i>By along the cmd</i></b>:
 <code>/cmd</code> link -n new name
@@ -247,6 +251,8 @@ Some links need user access so sure you must add USER_SESSION_STRING for it.
 
 ➲ <b>NOTES:</b>
 1. Commands that start with <b>qb</b> are ONLY for torrents.
+
+<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
 """]
 
 RSS_HELP_MESSAGE = """
@@ -272,6 +278,8 @@ Another example: inf:  1080  or 720p|.web. or .webrip.|hvec or x264. This will p
 4. Take look on title if it has static special character after or before the qualities or extensions or whatever and use them in filter to avoid wrong match.
 
 <b>Timeout:</b> 60 sec.
+
+<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
 """
 
 CLONE_HELP_MESSAGE = ["""<i>Send Gdrive | Gdtot | Filepress | Filebee | Appdrive | Gdflix link or RClone path along with or by replying to the link/rc_path by command with args.</i>
@@ -306,6 +314,8 @@ Gdrive | Gdtot | Filepress | Filebee | Appdrive | Gdflix link or rclone path
 1. If -up or -upload not specified then rclone destination will be the RCLONE_PATH from <code>config.env</code>.
 2. If UserTD enabled, then only it will upload to UserTD either by direct arg or category buttons.
 3. For Multi Custom Upload always use Arg in respective msgs and then reply with /cmd -i 10(number)
+
+<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
 """]
 
 CATEGORY_HELP_MESSAGE = """Reply to an active /{cmd} which was used to start the download or add gid along with {cmd}
@@ -316,6 +326,8 @@ But you can always use -c or -category with to select category before download s
 <code>/{cmd}</code> -id <code>drive_folder_link</code> or <code>drive_id</code> -index <code>https://example.com/0:</code> gid or by replying to active download
 
 <b>NOTE:</b> drive_id must be folder id or folder link and index must be url else it will not accept.
+
+<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
 """
 
 help_string = [f'''⌬ <b><i>Basic Commands!</i></b>
@@ -417,6 +429,8 @@ f'''⌬ <b><i>Miscellaneous Commands!</i></b>
 ┠ /{BotCommands.AniListCommand}: Search for anime in AniList.
 ┠ /{BotCommands.AnimeHelpCommand}: Anime help guide.
 ┖ /{BotCommands.MyDramaListCommand}: Search in MyDramaList.
+
+<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
 ''']
 
 PASSWORD_ERROR_MESSAGE = """
