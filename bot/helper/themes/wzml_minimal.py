@@ -215,7 +215,7 @@ class WZMLStyle:
     CANCEL =         '\n<b>❌Cancel :</b> {Cancel}</blockquote>\n\n'
 
     ####------FOOTER--------
-    FOOTER =      '<blockquote>⌬ <b><i>Bot Stats</i></b>\n'
+    FOOTER =      '<blockquote>⌬ <b><i>Bot Stats</i></b></blockquote>\n'
     TASKS =          '<b>🧮Tasks:</b> {Tasks}\n'
     BOT_TASKS =      '<b>🥏Tasks:</b> {Tasks}/{Ttask} | <b>♟️AVL:</b> {Free}\n'
     Cpu =            '<b>🖥CPU:</b> {cpu}% |'
@@ -223,7 +223,7 @@ class WZMLStyle:
     Ram =          '\n <b>🎟RAM:</b>{ram}% | '
     uptime =                     '<b>🟢UPTIME:</b>{uptime}'
     DL =           '\n<b>🔻DL:</b> {DL}/s | '
-    UL =                        '<b>🔺UL:</b> {UL}/s</blockquote>'
+    UL =                        '<b>🔺UL:</b> {UL}/s'
 
     ###--------BUTTONS-------
     PREVIOUS = '⏪Previous'
