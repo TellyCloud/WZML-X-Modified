@@ -44,7 +44,7 @@ class WZMLStyle:
     HELP_HEADER = "㊂ <b><i>Help Guide Menu!</i></b>\n\n<b>NOTE: <i>Click on any CMD to see more minor detalis.</i></b>"
 
     # async def stats(client, message):
-    BOT_STATS = '''⌬ <b><i>BOT STATISTICS :</i></b>
+    BOT_STATS = '''⌬ <blockquote><b><i>BOT STATISTICS :</i></b>
 <b>🟢Bot Uptime :</b> {bot_uptime}
 
  <b><i>🎮RAM ( MEMORY ) :</i></b>
@@ -59,10 +59,10 @@ class WZMLStyle:
 │ {disk_bar} {disk}%
 │<b>📀Total Disk Read  :</b> {disk_read}
 │<b>💿Total Disk Write :</b> {disk_write}
-<b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}
+<b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}</blockquote>
  <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>   
     '''
-    SYS_STATS = '''⌬ <b><i>💻OS SYSTEM :</i></b>
+    SYS_STATS = '''⌬ <blockquote><b><i>💻OS SYSTEM :</i></b>
  <b>⌚OS Uptime  :</b> {os_uptime}
 <b>🪃OS Version :</b> {os_version}
 <b>🪶OS Arch    :</b> {os_arch}
@@ -81,32 +81,32 @@ class WZMLStyle:
 <b>P-Core(s)       :</b> {p_core}
 <b>V-Core(s)       :</b> {v_core}
 <b>Total Core(s)   :</b> {total_core}
-<b>Usable CPU(s)   :</b> {cpu_use}
+<b>Usable CPU(s)   :</b> {cpu_use}</blockquote>
 <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
     '''
-    REPO_STATS = '''⌬ <b><i>REPO STATISTICS :</i></b>
+    REPO_STATS = '''⌬ <blockquote><b><i>REPO STATISTICS :</i></b>
 <b>Bot Updated     :</b> {last_commit}
 <b>Current Version :</b> {bot_version}
 <b>Latest Version  :</b> {lat_version}
-<b>Last ChangeLog  :</b> {commit_details}
+<b>Last ChangeLog  :</b> {commit_details}</blockquote>
 
 ⌬ <b>REMARKS :</b> <code>{remarks}</code>
 <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
     '''
     BOT_LIMITS = '''⌬ <b><i>BOT LIMITATIONS :</i></b>
-<b>Direct Limit  :</b> {DL} GB
+<blockquote><b>Direct Limit  :</b> {DL} GB
 <b>Torrent Limit :</b> {TL} GB
 <b>GDrive Limit  :</b> {GL} GB
 <b>YT-DLP Limit  :</b> {YL} GB
 <b>Playlist Limit:</b> {PL} GB
 <b>Mega Limit    :</b> {ML} GB
 <b>Clone Limit   :</b> {CL} GB
-<b>Leech Limit   :</b> {LL} GB
+<b>Leech Limit   :</b> {LL} GB</blockquote>
 
-<b>Token Validity      :</b> {TV}
+<blockquote><b>Token Validity      :</b> {TV}
 <b>User Time Limit     :</b> {UTI} / task
 <b>User Parallel Tasks :</b> {UT}
-<b>Bot Parallel Tasks  :</b> {BT}
+<b>Bot Parallel Tasks  :</b> {BT}</blockquote>
 <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
     '''
     # ---------------------
@@ -117,10 +117,10 @@ class WZMLStyle:
 
     # async def restart_notification(): ---> __main__.py
     RESTART_SUCCESS = '''⌬ <b><i>TellyCloud Bots Restarted Successfully!</i></b>
-<b>Date     :</b> {date}
+<blockquote><b>Date     :</b> {date}
 <b>Time     :</b> {time}
 <b>TimeZone :</b> {timz}
-<b>Version  :</b> {version}
+<b>Version  :</b> {version}</blockquote>
 <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>'''
     RESTARTED = '''⌬ <b><i>Bot Restarted!</i></b>'''
     # ---------------------
@@ -145,18 +145,18 @@ class WZMLStyle:
     L_LOG_START =           "➲ <b><u>Leech Started :</u></b>\n│\n <b>User :</b> {mention} ( #ID{uid} )\n<b>Source :</b> <a href='{msg_link}'>Click Here</a>"
 
     # async def onUploadComplete(): ---> tasks_listener.py
-    NAME =                  '<b>🏷️<i>{Name}</i></b>\n'
-    SIZE =                  '<b>💾Size : </b>{Size}'
-    ELAPSE =                '<b>⌛️Elapsed : </b>{Time}\n'
-    MODE =                  '<b>💠Mode : </b>{Mode}\n'
+    NAME =                  '<b><blockquote>🏷️<i>{Name}</i></b></blockquote>\n'
+    SIZE =                  '<b>💾Size       : </b>{Size}'
+    ELAPSE =                '<b>⌛️Elapsed    : </b>{Time}\n'
+    MODE =                  '<b>💠Mode       : </b>{Mode}\n'
 
     # ----- LEECH -------
     L_TOTAL_FILES =         '<b>📂Total Files : </b>{Files}\n'
     L_CORRUPTED_FILES =     '<b>👹Corrupted Files : </b>{Corrupt}\n'
     L_CC =                  '<b>👤User By : </b>{Tag}\n\n'
-    PM_BOT_MSG =            '➲ <b><i>File(s) have been Sent above</i></b>'
+    PM_BOT_MSG =            '<blockquote>➲ <b><i>File(s) have been Sent above</i></b>'
     L_BOT_MSG =             '➲ <b><i>File(s) have been Sent to Bot PM (Private)</i></b>'
-    L_LL_MSG =              '➲ <b><i>File(s) have been Sent. Access via Links...</i></b>\n'
+    L_LL_MSG =              '➲ <b><i>File(s) have been Sent. Access via Links...</i></b></blockquote>\n'
     
     # ----- MIRROR -------
     M_TYPE =                '<b>Type : </b>{Mimetype}\n'
@@ -182,17 +182,17 @@ class WZMLStyle:
 
     # def get_readable_message(): ---> bot_utilis.py
     ####--------OVERALL MSG HEADER----------
-    STATUS_NAME =       '<b><i>{Name}</i></b>'
+    STATUS_NAME =       '<blockquote><b><i>{Name}</i></b></blockquote>'
 
     #####---------PROGRESSIVE STATUS-------
     BAR =            '\n 💫 {Bar}'
-    PROCESSED =      '\n<b>🔄Sync:</b> {Processed}'
-    STATUS =         '\n<b>🌐Status:</b> <a href="{Url}">{Status}</a> | '
-    ETA =            '<b>🍥ETA:</b> {Eta}'
-    SPEED =          '\n<b>🚀Speed:</b> {Speed} | '
-    ELAPSED =                                        '<b>👻Elapsed:</b> {Elapsed}'
+    PROCESSED =      '\n<blockquote><b>🔄Sync:</b> {Processed}</blockquote>'
+    STATUS =         '\n<blockquote><b>🌐Status:</b> <a href="{Url}">{Status}</a> | '
+    ETA =            '<b>🍥ETA:</b> {Eta}</blockquote>'
+    SPEED =          '\n<blockquote><b>🚀Speed:</b> {Speed} | '
+    ELAPSED =                                        '<b>👻Elapsed:</b> {Elapsed}</blockquote>'
     ENGINE =         '\n<blockquote><b>⛓️Engine:</b> {Engine}</blockquote>'
-    STA_MODE =       '\n<b>💠Mode:</b> {Mode}'
+    STA_MODE =       '\n<blockquote><b>💠Mode:</b> {Mode}</blockquote>'
     SEEDERS  =       '\n<b>🌱Seeders:</b> {Seeders} | '
     LEECHERS =                                        '<b>🐌Leechers:</b> {Leechers}'
 
@@ -215,8 +215,8 @@ class WZMLStyle:
     CANCEL =         '\n<blockquote><b>❌Cancel :</b> {Cancel}</blockquote>\n\n'
 
     ####------FOOTER--------
-    FOOTER =      '<blockquote>⌬ <b><i>Bot Stats</i></b></blockquote>\n'
-    TASKS =          '<blockquote><b>🧮Tasks:</b> {Tasks}</blockquote>'
+    FOOTER =      '⌬ <blockquote><b><i>Bot Stats</i></b> | '
+    TASKS =          '<b>🧮Tasks:</b> {Tasks}</blockquote>'
     BOT_TASKS =      '\n<blockquote><b>🥏Tasks:</b> {Tasks}/{Ttask} | <b>♟️AVL:</b> {Free}</blockquote>'
     Cpu =            '\n<blockquote><b>🖥CPU:</b> {cpu}% |'
     FREE =                      '<b>💿F:</b>{free}[{free_p}%]</blockquote>'
@@ -232,7 +232,7 @@ class WZMLStyle:
     # ---------------------
 
     #STOP_DUPLICATE_MSG: ---> clone.py, aria2_listener.py, task_manager.py
-    STOP_DUPLICATE = 'File/Folder is already available in Drive.\nHere are {content} list results:'
+    STOP_DUPLICATE = '<blockquote>File/Folder is already available in Drive.\nHere are {content} list results:</blockquote>'
     # ---------------------
 
     # async def countNode(_, message): ----> gd_count.py
@@ -254,27 +254,27 @@ class WZMLStyle:
     # async def mirror_status(_, message): ----> status.py
     NO_ACTIVE_DL = '''<i>No Active Downloads!</i>
     
-⌬ <b><i>Bot Stats</i></b>
+⌬ <blockquote><b><i>Bot Stats</i></b>
 <b>CPU:</b> {cpu}% | <b>F:</b> {free} [{free_p}%]
-<b>RAM:</b> {ram} | <b>UPTIME:</b> {uptime}
+<b>RAM:</b> {ram} | <b>UPTIME:</b> {uptime}</blockquote>
 
 <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
     '''
     # ---------------------
 
     # USER Setting --> user_setting.py 
-    USER_SETTING = '''㊂ <b><u>User Settings :</u></b>
+    USER_SETTING = '''㊂ <blockquote><b><u>User Settings :</u></b>
         
 <b>👤Name :</b> {NAME} ( <code>{ID}</code> )
 <b>🔮Telegram DC :</b> {DC}
-<b>🗣️Language :</b> {LANG}
+<b>🗣️Language :</b> {LANG}</blockquote>
 
 ➲ <u><b>Available Args:</b></u>
 • <b>-s</b> or <b>-set</b>: Set Directly via Arg
 
 <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>'''
 
-    UNIVERSAL = '''㊂ <b><u>Universal Settings : {NAME}</u></b>
+    UNIVERSAL = '''㊂<blockquote> <b><u>Universal Settings : {NAME}</u></b>
 
 <b>🎥YT-DLP Options :</b> <b><code>{YT}</code></b>
 <b>🎯Daily Tasks :</b> <code>{DT}</code> per day
@@ -282,11 +282,11 @@ class WZMLStyle:
 <b>🔑User Session :</b> <code>{USESS}</code>
 <b>🎥MediaInfo Mode :</b> <code>{MEDIAINFO}</code>
 <b>🕵️Save Mode :</b> <code>{SAVE_MODE}</code>
-<b>✉️User Bot PM :</b> <code>{BOT_PM}</code>
+<b>✉️User Bot PM :</b> <code>{BOT_PM}</code><blockquote>
 
 <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>'''
 
-    MIRROR = '''㊂ <b><u>Mirror/Clone Settings : {NAME}</u></b>
+    MIRROR = '''㊂ <blockquote><b><u>Mirror/Clone Settings : {NAME}</u></b>
 
 <b>🧬RClone Config :</b> <i>{RCLONE}</i>
 <b>🅿Mirror Prefix :</b> <code>{MPREFIX}</code>
@@ -295,11 +295,11 @@ class WZMLStyle:
 <b>🧿DDL Server(s) :</b> <i>{DDL_SERVER}</i>
 <b>📮User TD Mode :</b> <i>{TMODE}</i>
 <b>📝Total User TD(s) :</b> <i>{USERTD}</i>
-<b>☁️Daily Mirror :</b> <code>{DM}</code> per day
+<b>☁️Daily Mirror :</b> <code>{DM}</code> per day</blockquote>
 
 <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>'''
 
-    LEECH = '''㊂ <b><u>Leech Settings for {NAME}</u></b>
+    LEECH = '''㊂ <blockquote><b><u>Leech Settings for {NAME}</u></b>
 
 <b>📂Daily Leech :</b><code>{DL}</code> per day
 <b>⚙️Leech Type :</b> <i>{LTYPE}</i>
@@ -311,6 +311,6 @@ class WZMLStyle:
 <b>🅿Leech Prefix :</b> <code>{LPREFIX}</code>
 <b>💲Leech Suffix :</b> <code>{LSUFFIX}</code>
 <b>📦Leech Dumps :</b> <code>{LDUMP}</code>
-<b>🌈Leech Remname :</b> <code>{LREMNAME}</code>
+<b>🌈Leech Remname :</b> <code>{LREMNAME}</code></blockquote>
 
 <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>'''
