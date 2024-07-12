@@ -187,11 +187,11 @@ class WZMLStyle:
     #####---------PROGRESSIVE STATUS-------
     BAR =            '\n 💫 {Bar}'
     PROCESSED =      '\n<b>🔄Sync:</b> {Processed}'
-    STATUS =         '\n<b>🌐Status:</b> <a href="{Url}">{Status}</a>'
+    STATUS =         '\n<b>🌐Status:</b> <a href="{Url}">{Status}</a> | '
     ETA =            '<b>🍥ETA:</b> {Eta}'
     SPEED =          '\n<b>🚀Speed:</b> {Speed} | '
     ELAPSED =                                        '<b>👻Elapsed:</b> {Elapsed}'
-    ENGINE =         '\n<b>⛓️Engine:</b> {Engine}'
+    ENGINE =         '\n<blockquote><b>⛓️Engine:</b> {Engine}</blockquote>'
     STA_MODE =       '\n<b>💠Mode:</b> {Mode}'
     SEEDERS  =       '\n<b>🌱Seeders:</b> {Seeders} | '
     LEECHERS =                                        '<b>🐌Leechers:</b> {Leechers}'
@@ -209,21 +209,21 @@ class WZMLStyle:
     NON_ENGINE =     '\n<b>⛓️Engine :</b> {Engine}'
 
     ####--------OVERALL MSG FOOTER----------
-    USER =           '\n<b>👤User :</b> <code>{User}</code> | '
-    ID =                                                 '<b>🆔ID :</b> <code>{Id}</code>'
-    BTSEL =          '\n<b>🧲️Select :</b> {Btsel}'
-    CANCEL =         '\n<b>❌Cancel :</b> {Cancel}</blockquote>\n\n'
+    USER =           '\n<blockquote><b>👤User :</b> <code>{User}</code> | '
+    ID =                                                 '<b>🆔ID :</b> <code>{Id}</code></blockquote>'
+    BTSEL =          '\n<blockquote><b>🧲️Select :</b> {Btsel}</blockquote>'
+    CANCEL =         '\n<blockquote><b>❌Cancel :</b> {Cancel}</blockquote>\n\n'
 
     ####------FOOTER--------
     FOOTER =      '<blockquote>⌬ <b><i>Bot Stats</i></b></blockquote>\n'
-    TASKS =          '<b>🧮Tasks:</b> {Tasks}\n'
-    BOT_TASKS =      '<b>🥏Tasks:</b> {Tasks}/{Ttask} | <b>♟️AVL:</b> {Free}\n'
-    Cpu =            '<b>🖥CPU:</b> {cpu}% |'
-    FREE =                      '<b>💿F:</b>{free}[{free_p}%]'
-    Ram =          '\n <b>🎟RAM:</b>{ram}% | '
-    uptime =                     '<b>🟢UPTIME:</b>{uptime}'
-    DL =           '\n<b>🔻DL:</b> {DL}/s | '
-    UL =                        '<b>🔺UL:</b> {UL}/s'
+    TASKS =          '<blockquote><b>🧮Tasks:</b> {Tasks}</blockquote>'
+    BOT_TASKS =      '\n<blockquote><b>🥏Tasks:</b> {Tasks}/{Ttask} | <b>♟️AVL:</b> {Free}</blockquote>'
+    Cpu =            '\n<blockquote><b>🖥CPU:</b> {cpu}% |'
+    FREE =                      '<b>💿F:</b>{free}[{free_p}%]</blockquote>'
+    Ram =          '\n<blockquote><b>🎟RAM:</b>{ram}% | '
+    uptime =                     '<b>🟢UPTIME:</b>{uptime}</blockquote>'
+    DL =           '\n<blockquote><b>🔻DL:</b> {DL}/s | '
+    UL =                        '<b>🔺UL:</b> {UL}/s</blockquote>'
 
     ###--------BUTTONS-------
     PREVIOUS = '⏪Previous'
