@@ -215,8 +215,8 @@ class WZMLStyle:
     CANCEL =         '\n<blockquote><b>❌Cancel :</b> {Cancel}</blockquote>\n\n'
 
     ####------FOOTER--------
-    FOOTER =      '⌬ <blockquote><b><i>Bot Stats</i></b> </blockquote> '
-    TASKS =          '<blockquote><b>| 🧮Tasks:</b> {Tasks}</blockquote>'
+    FOOTER =      '<blockquote>⌬ <b><i>Bot Stats</i></b> </blockquote> '
+    TASKS =          '<blockquote><b>🧮Tasks:</b> {Tasks}</blockquote>'
     BOT_TASKS =      '\n<blockquote><b>🥏Tasks:</b> {Tasks}/{Ttask} | <b>♟️AVL:</b> {Free}</blockquote>'
     Cpu =            '\n<blockquote><b>🖥CPU:</b> {cpu}% |'
     FREE =                      '<b>💿F:</b>{free}[{free_p}%]</blockquote>'
