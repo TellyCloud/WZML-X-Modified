@@ -185,11 +185,11 @@ class WZMLStyle:
     STATUS_NAME =       '<b><i>{Name}</i></b>'
 
     #####---------PROGRESSIVE STATUS-------
-    BAR =            '\n  {Bar}'
+    BAR =            '\n 💫 {Bar}'
     PROCESSED =      '\n<b>🔄Sync:</b> {Processed}'
-    STATUS =         '\n<b>🌐Status:</b> <a href="{Url}">{Status}</a> | '
-    SPEED =                                          '<b>🚀Speed:</b> {Speed}'
-    ETA =            '\n<b>🍥ETA:</b> {Eta} | '
+    STATUS =         '\n<b>🌐Status:</b> <a href="{Url}">{Status}</a>'
+    ETA =            '<b>🍥ETA:</b> {Eta}'
+    SPEED =          '\n<b>🚀Speed:</b> {Speed} | '
     ELAPSED =                                        '<b>👻Elapsed:</b> {Elapsed}'
     ENGINE =         '\n<b>⛓️Engine:</b> {Engine}'
     STA_MODE =       '\n<b>💠Mode:</b> {Mode}'
