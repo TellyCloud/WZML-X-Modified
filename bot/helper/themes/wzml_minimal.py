@@ -186,7 +186,7 @@ class WZMLStyle:
 
     #####---------PROGRESSIVE STATUS-------
     BAR =            '\n  {Bar}'
-    <blockquote>PROCESSED =      '\n<b>🔄Sync:</b> {Processed}'
+    PROCESSED =      '\n<b>🔄Sync:</b> {Processed}'
     STATUS =         '\n<b>🌐Status:</b> <a href="{Url}">{Status}</a> | '
     SPEED =                                          '<b>🚀Speed:</b> {Speed}'
     ETA =            '\n<b>🍥ETA:</b> {Eta} | '
@@ -194,7 +194,7 @@ class WZMLStyle:
     ENGINE =         '\n<b>⛓️Engine:</b> {Engine}'
     STA_MODE =       '\n<b>💠Mode:</b> {Mode}'
     SEEDERS  =       '\n<b>🌱Seeders:</b> {Seeders} | '
-    LEECHERS =                                        '<b>🐌Leechers:</b> {Leechers}'</blockquote>
+    LEECHERS =                                        '<b>🐌Leechers:</b> {Leechers}'
 
     ####--------SEEDING----------
     SEED_SIZE =      '\n<b>📐Size : </b>{Size}'
