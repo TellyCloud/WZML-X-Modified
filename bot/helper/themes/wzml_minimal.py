@@ -146,7 +146,7 @@ class WZMLStyle:
 
     # async def onUploadComplete(): ---> tasks_listener.py
     NAME =                  '<b>🏷️<i>{Name}</i></b>\n'
-    SIZE =                  '<b>💾Size : </b>{Size}\n'
+    SIZE =                  '<b>💾Size : </b>{Size}'
     ELAPSE =                '<b>⌛️Elapsed : </b>{Time}\n'
     MODE =                  '<b>💠Mode : </b>{Mode}\n'
 
@@ -188,13 +188,13 @@ class WZMLStyle:
     BAR =            '<blockquote>\n  {Bar}'
     PROCESSED =      '\n<b>🔄Sync:</b> {Processed}'
     STATUS =         '\n<b>🌐Status:</b> <a href="{Url}">{Status}</a>'
-    ETA =            '\n<b>🍥ETA:</b> {Eta}'
-    SPEED =          '\n<b>🚀Speed:</b> {Speed}'
-    ELAPSED =        '\n<b>👻Elapsed:</b> {Elapsed}'
-    ENGINE =         '\n<b>⛓️Engine:</b> {Engine}'
+    ETA =            '\n<b>🍥ETA:</b> {Eta} | '
+    SPEED =                                          '<b>🚀Speed:</b> {Speed}'
+    ELAPSED =        '\n<b>👻Elapsed:</b> {Elapsed} | '
+    ENGINE =                                         '<b>⛓️Engine:</b> {Engine}'
     STA_MODE =       '\n<b>💠Mode:</b> {Mode}'
     SEEDERS  =       '\n<b>🌱Seeders:</b> {Seeders} | '
-    LEECHERS =                                      '<b>🐌Leechers:</b> {Leechers}'
+    LEECHERS =                                        '<b>🐌Leechers:</b> {Leechers}'
 
     ####--------SEEDING----------
     SEED_SIZE =      '\n<b>📐Size : </b>{Size}'
@@ -209,8 +209,8 @@ class WZMLStyle:
     NON_ENGINE =     '\n<b>⛓️Engine :</b> {Engine}'
 
     ####--------OVERALL MSG FOOTER----------
-    USER =           '\n<b>👤User :</b> <code>{User}</code>'
-    ID =             '\n<b>🆔ID :</b> <code>{Id}</code>'
+    USER =           '\n<b>👤User :</b> <code>{User}</code> | '
+    ID =                                                 '<b>🆔ID :</b> <code>{Id}</code>'
     BTSEL =          '\n<b>🧲️Select :</b> {Btsel}'
     CANCEL =         '\n<b>❌Cancel :</b> {Cancel}</blockquote>\n\n'
 
@@ -257,6 +257,8 @@ class WZMLStyle:
 ⌬ <b><i>Bot Stats</i></b>
 <b>CPU:</b> {cpu}% | <b>F:</b> {free} [{free_p}%]
 <b>RAM:</b> {ram} | <b>UPTIME:</b> {uptime}
+
+<a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
     '''
     # ---------------------
 
