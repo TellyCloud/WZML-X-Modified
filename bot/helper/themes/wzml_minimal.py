@@ -217,11 +217,11 @@ class WZMLStyle:
     ####------FOOTER--------
     FOOTER =      '<blockquote>⌬ <b><i>Bot Stats</i></b></blockquote>\n'
     TASKS =          '<b>🧮Tasks:</b> {Tasks}\n'
-    BOT_TASKS =      '<blockquote><b>🥏Tasks:</b> {Tasks}/{Ttask} | <b>♟️AVL:</b> {Free}</blockquote>\n'
-    Cpu =            '<blockquote><b>🖥CPU:</b> {cpu}% |'
-    FREE =                      '<b>💿F:</b>{free}[{free_p}%]</blockquote>\n'
-    Ram =          '<blockquote><b>🎟RAM:</b>{ram}% | '
-    uptime =                     '<b>🟢UPTIME:</b>{uptime}</blockquote>\n'
+    BOT_TASKS =      '<b>🥏Tasks:</b> {Tasks}/{Ttask} | <b>♟️AVL:</b> {Free}\n'
+    Cpu =            '<b>🖥CPU:</b> {cpu}% |'
+    FREE =                      '<b>💿F:</b>{free}[{free_p}%]\n'
+    Ram =          '<b>🎟RAM:</b>{ram}% | '
+    uptime =                     '<b>🟢UPTIME:</b>{uptime}\n'
     DL =           '<blockquote><b>🔻DL:</b> {DL}/s | '
     UL =                        '<b>🔺UL:</b> {UL}/s</blockquote>'
 
