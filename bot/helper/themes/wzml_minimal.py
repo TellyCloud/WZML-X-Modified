@@ -93,8 +93,8 @@ class WZMLStyle:
 ⌬ <b>REMARKS :</b> <code>{remarks}</code>
 <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
     '''
-    BOT_LIMITS = '''⌬ <b><i>BOT LIMITATIONS :</i></b>
-<blockquote><b>Direct Limit  :</b> {DL} GB
+    BOT_LIMITS = '''<blockquote>⌬ <b><i>BOT LIMITATIONS :</i></b>
+<b>Direct Limit  :</b> {DL} GB
 <b>Torrent Limit :</b> {TL} GB
 <b>GDrive Limit  :</b> {GL} GB
 <b>YT-DLP Limit  :</b> {YL} GB
@@ -116,8 +116,8 @@ class WZMLStyle:
     # ---------------------
 
     # async def restart_notification(): ---> __main__.py
-    RESTART_SUCCESS = '''⌬ <b><i>TellyCloud Bots Restarted Successfully!</i></b>
-<blockquote><b>Date     :</b> {date}
+    RESTART_SUCCESS = '''<blockquote>⌬ <b><i>TellyCloud Bots Restarted Successfully!</i></b>
+<b>Date     :</b> {date}
 <b>Time     :</b> {time}
 <b>TimeZone :</b> {timz}
 <b>Version  :</b> {version}</blockquote>
@@ -127,22 +127,22 @@ class WZMLStyle:
 
     # async def ping(client, message): ---> __main__.py
     PING = '<i>Starting Ping..</i>'
-    PING_VALUE = '<b>Pong</b>\n<code>🏓 {value} ms..</code>'
+    PING_VALUE = '<blockquote><b>Pong</b>\n<code>🏓 {value} ms..</code></blockquote>'
     # ---------------------
 
     # async def onDownloadStart(self): --> tasks_listener.py
-    LINKS_START = """<b><i>Task Started</i></b>
+    LINKS_START = """<blockquote><b><i>Task Started</i></b>
 <b>Mode :</b> {Mode}
-<b>By   :</b> {Tag}\n\n"""
-    LINKS_SOURCE = """➲ <b>Source:</b>
+<b>By   :</b> {Tag}\n\n</blockquote>"""
+    LINKS_SOURCE = """<blockquote>➲ <b>Source:</b>
 <b>Added On:</b> {On}
 ------------------------------------------
 {Source}
-------------------------------------------\n\n"""
+------------------------------------------</blockquote>\n\n"""
     
     # async def __msg_to_reply(self): ---> pyrogramEngine.py
-    PM_START =            "➲ <b><u>Task Started :</u></b>\n│\n<b>Link:</b> <a href='{msg_link}'>Click Here</a>"
-    L_LOG_START =           "➲ <b><u>Leech Started :</u></b>\n│\n <b>User :</b> {mention} ( #ID{uid} )\n<b>Source :</b> <a href='{msg_link}'>Click Here</a>"
+    PM_START =            "<blockquote>➲ <b><u>Task Started :</u></b>\n│\n<b>Link:</b> <a href='{msg_link}'>Click Here</a></blockquote>"
+    L_LOG_START =           "<blockquote>➲ <b><u>Leech Started :</u></b>\n│\n <b>User :</b> {mention} ( #ID{uid} )\n<b>Source :</b> <a href='{msg_link}'>Click Here</a></blockquote>"
 
     # async def onUploadComplete(): ---> tasks_listener.py
     NAME =                  '<b><blockquote>🏷️<i>{Name}</i></b></blockquote>\n'
@@ -154,9 +154,9 @@ class WZMLStyle:
     L_TOTAL_FILES =         '<b>📂Total Files : </b>{Files}\n'
     L_CORRUPTED_FILES =     '<b>👹Corrupted Files : </b>{Corrupt}\n'
     L_CC =                  '<b>👤User By : </b>{Tag}\n\n'
-    PM_BOT_MSG =            '<blockquote>➲ <b><i>File(s) have been Sent above</i></b>'
+    PM_BOT_MSG =            '<blockquote>➲ <b><i>File(s) have been Sent above</i></b></blockquote>'
     L_BOT_MSG =             '➲ <b><i>File(s) have been Sent to Bot PM (Private)</i></b>'
-    L_LL_MSG =              '➲ <b><i>File(s) have been Sent. Access via Links...</i></b></blockquote>\n'
+    L_LL_MSG =              '➲ <b><i>File(s) have been Sent. Access via Links...</i></b>\n'
     
     # ----- MIRROR -------
     M_TYPE =                '<b>Type : </b>{Mimetype}\n'
@@ -164,7 +164,7 @@ class WZMLStyle:
     TOTAL_FILES =           '<b>Files : </b>{Files}\n'
     RCPATH =                '<b>Path: </b><code>{RCpath}</code>\n'
     M_CC =                  '<b>By : </b>{Tag}\n\n'
-    M_BOT_MSG =             '➲ <b><i>Link(s) have been Sent to Bot PM (Private)</i></b>'
+    M_BOT_MSG =             '<blockquote>➲ <b><i>Link(s) have been Sent to Bot PM (Private)</i></b></blockquote>'
     # ----- BUTTONS -------
     CLOUD_LINK =      '☁️ Cloud Link'
     SAVE_MSG =        '📨 Save Message'
@@ -211,18 +211,18 @@ class WZMLStyle:
     ####--------OVERALL MSG FOOTER----------
     USER =           '\n<blockquote><b>👤User :</b> <code>{User}</code> | '
     ID =                                                 '<b>🆔ID :</b> <code>{Id}</code></blockquote>'
-    BTSEL =          '\n<blockquote><b>🧲️Select :</b> {Btsel}</blockquote>'
+    BTSEL =          '\n<b>🧲️Select :</b> {Btsel}'
     CANCEL =         '\n<blockquote><b>❌Cancel :</b> {Cancel}</blockquote>\n\n'
 
     ####------FOOTER--------
-    FOOTER =      '<blockquote>⌬ <b><i>Bot Stats</i></b> </blockquote> '
-    TASKS =          '<blockquote><b>🧮Tasks:</b> {Tasks}</blockquote>'
-    BOT_TASKS =      '\n<blockquote><b>🥏Tasks:</b> {Tasks}/{Ttask} | <b>♟️AVL:</b> {Free}</blockquote>'
-    Cpu =            '\n<blockquote><b>🖥CPU:</b> {cpu}% |'
-    FREE =                      '<b>💿F:</b>{free}[{free_p}%]</blockquote>'
-    Ram =          '\n<blockquote><b>🎟RAM:</b>{ram}% | '
-    uptime =                     '<b>🟢UPTIME:</b>{uptime}</blockquote>'
-    DL =           '\n<blockquote><b>🔻DL:</b> {DL}/s | '
+    FOOTER =      '<blockquote>⌬ <b><i>Bot Stats</i></b></blockquote>\n'
+    TASKS =          '<b>🧮Tasks:</b> {Tasks}\n'
+    BOT_TASKS =      '<blockquote><b>🥏Tasks:</b> {Tasks}/{Ttask} | <b>♟️AVL:</b> {Free}</blockquote>\n'
+    Cpu =            '<blockquote><b>🖥CPU:</b> {cpu}% |'
+    FREE =                      '<b>💿F:</b>{free}[{free_p}%]</blockquote>\n'
+    Ram =          '<blockquote><b>🎟RAM:</b>{ram}% | '
+    uptime =                     '<b>🟢UPTIME:</b>{uptime}</blockquote>\n'
+    DL =           '<blockquote><b>🔻DL:</b> {DL}/s | '
     UL =                        '<b>🔺UL:</b> {UL}/s</blockquote>'
 
     ###--------BUTTONS-------
@@ -254,7 +254,7 @@ class WZMLStyle:
     # async def mirror_status(_, message): ----> status.py
     NO_ACTIVE_DL = '''<i>No Active Downloads!</i>
     
-⌬ <blockquote><b><i>Bot Stats</i></b>
+<blockquote>⌬ <b><i>Bot Stats</i></b>
 <b>CPU:</b> {cpu}% | <b>F:</b> {free} [{free_p}%]
 <b>RAM:</b> {ram} | <b>UPTIME:</b> {uptime}</blockquote>
 
@@ -263,7 +263,7 @@ class WZMLStyle:
     # ---------------------
 
     # USER Setting --> user_setting.py 
-    USER_SETTING = '''㊂ <blockquote><b><u>User Settings :</u></b>
+    USER_SETTING = '''<blockquote>㊂ <b><u>User Settings :</u></b>
         
 <b>👤Name :</b> {NAME} ( <code>{ID}</code> )
 <b>🔮Telegram DC :</b> {DC}
@@ -274,7 +274,7 @@ class WZMLStyle:
 
 <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>'''
 
-    UNIVERSAL = '''㊂<blockquote> <b><u>Universal Settings : {NAME}</u></b>
+    UNIVERSAL = '''<blockquote>㊂ <b><u>Universal Settings : {NAME}</u></b>
 
 <b>🎥YT-DLP Options :</b> <b><code>{YT}</code></b>
 <b>🎯Daily Tasks :</b> <code>{DT}</code> per day
@@ -286,7 +286,7 @@ class WZMLStyle:
 
 <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>'''
 
-    MIRROR = '''㊂ <blockquote><b><u>Mirror/Clone Settings : {NAME}</u></b>
+    MIRROR = '''<blockquote>㊂ <b><u>Mirror/Clone Settings : {NAME}</u></b>
 
 <b>🧬RClone Config :</b> <i>{RCLONE}</i>
 <b>🅿Mirror Prefix :</b> <code>{MPREFIX}</code>
@@ -299,7 +299,7 @@ class WZMLStyle:
 
 <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>'''
 
-    LEECH = '''㊂ <blockquote><b><u>Leech Settings for {NAME}</u></b>
+    LEECH = '''<blockquote>㊂ <b><u>Leech Settings for {NAME}</u></b>
 
 <b>📂Daily Leech :</b><code>{DL}</code> per day
 <b>⚙️Leech Type :</b> <i>{LTYPE}</i>
