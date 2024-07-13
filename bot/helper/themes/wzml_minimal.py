@@ -187,12 +187,12 @@ class WZMLStyle:
     #####---------PROGRESSIVE STATUS-------
     BAR =            '\n 💫 {Bar}'
     PROCESSED =      '\n<blockquote><b>🔄Sync:</b> {Processed}</blockquote>'
-    STATUS =         '\n<blockquote><b>🌐Status:</b> <a href="{Url}">{Status}</a> | '
-    ETA =            '<b>🍥ETA:</b> {Eta}</blockquote>'
+    STATUS =         '\n<b>🌐Status:</b> <a href="{Url}">{Status}</a> | '
+    ETA =            '<b>🍥ETA:</b> {Eta}'
     SPEED =          '\n<blockquote><b>🚀Speed:</b> {Speed} | '
     ELAPSED =                                        '<b>👻Elapsed:</b> {Elapsed}</blockquote>'
     ENGINE =         '\n<blockquote><b>⛓️Engine:</b> {Engine}</blockquote>'
-    STA_MODE =       '\n<blockquote><b>💠Mode:</b> {Mode}</blockquote>'
+    STA_MODE =       '\n<b>💠Mode:</b> {Mode}'
     SEEDERS  =       '\n<b>🌱Seeders:</b> {Seeders} | '
     LEECHERS =                                        '<b>🐌Leechers:</b> {Leechers}'
 
@@ -212,7 +212,7 @@ class WZMLStyle:
     USER =           '\n<blockquote><b>👤User :</b> <code>{User}</code> | '
     ID =                                                 '<b>🆔ID :</b> <code>{Id}</code></blockquote>'
     BTSEL =          '\n<b>🧲️Select :</b> {Btsel}'
-    CANCEL =         '\n<blockquote><b>❌Cancel :</b> {Cancel}</blockquote>\n\n'
+    CANCEL =         '\n<b>❌Cancel :</b> {Cancel}\n\n'
 
     ####------FOOTER--------
     FOOTER =      '<blockquote>⌬ <b><i>Bot Stats</i></b></blockquote>\n'
