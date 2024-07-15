@@ -52,7 +52,7 @@ class WZMLStyle:
     <b><code>🧱SWAP MEMORY      :</code>{swap_bar} {swap}%</b>
     <b>U :</b> {swap_u} | <b>F :</b> {swap_f} | <b>T :</b> {swap_t}
 
-    <b><code>💾DISK             :</code> {disk_bar} {disk}%</b>
+    <b>💾DISK : {disk_bar} {disk}%</b>
     <b><code>📀Total Disk Read  :</code> {disk_read}</b>
     <b><code>💿Total Disk Write :</code> {disk_write}</b>
     <b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}</blockquote>
@@ -66,9 +66,9 @@ class WZMLStyle:
     <b><i>⌬ 📡NETWORK STATS !</i></b>
     <b><code>📤Upload Data   :</code> {up_data}</b>
     <b><code>📥Download Data :</code> {dl_data}</b>
-    <b><code>⏳Pkts Sent      :</code> {pkt_sent}k</b>
-    <b><code>⌛Pkts Received  :</code> {pkt_recv}k</b>
-    <b><code>🛰Total I/O Data :</code> {tl_data}</b>
+    <b><code>⏳Pkts Sent     :</code> {pkt_sent}k</b>
+    <b><code>⌛Pkts Received :</code> {pkt_recv}k</b>
+    <b><code>🛰Total I/O Data:</code> {tl_data}</b>
 
     <b><code>🖥CPU           :</code> {cpu_bar} {cpu}%</b>
     <b><code>CPU Frequency   :</code> {cpu_freq}</b>
