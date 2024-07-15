@@ -71,7 +71,7 @@ class WZMLStyle:
 <b><code>⌛Pkts Received :</code> {pkt_recv}k</b>
 <b><code>🛰Total I/O Data:</code> {tl_data}</b></blockquote>
 
-<blockquote><b><code>🖥CPU           :</code> {cpu_bar} {cpu}%</b>
+<blockquote><b><code>🖥CPU :</code> {cpu_bar} {cpu}%</b>
 <b><code>CPU Frequency   :</code> {cpu_freq}</b>
 <b><code>System Avg Load :</code> {sys_load}</b>
 <b><code>P-Core(s)       :</code> {p_core}</b>
@@ -81,7 +81,7 @@ class WZMLStyle:
 
     <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
     '''
-    REPO_STATS = '''⌬ <blockquote><b><i>REPO STATISTICS !</i></b>
+    REPO_STATS = '''<blockquote>⌬ <b><i>REPO STATISTICS !</i></b>
 <code><b>Bot Updated     :</b> {last_commit}</code>
 <code><b>Current Version :</b> {bot_version}</code>
 <code><b>Latest Version  :</b> {lat_version}</code>
@@ -101,7 +101,7 @@ class WZMLStyle:
 <code><b>Clone Limit       :</b> {CL} GB</code>
 <code><b>Leech Limit       :</b> {LL} GB</code></blockquote>
 
-</blockquote><code><b>Token Validity     :</b> {TV}</code>
+<blockquote><code><b>Token Validity     :</b> {TV}</code>
 <code><b>User Time Limit    :</b> {UTI} / task</code>
 <code><b>User Parallel Task :</b> {UT}</code>
 <code><b>Bot Parallel Tasks :</b> {BT}</code></blockquote>
@@ -159,11 +159,11 @@ class WZMLStyle:
     L_LL_MSG =              '➲ <b><i>File(s) have been Sent. Access via Links...</i></b>\n'
     
     # ----- MIRROR -------
-    M_TYPE =                '<b>Type : </b>{Mimetype}\n'
+    M_TYPE =                '<b>Type       : </b>{Mimetype}\n'
     M_SUBFOLD =             '<b>SubFolders : </b>{Folder}\n'
-    TOTAL_FILES =           '<b>Files : </b>{Files}\n'
-    RCPATH =                '<b>Path: </b><code>{RCpath}</code>\n'
-    M_CC =                  '<b>By : </b>{Tag}\n\n'
+    TOTAL_FILES =           '<b>Files      : </b>{Files}\n'
+    RCPATH =                '<b>Path       : </b><code>{RCpath}</code>\n'
+    M_CC =                  '<b>By         : </b>{Tag}\n\n'
     M_BOT_MSG =             '<blockquote>➲ <b><i>Link(s) have been Sent to Bot PM (Private)</i></b></blockquote>'
     # ----- BUTTONS -------
     CLOUD_LINK =      '☁️ Cloud Link'
@@ -186,15 +186,15 @@ class WZMLStyle:
 
     #####---------PROGRESSIVE STATUS-------
     BAR =            '\n 💫 {Bar}'
-    PROCESSED =      '\n<blockquote><b>🔄Sync:</b> {Processed}</blockquote>'
+    PROCESSED =      '\n<b>🔄Sync:</b> {Processed}'
     STATUS =         '\n<b>🌐Status:</b> <a href="{Url}">{Status}</a> | '
-    ETA =            '<b>🍥ETA:</b> {Eta}'
-    SPEED =          '\n<blockquote><b>🚀Speed:</b> {Speed} | '
-    ELAPSED =                                        '<b>👻Elapsed:</b> {Elapsed}</blockquote>'
-    ENGINE =         '\n<blockquote><b>⛓️Engine:</b> {Engine}</blockquote>'
+    ETA =              '<b>🍥ETA:</b> {Eta}'
+    SPEED =          '\n<b>🚀Speed:</b> {Speed} | '
+    ELAPSED =          '<b>👻Elapsed:</b> {Elapsed}'
+    ENGINE =         '\n<b>⛓️Engine:</b> {Engine}'
     STA_MODE =       '\n<b>💠Mode:</b> {Mode}'
     SEEDERS  =       '\n<b>🌱Seeders:</b> {Seeders} | '
-    LEECHERS =                                        '<b>🐌Leechers:</b> {Leechers}'
+    LEECHERS =         '<b>🐌Leechers:</b> {Leechers}'
 
     ####--------SEEDING----------
     SEED_SIZE =      '\n<b>📐Size : </b>{Size}'
@@ -205,24 +205,24 @@ class WZMLStyle:
     SEED_ENGINE =    '\n<b>⛓️Engine :</b> {Engine}'
 
     ####--------NON-PROGRESSIVE + NON SEEDING----------
-    STATUS_SIZE =    '\n<b>📐Size : </b>{Size}'
+    STATUS_SIZE =    '\n<b>📐Size  : </b>{Size}'
     NON_ENGINE =     '\n<b>⛓️Engine :</b> {Engine}'
 
     ####--------OVERALL MSG FOOTER----------
-    USER =           '\n<blockquote><b>👤User :</b> <code>{User}</code> | '
-    ID =                                                 '<b>🆔ID :</b> <code>{Id}</code></blockquote>'
+    USER =           '\n<b>👤User   :</b> <code>{User}</code> | '
+    ID =               '<b>🆔ID :</b> <code>{Id}</code>'
     BTSEL =          '\n<b>🧲️Select :</b> {Btsel}'
     CANCEL =         '\n<b>❌Cancel :</b> {Cancel}\n\n'
 
     ####------FOOTER--------
-    FOOTER =      '<blockquote>⌬ <b><i>Bot Stats</i></b></blockquote>\n'
-    TASKS =          '<b>🧮Tasks:</b> {Tasks}\n'
-    BOT_TASKS =      '<b>🥏Tasks:</b> {Tasks}/{Ttask} | <b>♟️AVL:</b> {Free}\n'
-    Cpu =            '<b>🖥CPU:</b> {cpu}% |'
-    FREE =                      '<b>💿F:</b>{free}[{free_p}%]\n'
-    Ram =          '<b>🎟RAM:</b>{ram}% | '
-    uptime =                     '<b>🟢UPTIME:</b>{uptime}\n'
-    DL =           '<blockquote><b>🔻DL:</b> {DL}/s | '
+    FOOTER =      '<blockquote>⌬ <b><i>Bot Stats</i></b></blockquote>'
+    TASKS =          '\n<b>🧮Tasks:</b> {Tasks}'
+    BOT_TASKS =      '\n<b>🥏Tasks:</b> {Tasks}/{Ttask} | <b>♟️AVL:</b> {Free}'
+    Cpu =            '\n<b>🖥CPU:</b> {cpu}% |'
+    FREE =             '<b>💿F:</b>{free}[{free_p}%]'
+    Ram =            '\n<b>🎟RAM:</b>{ram}% | '
+    uptime =           '<b>🟢UPTIME:</b>{uptime}'
+    DL =             '\n<blockquote><b>🔻DL:</b> {DL}/s | '
     UL =                        '<b>🔺UL:</b> {UL}/s</blockquote>'
 
     ###--------BUTTONS-------
