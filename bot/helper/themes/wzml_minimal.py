@@ -18,18 +18,18 @@ class WZMLStyle:
     USED_TOKEN = '''<b>Temporary Token already used!</b>\n\n<i>Kindly generate a new one.</i>'''
     LOGGED_PASSWORD = '''<b>Bot Already Logged In via Password</b>\n\n<i>No Need to Accept Temp Tokens.</i>'''
     ACTIVATE_BUTTON = 'Activate Temporary Token'
-    TOKEN_MSG = '''<b><u>Generated Temporary Login Token!</u></b>
-<b>Temp Token:</b> <code>{token}</code>
-<b>Validity:</b> {validity}'''
+    TOKEN_MSG = '''<blockquote><b><u>Generated Temporary Login Token!</u></b></blockquote>
+                   <b><code>Temp Token :</code>{token}</b>
+                   <b><code>Validity   :</code>{validity}</b>'''
     # ---------------------
     # async def token_callback(_, query): ---> __main__.py
-    ACTIVATED = '✅️ Activated ✅'
+    ACTIVATED = '<blockquote>✅️ Activated ✅</blockquote>'
     # ---------------------
     # async def login(_, message): --> __main__.py
-    LOGGED_IN = '<b>Already Bot Login In!</b>'
-    INVALID_PASS = '<b>Invalid Password!</b>\n\nKindly put the correct Password .'
-    PASS_LOGGED = '<b>Bot Permanent Login Successfully!</b>'
-    LOGIN_USED = '<b>Bot Login Usage :</b>\n\n<code>/cmd [password]</code>'
+    LOGGED_IN = '<blockquote><b>Already Bot Login In!</b></blockquote>'
+    INVALID_PASS = '<blockquote><b>Invalid Password!</b>\n\nKindly put the correct Password .</blockquote>'
+    PASS_LOGGED = '<blockquote><b>Bot Permanent Login Successfully!</b></blockquote>'
+    LOGIN_USED = '</blockquote><b>Bot Login Usage :</b>\n\n<code>/cmd [password]</code></blockquote>'
     # ---------------------
     # async def log(_, message): ---> __main__.py
     LOG_DISPLAY_BT = '📑 Log Display'
@@ -44,33 +44,29 @@ class WZMLStyle:
     HELP_HEADER = "㊂ <b><i>Help Guide Menu!</i></b>\n\n<b>NOTE: <i>Click on any CMD to see more minor detalis.</i></b>"
 
     # async def stats(client, message):
-    BOT_STATS = '''⌬ <blockquote><b><i>BOT STATISTICS :</i></b>
-<b>🟢Bot Uptime :</b> {bot_uptime}
+    BOT_STATS = '''<blockquote>⌬ <b><i>BOT STATISTICS :</i></b>
+    <b><code>🟢Bot Uptime       :</code> {bot_uptime}</b>
+    <b><code>🎮RAM ( MEMORY )   :</code> {ram_bar} {ram}%</b>
+    <b>U :</b> {ram_u} | <b>F :</b> {ram_f} | <b>T :</b> {ram_t}
 
- <b><i>🎮RAM ( MEMORY ) :</i></b>
-│ {ram_bar} {ram}%
-<b>U :</b> {ram_u} | <b>F :</b> {ram_f} | <b>T :</b> {ram_t}
+    <b><code>🧱SWAP MEMORY      :</code>{swap_bar} {swap}%</b>
+    <b>U :</b> {swap_u} | <b>F :</b> {swap_f} | <b>T :</b> {swap_t}
 
- <b><i>🧱SWAP MEMORY :</i></b>
-│ {swap_bar} {swap}%
-<b>U :</b> {swap_u} | <b>F :</b> {swap_f} | <b>T :</b> {swap_t}
-
-<b><i>💾DISK :</i></b>
-│ {disk_bar} {disk}%
-│<b>📀Total Disk Read  :</b> {disk_read}
-│<b>💿Total Disk Write :</b> {disk_write}
-<b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}</blockquote>
- <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>   
+    <b><code>💾DISK             :</code> {disk_bar} {disk}%</b>
+    <b><code>📀Total Disk Read  :</code> {disk_read}</b>
+    <b><code>💿Total Disk Write :</code> {disk_write}</b>
+    <b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}</blockquote>
+    <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>   
     '''
     SYS_STATS = '''⌬ <blockquote><b><i>💻OS SYSTEM :</i></b>
- <b>⌚OS Uptime  :</b> {os_uptime}
-<b>🪃OS Version :</b> {os_version}
-<b>🪶OS Arch    :</b> {os_arch}
+<b><code>⌚OS Uptime  :</code> {os_uptime}</b>
+<b><code>🪃OS Version  :</code> {os_version}</b>
+<b><code>🪶OS Arch     :</code> {os_arch}</b>
 
 ⌬ <b><i>📡NETWORK STATS :</i></b>
 <b>📤Upload Data  :</b> {up_data}
 <b>📥Download Data:</b> {dl_data}
-<b>⏳Pkts Sent    :</b> {pkt_sent}k
+<b>⏳Pkts Sent     :</b> {pkt_sent}k
 <b>⌛Pkts Received:</b> {pkt_recv}k
 <b>🛰Total I/O Data:</b> {tl_data}
 
