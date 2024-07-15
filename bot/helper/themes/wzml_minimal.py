@@ -60,9 +60,9 @@ class WZMLStyle:
     <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>   
     '''
     SYS_STATS = '''<blockquote>⌬ <b><i>💻OS SYSTEM !</i></b>
-<b><code>⌚OS Uptime    :</code> {os_uptime}</b>
-<b><code>🪃OS Version   :</code> {os_version}</b>
-<b><code>🪶OS Arch      :</code> {os_arch}</b></blockquote>
+<b><code>⌚OS Uptime     :</code> {os_uptime}</b>
+<b><code>🪃OS Version    :</code> {os_version}</b>
+<b><code>🪶OS Arch       :</code> {os_arch}</b></blockquote>
 
 <blockquote><b><i>⌬ 📡NETWORK STATS !</i></b>
 <b><code>📤Upload Data   :</code> {up_data}</b>
@@ -92,14 +92,14 @@ class WZMLStyle:
     <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
     '''
     BOT_LIMITS = '''<blockquote>⌬ <b><i>BOT LIMITATIONS !</i></b>
-<code><b>Direct Limit  :</b> {DL} GB</code>
-<code><b>Torrent Limit :</b> {TL} GB</code>
-<code><b>GDrive Limit  :</b> {GL} GB</code>
-<code><b>YT-DLP Limit  :</b> {YL} GB</code>
-<code><b>Playlist Limit:</b> {PL} GB</code>
-<code><b>Mega Limit    :</b> {ML} GB</code>
-<code><b>Clone Limit   :</b> {CL} GB</code>
-<code><b>Leech Limit   :</b> {LL} GB</code></blockquote>
+<code><b>Direct Limit      :</b> {DL} GB</code>
+<code><b>Torrent Limit     :</b> {TL} GB</code>
+<code><b>GDrive Limit      :</b> {GL} GB</code>
+<code><b>YT-DLP Limit      :</b> {YL} GB</code>
+<code><b>Playlist Limit    :</b> {PL} GB</code>
+<code><b>Mega Limit        :</b> {ML} GB</code>
+<code><b>Clone Limit       :</b> {CL} GB</code>
+<code><b>Leech Limit       :</b> {LL} GB</code></blockquote>
 
 </blockquote><code><b>Token Validity     :</b> {TV}</code>
 <code><b>User Time Limit    :</b> {UTI} / task</code>
