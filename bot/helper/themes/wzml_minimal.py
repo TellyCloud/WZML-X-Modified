@@ -45,38 +45,38 @@ class WZMLStyle:
 
     # async def stats(client, message):
     BOT_STATS = '''<blockquote>⌬ <b><i>BOT STATISTICS !</i></b>
-    <b><code>🟢Bot Uptime       :</code> {bot_uptime}</b>
-    <b><code>🎮RAM ( MEMORY )   :</code> {ram_bar} {ram}%</b>
-    <b>U :</b> {ram_u} | <b>F :</b> {ram_f} | <b>T :</b> {ram_t}
+<b><code>🟢Bot Uptime       :</code> {bot_uptime}</b>
+<b><code>🎮RAM ( MEMORY ):</code>{ram_bar} {ram}%</b>
+<b>U :</b> {ram_u} | <b>F :</b> {ram_f} | <b>T :</b> {ram_t}
 
-    <b><code>🧱SWAP MEMORY      :</code>{swap_bar} {swap}%</b>
-    <b>U :</b> {swap_u} | <b>F :</b> {swap_f} | <b>T :</b> {swap_t}
+<b><code>🧱SWAP MEMORY :</code>{swap_bar} {swap}%</b>
+<b>U :</b> {swap_u} | <b>F :</b> {swap_f} | <b>T :</b> {swap_t}
 
-    <b>💾DISK : {disk_bar} {disk}%</b>
-    <b><code>📀Total Disk Read  :</code> {disk_read}</b>
-    <b><code>💿Total Disk Write :</code> {disk_write}</b>
-    <b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}</blockquote>
+<b><code>💾DISK :</code> {disk_bar} {disk}%</b>
+<b><code>📀Total Disk Read  :</code> {disk_read}</b>
+<b><code>💿Total Disk Write :</code> {disk_write}</b>
+<b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}</blockquote>
     <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>   
     '''
     SYS_STATS = '''⌬ <blockquote><b><i>💻OS SYSTEM !</i></b>
-    <b><code>⌚OS Uptime  :</code> {os_uptime}</b>
-    <b><code>🪃OS Version  :</code> {os_version}</b>
-    <b><code>🪶OS Arch     :</code> {os_arch}</b>
+<b><code>⌚OS Uptime  :</code> {os_uptime}</b>
+<b><code>🪃OS Version  :</code> {os_version}</b>
+<b><code>🪶OS Arch     :</code> {os_arch}</b>
 
-    <b><i>⌬ 📡NETWORK STATS !</i></b>
-    <b><code>📤Upload Data   :</code> {up_data}</b>
-    <b><code>📥Download Data :</code> {dl_data}</b>
-    <b><code>⏳Pkts Sent     :</code> {pkt_sent}k</b>
-    <b><code>⌛Pkts Received :</code> {pkt_recv}k</b>
-    <b><code>🛰Total I/O Data:</code> {tl_data}</b>
+<b><i>⌬ 📡NETWORK STATS !</i></b>
+<b><code>📤Upload Data   :</code> {up_data}</b>
+<b><code>📥Download Data :</code> {dl_data}</b>
+<b><code>⏳Pkts Sent     :</code> {pkt_sent}k</b>
+<b><code>⌛Pkts Received :</code> {pkt_recv}k</b>
+<b><code>🛰Total I/O Data:</code> {tl_data}</b>
 
-    <b><code>🖥CPU           :</code> {cpu_bar} {cpu}%</b>
-    <b><code>CPU Frequency   :</code> {cpu_freq}</b>
-    <b><code>System Avg Load :</code> {sys_load}</b>
-    <b><code>P-Core(s)       :</code> {p_core}</b>
-    <b><code>V-Core(s)       :</code> {v_core}</b>
-    <b><code>Total Core(s)   :</code> {total_core}</b>
-    <b><code>Usable CPU(s)   :</code> {cpu_use}</b></blockquote>
+<b><code>🖥CPU           :</code> {cpu_bar} {cpu}%</b>
+<b><code>CPU Frequency   :</code> {cpu_freq}</b>
+<b><code>System Avg Load :</code> {sys_load}</b>
+<b><code>P-Core(s)       :</code> {p_core}</b>
+<b><code>V-Core(s)       :</code> {v_core}</b>
+<b><code>Total Core(s)   :</code> {total_core}</b>
+<b><code>Usable CPU(s)   :</code> {cpu_use}</b></blockquote>
     <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
     '''
     REPO_STATS = '''⌬ <blockquote><b><i>REPO STATISTICS !</i></b>
