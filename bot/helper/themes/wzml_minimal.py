@@ -44,7 +44,7 @@ class WZMLStyle:
     HELP_HEADER = "㊂ <b><i>Help Guide Menu!</i></b>\n\n<b>NOTE: <i>Click on any CMD to see more minor detalis.</i></b>"
 
     # async def stats(client, message):
-    BOT_STATS = '''<blockquote>⌬ <b><i>BOT STATISTICS :</i></b>
+    BOT_STATS = '''<blockquote>⌬ <b><i>BOT STATISTICS !</i></b>
     <b><code>🟢Bot Uptime       :</code> {bot_uptime}</b>
     <b><code>🎮RAM ( MEMORY )   :</code> {ram_bar} {ram}%</b>
     <b>U :</b> {ram_u} | <b>F :</b> {ram_f} | <b>T :</b> {ram_t}
@@ -58,66 +58,65 @@ class WZMLStyle:
     <b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}</blockquote>
     <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>   
     '''
-    SYS_STATS = '''⌬ <blockquote><b><i>💻OS SYSTEM :</i></b>
-<b><code>⌚OS Uptime  :</code> {os_uptime}</b>
-<b><code>🪃OS Version  :</code> {os_version}</b>
-<b><code>🪶OS Arch     :</code> {os_arch}</b>
+    SYS_STATS = '''⌬ <blockquote><b><i>💻OS SYSTEM !</i></b>
+    <b><code>⌚OS Uptime  :</code> {os_uptime}</b>
+    <b><code>🪃OS Version  :</code> {os_version}</b>
+    <b><code>🪶OS Arch     :</code> {os_arch}</b>
 
-⌬ <b><i>📡NETWORK STATS :</i></b>
-<b>📤Upload Data  :</b> {up_data}
-<b>📥Download Data:</b> {dl_data}
-<b>⏳Pkts Sent     :</b> {pkt_sent}k
-<b>⌛Pkts Received:</b> {pkt_recv}k
-<b>🛰Total I/O Data:</b> {tl_data}
+    <b><i>⌬ 📡NETWORK STATS !</i></b>
+    <b><code>📤Upload Data   :</code> {up_data}</b>
+    <b><code>📥Download Data :</code> {dl_data}</b>
+    <b><code>⏳Pkts Sent      :</code> {pkt_sent}k</b>
+    <b><code>⌛Pkts Received  :</code> {pkt_recv}k</b>
+    <b><code>🛰Total I/O Data :</code> {tl_data}</b>
 
-<b>🖥CPU :</b>
-│ {cpu_bar} {cpu}%
-<b>CPU Frequency   :</b> {cpu_freq}
-<b>System Avg Load :</b> {sys_load}
-<b>P-Core(s)       :</b> {p_core}
-<b>V-Core(s)       :</b> {v_core}
-<b>Total Core(s)   :</b> {total_core}
-<b>Usable CPU(s)   :</b> {cpu_use}</blockquote>
-<a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
+    <b><code>🖥CPU           :</code> {cpu_bar} {cpu}%</b>
+    <b><code>CPU Frequency   :</code> {cpu_freq}</b>
+    <b><code>System Avg Load :</code> {sys_load}</b>
+    <b><code>P-Core(s)       :</code> {p_core}</b>
+    <b><code>V-Core(s)       :</code> {v_core}</b>
+    <b><code>Total Core(s)   :</code> {total_core}</b>
+    <b><code>Usable CPU(s)   :</code> {cpu_use}</b></blockquote>
+    <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
     '''
-    REPO_STATS = '''⌬ <blockquote><b><i>REPO STATISTICS :</i></b>
-<b>Bot Updated     :</b> {last_commit}
-<b>Current Version :</b> {bot_version}
-<b>Latest Version  :</b> {lat_version}
-<b>Last ChangeLog  :</b> {commit_details}</blockquote>
+    REPO_STATS = '''⌬ <blockquote><b><i>REPO STATISTICS !</i></b>
+    <b>Bot Updated     :</b> {last_commit}
+    <b>Current Version :</b> {bot_version}
+    <b>Latest Version  :</b> {lat_version}
+    <b>Last ChangeLog  :</b> {commit_details}</blockquote>
 
-⌬ <b>REMARKS :</b> <code>{remarks}</code>
-<a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
+    ⌬ <b>REMARKS :</b> <code>{remarks}</code>
+    <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
     '''
     BOT_LIMITS = '''<blockquote>⌬ <b><i>BOT LIMITATIONS :</i></b>
-<b>Direct Limit  :</b> {DL} GB
-<b>Torrent Limit :</b> {TL} GB
-<b>GDrive Limit  :</b> {GL} GB
-<b>YT-DLP Limit  :</b> {YL} GB
-<b>Playlist Limit:</b> {PL} GB
-<b>Mega Limit    :</b> {ML} GB
-<b>Clone Limit   :</b> {CL} GB
-<b>Leech Limit   :</b> {LL} GB</blockquote>
+    <b>Direct Limit  :</b> {DL} GB
+    <b>Torrent Limit :</b> {TL} GB
+    <b>GDrive Limit  :</b> {GL} GB
+    <b>YT-DLP Limit  :</b> {YL} GB
+    <b>Playlist Limit:</b> {PL} GB
+    <b>Mega Limit    :</b> {ML} GB
+    <b>Clone Limit   :</b> {CL} GB
+    <b>Leech Limit   :</b> {LL} GB</blockquote>
 
-<blockquote><b>Token Validity      :</b> {TV}
-<b>User Time Limit     :</b> {UTI} / task
-<b>User Parallel Tasks :</b> {UT}
-<b>Bot Parallel Tasks  :</b> {BT}</blockquote>
-<a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
+    <blockquote><b>Token Validity      :</b> {TV}
+    <b>User Time Limit     :</b> {UTI} / task
+    <b>User Parallel Tasks :</b> {UT}
+    <b>Bot Parallel Tasks  :</b> {BT}</blockquote>
+    <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
     '''
     # ---------------------
 
     # async def restart(client, message): ---> __main__.py
-    RESTARTING = '<i>Restarting...</i>'
+    RESTARTING = '<blockquote><i>Restarting.....</blockquote></i>'
     # ---------------------
 
     # async def restart_notification(): ---> __main__.py
     RESTART_SUCCESS = '''<blockquote>⌬ <b><i>TellyCloud Bots Restarted Successfully!</i></b>
-<b>Date     :</b> {date}
-<b>Time     :</b> {time}
-<b>TimeZone :</b> {timz}
-<b>Version  :</b> {version}</blockquote>
-<a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>'''
+    <b>Date     :</b> {date}
+    <b>Time     :</b> {time}
+    <b>TimeZone :</b> {timz}
+    <b>Version  :</b> {version}</blockquote>
+    <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>'''
     RESTARTED = '''⌬ <b><i>Bot Restarted!</i></b>'''
     # ---------------------
 
