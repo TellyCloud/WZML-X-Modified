@@ -92,14 +92,14 @@ class WZMLStyle:
     <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
     '''
     BOT_LIMITS = '''<blockquote>⌬ <b><i>BOT LIMITATIONS !</i></b>
-<code><b>Direct Limit      :</b> {DL} GB</code>
-<code><b>Torrent Limit     :</b> {TL} GB</code>
-<code><b>GDrive Limit      :</b> {GL} GB</code>
-<code><b>YT-DLP Limit      :</b> {YL} GB</code>
-<code><b>Playlist Limit    :</b> {PL} GB</code>
-<code><b>Mega Limit        :</b> {ML} GB</code>
-<code><b>Clone Limit       :</b> {CL} GB</code>
-<code><b>Leech Limit       :</b> {LL} GB</code></blockquote>
+<code><b>Direct Limit       :</b> {DL} GB</code>
+<code><b>Torrent Limit      :</b> {TL} GB</code>
+<code><b>GDrive Limit       :</b> {GL} GB</code>
+<code><b>YT-DLP Limit       :</b> {YL} GB</code>
+<code><b>Playlist Limit     :</b> {PL} GB</code>
+<code><b>Mega Limit         :</b> {ML} GB</code>
+<code><b>Clone Limit        :</b> {CL} GB</code>
+<code><b>Leech Limit        :</b> {LL} GB</code></blockquote>
 
 <blockquote><code><b>Token Validity     :</b> {TV}</code>
 <code><b>User Time Limit    :</b> {UTI} / task</code>
@@ -188,20 +188,20 @@ class WZMLStyle:
     BAR =            '\n💫 {Bar}'
     PROCESSED =      '\n<code><b>🔄Sync     : </b>{Processed}</code>'
     STATUS =         '\n<code><b>🌐Status   : </b><a href="{Url}">{Status}</a> </code>'
-    ETA =            '| <code><b>🍥ETA      : </b>{Eta}</code>'
+    ETA =            '\n<code><b>🍥ETA      : </b>{Eta}</code>'
     SPEED =          '\n<code><b>🚀Speed    : </b>{Speed} </code>'
-    ELAPSED =        '| <code><b>👻Elapsed  : </b>{Elapsed}</code>'
+    ELAPSED =        '\n<code><b>👻Elapsed  : </b>{Elapsed}</code>'
     ENGINE =         '\n<code><b>⛓️Engine   : </b>{Engine}</code>'
     STA_MODE =       '\n<code><b>💠Mode     : </b>{Mode}</code>'
-    SEEDERS  =       '\n<code><b>🌱Seeders  : </b>{Seeders} </code>'
+    SEEDERS  =       '\n<code><b>🌱Seeders  : </b>{Seeders}</code>'
     LEECHERS =       '| <code><b>🐌Leechers : </b>{Leechers}</code>'
 
     ####--------SEEDING----------
     SEED_SIZE =      '\n<<code>b>📐Size     : </b>{Size}</code>'
     SEED_SPEED =     '\n<code><b>🚀Speed    : </b>{Speed} </code>'
-    UPLOADED =       '| <code><b>📤Uploaded : </b>{Upload}</code>'                         
+    UPLOADED =       '\n<code><b>📤Uploaded : </b>{Upload}</code>'                         
     RATIO =          '\n<code><b>📶Ratio    : </b>{Ratio} </code>'
-    TIME =           '| <code><b>🕒Time     : </b>{Time}</code>'
+    TIME =           '\n<code><b>🕒Time     : </b>{Time}</code>'
     SEED_ENGINE =    '\n<code><b>⛓️Engine   : </b>{Engine}</code>'
 
     ####--------NON-PROGRESSIVE + NON SEEDING----------
