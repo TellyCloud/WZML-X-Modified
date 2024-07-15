@@ -19,8 +19,8 @@ class WZMLStyle:
     LOGGED_PASSWORD = '''<b>Bot Already Logged In via Password</b>\n\n<i>No Need to Accept Temp Tokens.</i>'''
     ACTIVATE_BUTTON = 'Activate Temporary Token'
     TOKEN_MSG = '''<blockquote><b><u>Generated Temporary Login Token!</u></b></blockquote>
-                   <b><code>Temp Token :</code>{token}</b>
-                   <b><code>Validity   :</code>{validity}</b>'''
+<b><code>Temp Token :</code>{token}</b>
+<b><code>Validity   :</code>{validity}</b>'''
     # ---------------------
     # async def token_callback(_, query): ---> __main__.py
     ACTIVATED = '<blockquote>✅️ Activated ✅</blockquote>'
@@ -80,10 +80,10 @@ class WZMLStyle:
     <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
     '''
     REPO_STATS = '''⌬ <blockquote><b><i>REPO STATISTICS !</i></b>
-    <b>Bot Updated     :</b> {last_commit}
-    <b>Current Version :</b> {bot_version}
-    <b>Latest Version  :</b> {lat_version}
-    <b>Last ChangeLog  :</b> {commit_details}</blockquote>
+<b>Bot Updated     :</b> {last_commit}
+<b>Current Version :</b> {bot_version}
+<b>Latest Version  :</b> {lat_version}
+<b>Last ChangeLog  :</b> {commit_details}</blockquote>
 
     ⌬ <b>REMARKS :</b> <code>{remarks}</code>
     <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
