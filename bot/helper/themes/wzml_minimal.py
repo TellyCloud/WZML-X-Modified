@@ -82,29 +82,31 @@ class WZMLStyle:
     <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
     '''
     REPO_STATS = '''⌬ <blockquote><b><i>REPO STATISTICS !</i></b>
-<b>Bot Updated     :</b> {last_commit}
-<b>Current Version :</b> {bot_version}
-<b>Latest Version  :</b> {lat_version}
-<b>Last ChangeLog  :</b> {commit_details}</blockquote>
+<code><b>Bot Updated     :</b> {last_commit}</code>
+<code><b>Current Version :</b> {bot_version}</code>
+<code><b>Latest Version  :</b> {lat_version}</code>
+<code><b>Last ChangeLog  :</b> {commit_details}</code></blockquote>
 
-    ⌬ <b>REMARKS :</b> <code>{remarks}</code>
+⌬ <b>REMARKS :</b> <code>{remarks}</code>
+
     <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
     '''
-    BOT_LIMITS = '''<blockquote>⌬ <b><i>BOT LIMITATIONS :</i></b>
-    <b>Direct Limit  :</b> {DL} GB
-    <b>Torrent Limit :</b> {TL} GB
-    <b>GDrive Limit  :</b> {GL} GB
-    <b>YT-DLP Limit  :</b> {YL} GB
-    <b>Playlist Limit:</b> {PL} GB
-    <b>Mega Limit    :</b> {ML} GB
-    <b>Clone Limit   :</b> {CL} GB
-    <b>Leech Limit   :</b> {LL} GB</blockquote>
+    BOT_LIMITS = '''<blockquote>⌬ <b><i>BOT LIMITATIONS !</i></b>
+<code><b>Direct Limit  :</b> {DL} GB</code>
+<code><b>Torrent Limit :</b> {TL} GB</code>
+<code><b>GDrive Limit  :</b> {GL} GB</code>
+<code><b>YT-DLP Limit  :</b> {YL} GB</code>
+<code><b>Playlist Limit:</b> {PL} GB</code>
+<code><b>Mega Limit    :</b> {ML} GB</code>
+<code><b>Clone Limit   :</b> {CL} GB</code>
+<code><b>Leech Limit   :</b> {LL} GB</code></blockquote>
 
-    <blockquote><b>Token Validity      :</b> {TV}
-    <b>User Time Limit     :</b> {UTI} / task
-    <b>User Parallel Tasks :</b> {UT}
-    <b>Bot Parallel Tasks  :</b> {BT}</blockquote>
-    <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
+</blockquote><code><b>Token Validity     :</b> {TV}</code>
+<code><b>User Time Limit    :</b> {UTI} / task</code>
+<code><b>User Parallel Task :</b> {UT}</code>
+<code><b>Bot Parallel Tasks :</b> {BT}</code></blockquote>
+ 
+     <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
     '''
     # ---------------------
 
@@ -114,10 +116,11 @@ class WZMLStyle:
 
     # async def restart_notification(): ---> __main__.py
     RESTART_SUCCESS = '''<blockquote>⌬ <b><i>TellyCloud Bots Restarted Successfully!</i></b>
-    <b>Date     :</b> {date}
-    <b>Time     :</b> {time}
-    <b>TimeZone :</b> {timz}
-    <b>Version  :</b> {version}</blockquote>
+<code><b>Date     :</b> {date}</code>
+<code><b>Time     :</b> {time}</code>
+<code><b>TimeZone :</b> {timz}</code>
+<code><b>Version  :</b> {version}</code></blockquote>
+
     <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>'''
     RESTARTED = '''⌬ <b><i>Bot Restarted!</i></b>'''
     # ---------------------
@@ -129,8 +132,8 @@ class WZMLStyle:
 
     # async def onDownloadStart(self): --> tasks_listener.py
     LINKS_START = """<blockquote><b><i>Task Started</i></b>
-<b>Mode :</b> {Mode}
-<b>By   :</b> {Tag}\n\n</blockquote>"""
+<code><b>Mode :</b> {Mode}</code>
+<code><b>By   :</b> {Tag}</code></blockquote>\n\n"""
     LINKS_SOURCE = """<blockquote>➲ <b>Source:</b>
 <b>Added On:</b> {On}
 ------------------------------------------
@@ -143,14 +146,14 @@ class WZMLStyle:
 
     # async def onUploadComplete(): ---> tasks_listener.py
     NAME =                  '<b><blockquote>🏷️<i>{Name}</i></b></blockquote>\n'
-    SIZE =                  '<b>💾Size       : </b>{Size}'
-    ELAPSE =                '<b>⌛️Elapsed    : </b>{Time}\n'
-    MODE =                  '<b>💠Mode       : </b>{Mode}\n'
+    SIZE =                  '<code><b>💾Size        : </b>{Size}</code>\n'
+    ELAPSE =                '<code><b>⌛️Elapsed     : </b>{Time}</code>\n'
+    MODE =                  '<code><b>💠Mode        : </b>{Mode}</code>\n'
 
     # ----- LEECH -------
-    L_TOTAL_FILES =         '<b>📂Total Files : </b>{Files}\n'
-    L_CORRUPTED_FILES =     '<b>👹Corrupted Files : </b>{Corrupt}\n'
-    L_CC =                  '<b>👤User By : </b>{Tag}\n\n'
+    L_TOTAL_FILES =         '<code><b>📂Total Files : </b>{Files}</code>\n'
+    L_CORRUPTED_FILES =     '<code><b>👹Crptd Files : </b>{Corrupt}</code>\n'
+    L_CC =                  '<code><b>👤User By     : </b>{Tag}</code>\n\n'
     PM_BOT_MSG =            '<blockquote>➲ <b><i>File(s) have been Sent above</i></b></blockquote>'
     L_BOT_MSG =             '➲ <b><i>File(s) have been Sent to Bot PM (Private)</i></b>'
     L_LL_MSG =              '➲ <b><i>File(s) have been Sent. Access via Links...</i></b>\n'
