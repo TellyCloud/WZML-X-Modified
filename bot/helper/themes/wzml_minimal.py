@@ -192,7 +192,7 @@ class WZMLStyle:
     SPEED =          '\n<code><b>🚀Speed    : </b>{Speed} </code>'
     ELAPSED =        '\n<code><b>👻Elapsed  : </b>{Elapsed}</code>'
     ENGINE =         '\n<code><b>⛓️Engine   : </b>{Engine}</code>'
-    STA_MODE =       '\n<code><b>💠Mode     : </b>{Mode}</code>'
+    STA_MODE =       '\n<code><b>💠Mode     :</b>{Mode}</code>'
     SEEDERS  =       '\n<code><b>🌱Seeders  : </b>{Seeders}</code>'
     LEECHERS =       '| <code><b>🐌Leechers : </b>{Leechers}</code>'
 
