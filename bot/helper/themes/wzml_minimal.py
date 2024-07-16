@@ -132,7 +132,7 @@ class WZMLStyle:
 
     # async def onDownloadStart(self): --> tasks_listener.py
     LINKS_START = """<blockquote><b><i>Task Started</i></b>
-<code><b>💠Mode :</b> {Mode}</code>
+<code><b>💠Mode :</b>{Mode}</code>
 <code><b>👤By   :</b> {Tag}</code></blockquote>\n\n"""
     LINKS_SOURCE = """<blockquote>➲ <b>Source:</b>
 <b>Added On:</b> {On}
@@ -148,7 +148,7 @@ class WZMLStyle:
     NAME =                  '<b><blockquote>🏷️<i>{Name}</i></b></blockquote>\n'
     SIZE =                  '<code><b>💾Size        : </b>{Size}</code>\n'
     ELAPSE =                '<code><b>⌛️Elapsed     : </b>{Time}</code>\n'
-    MODE =                  '<code><b>💠Mode        : </b>{Mode}</code>\n'
+    MODE =                  '<code><b>💠Mode        :</b>{Mode}</code>\n'
 
     # ----- LEECH -------
     L_TOTAL_FILES =         '<code><b>📂Total Files : </b>{Files}</code>\n'
