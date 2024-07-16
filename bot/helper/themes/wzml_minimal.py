@@ -193,7 +193,7 @@ class WZMLStyle:
     ELAPSED =        '\n<code><b>👻Elapsed  : </b>{Elapsed}</code>'
     ENGINE =         '\n<code><b>⛓️Engine   : </b>{Engine}</code>'
     STA_MODE =       '\n<code><b>💠Mode     :</b>{Mode}</code>'
-    SEEDERS  =       '\n<code><b>🌱Seeders  : </b>{Seeders}</code>'
+    SEEDERS  =       '\n<code><b>🌱Seeders  : </b>{Seeders} </code>'
     LEECHERS =       '| <code><b>🐌Leechers : </b>{Leechers}</code>'
 
     ####--------SEEDING----------
@@ -289,7 +289,7 @@ class WZMLStyle:
 
 <code><b>🧬RClone Config  :</b> <i>{RCLONE}</i></code>
 <code><b>🅿Mirror Prefix  :</b> {MPREFIX}</code>
-<code><b>💲Mirror Suffix  :</b> {MSUFFIX}</code>
+<code><b>💲Mirror Suffix   :</b> {MSUFFIX}</code>
 <code><b>🌈Mirror Remname :</b> {MREMNAME}</code>
 <code><b>🧿DDL Server(s)  :</b> <i>{DDL_SERVER}</i></code>
 <code><b>📮User TD Mode   :</b> <i>{TMODE}</i></code>
@@ -308,7 +308,7 @@ class WZMLStyle:
 <code><b>♒️Media Group      :</b> <i>{MEDIA_GROUP}</i></code>
 <code><b>📄Leech Caption    :</b> {LCAPTION}</code>
 <code><b>🅿Leech Prefix     :</b> {LPREFIX}</code>
-<code><b>💲Leech Suffix     :</b> {LSUFFIX}</code>
+<code><b>💲Leech Suffix      :</b> {LSUFFIX}</code>
 <code><b>📦Leech Dumps      :</b> {LDUMP}</code>
 <code><b>🌈Leech Remname    :</b> {LREMNAME}</code></blockquote>
 
