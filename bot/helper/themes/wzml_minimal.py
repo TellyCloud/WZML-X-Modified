@@ -215,15 +215,15 @@ class WZMLStyle:
     CANCEL            ='<b>❌Cancel : {Cancel}</b>\n'
 
     ####------FOOTER--------
-    FOOTER            =      '<blockquote>⌬ <b><i>Bot Stats</i></b></blockquote>'
-    TASKS             =          '\n<b>🧮Tasks:</b> {Tasks}'
-    BOT_TASKS         =      '\n<b>🥏Tasks:</b> {Tasks}/{Ttask} | <b>♟️AVL:</b> {Free}'
-    Cpu               =            '\n<b>🖥CPU:</b> {cpu}% |'
-    FREE              =             '<b>💿F:</b>{free}[{free_p}%]'
-    Ram               =            '\n<b>🎟RAM:</b>{ram}% | '
-    uptime            =           '<b>🟢UPTIME:</b>{uptime}'
-    DL                =             '\n<blockquote><b>🔻DL:</b> {DL}/s | '
-    UL                =                        '<b>🔺UL:</b> {UL}/s</blockquote>'
+    FOOTER            ='\n<blockquote>⌬ <b><i>Bot Stats</i></b></blockquote>'
+    TASKS             ='\n<b>🧮Tasks:</b> {Tasks}'
+    BOT_TASKS         ='\n<b>🥏Tasks:</b> {Tasks}/{Ttask} | <b>♟️AVL:</b> {Free}'
+    Cpu               ='\n<b>🖥CPU:</b> {cpu}% |'
+    FREE              ='<b>💿F:</b>{free}[{free_p}%]'
+    Ram               ='\n<b>🎟RAM:</b>{ram}% | '
+    uptime            ='<b>🟢UPTIME:</b>{uptime}'
+    DL                ='\n<blockquote><b>🔻DL:</b> {DL}/s | '
+    UL                ='<b>🔺UL:</b> {UL}/s</blockquote>'
 
     ###--------BUTTONS-------
     PREVIOUS          = '⏪Previous'
