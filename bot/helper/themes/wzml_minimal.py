@@ -141,118 +141,118 @@ class WZMLStyle:
 ------------------------------------------</blockquote>\n\n"""
     
     # async def __msg_to_reply(self): ---> pyrogramEngine.py
-    PM_START =            "<blockquote>➲ <b><u>Task Started :</u></b>\n│\n<b>Link:</b> <a href='{msg_link}'>Click Here</a></blockquote>"
-    L_LOG_START =           "<blockquote>➲ <b><u>Leech Started :</u></b>\n│\n <b>User :</b> {mention} ( #ID{uid} )\n<b>Source :</b> <a href='{msg_link}'>Click Here</a></blockquote>"
+    PM_START          ="<blockquote>➲ <b><u>Task Started :</u></b>\n│\n<b>Link:</b> <a href='{msg_link}'>Click Here</a></blockquote>"
+    L_LOG_START       ="<blockquote>➲ <b><u>Leech Started :</u></b>\n│\n <b>User :</b> {mention} ( #ID{uid} )\n<b>Source :</b> <a href='{msg_link}'>Click Here</a></blockquote>"
 
     # async def onUploadComplete(): ---> tasks_listener.py
-    NAME =                  '<b><blockquote>🏷️<i>{Name}</i></b></blockquote>\n'
-    SIZE =                  '<code><b>💾Size        : </b>{Size}</code>\n'
-    ELAPSE =                '<code><b>⌛️Elapsed     : </b>{Time}</code>\n'
-    MODE =                  '<code><b>💠Mode        :</b>{Mode}</code>\n'
+    NAME              ='<b><blockquote>🏷️<i>{Name}</i></b></blockquote>\n'
+    SIZE              ='<b><code>💾Size     : </code>{Size}</b>\n'
+    ELAPSE            ='<b><code>⌛️Elapsed  : </code>{Time}</b>\n'
+    MODE              ='<b><code>💠Mode     :</code>{Mode}</b>\n'
 
     # ----- LEECH -------
-    L_TOTAL_FILES =         '<code><b>📂Total Files : </b>{Files}</code>\n'
-    L_CORRUPTED_FILES =     '<code><b>👹Crptd Files : </b>{Corrupt}</code>\n'
-    L_CC =                  '<code><b>👤User By     : </b>{Tag}</code>\n\n'
-    PM_BOT_MSG =            '<blockquote>➲ <b><i>File(s) have been Sent above</i></b></blockquote>'
-    L_BOT_MSG =             '➲ <b><i>File(s) have been Sent to Bot PM (Private)</i></b>'
-    L_LL_MSG =              '➲ <b><i>File(s) have been Sent. Access via Links...</i></b>\n'
+    L_TOTAL_FILES     ='<b><code>📂FS Total : </code>{Files}</b>\n'
+    L_CORRUPTED_FILES ='<b><code>👹Crptd Fls: </code>{Corrupt}</b>'
+    L_CC              ='<b><code>👤User By  : </code>{Tag}</b>\n\n'
+    PM_BOT_MSG        ='<blockquote>➲ <b><i>File(s) have been Sent above</i></b></blockquote>'
+    L_BOT_MSG         ='➲ <b><i>File(s) have been Sent to Bot PM (Private)</i></b>'
+    L_LL_MSG          ='➲ <b><i>File(s) have been Sent. Access via Links...</i></b>\n'
     
     # ----- MIRROR -------
-    M_TYPE =                '<code><b>🔡Type       : </b>{Mimetype}</code>\n'
-    M_SUBFOLD =             '<code><b>📁SubFolders : </b>{Folder}</code>\n'
-    TOTAL_FILES =           '<code><b>📒Files      : </b>{Files}</code>\n'
-    RCPATH =                '<code><b>📃Path       : </b>{RCpath}</code>\n'
-    M_CC =                  '<code><b>👤By         : </b>{Tag}</code>\n\n'
-    M_BOT_MSG =             '<blockquote>➲ <b><i>Link(s) have been Sent to Bot PM (Private)</i></b></blockquote>'
+    M_TYPE            ='<b><code>🔡Type     : </code>{Mimetype}</b>\n'
+    M_SUBFOLD         ='<b><code>📁SubFolder: </code>{Folder}</b>\n'
+    TOTAL_FILES       ='<b><code>📒Files    : </code>{Files}</b>\n'
+    RCPATH            ='<b><code>📃Path     : </code>{RCpath}</b>\n'
+    M_CC              ='<b><code>👤By       : </code>{Tag}</b>\n\n'
+    M_BOT_MSG         ='<blockquote>➲ <b><i>Link(s) have been Sent to Bot PM (Private)</i></b></blockquote>'
     # ----- BUTTONS -------
-    CLOUD_LINK =      '☁️ Cloud Link'
-    SAVE_MSG =        '📨 Save Message'
-    RCLONE_LINK =     '♻️ RClone Link'
-    DDL_LINK =        '📎 {Serv} Link'
-    SOURCE_URL =      '🔐 Source Link'
-    INDEX_LINK_F =    '🗂 Index Link'
-    INDEX_LINK_D =    '⚡ Index Link'
-    VIEW_LINK =       '🌐 View Link'
-    CHECK_PM =        '📥 View in Bot PM'
-    CHECK_LL =        '🖇 View in Links Log'
-    MEDIAINFO_LINK =  '📃 MediaInfo'
-    SCREENSHOTS =     '🖼 ScreenShots'
+    CLOUD_LINK        =        '☁️ Cloud Link'
+    SAVE_MSG          =        '📨 Save Message'
+    RCLONE_LINK       =        '♻️ RClone Link'
+    DDL_LINK          =        '📎 {Serv} Link'
+    SOURCE_URL        =        '🔐 Source Link'
+    INDEX_LINK_F      =        '🗂 Index Link'
+    INDEX_LINK_D      =        '⚡ Index Link'
+    VIEW_LINK         =        '🌐 View Link'
+    CHECK_PM          =        '📥 View in Bot PM'
+    CHECK_LL          =        '🖇 View in Links Log'
+    MEDIAINFO_LINK    =        '📃 MediaInfo'
+    SCREENSHOTS       =        '🖼 ScreenShots'
     # ---------------------
 
     # def get_readable_message(): ---> bot_utilis.py
     ####--------OVERALL MSG HEADER----------
-    STATUS_NAME     =       '<blockquote><b><i>{Name}</i></b></blockquote>'
+    STATUS_NAME       ='<blockquote><b><i>{Name}</i></b></blockquote>\n'
 
     #####---------PROGRESSIVE STATUS-------
-    BAR             =            '\n💫 {Bar}'
-    PROCESSED       =      '\n<code><b>🔄Sync     : </b>{Processed}</code>'
-    STATUS          =         '\n<code><b>🌐Status   : </b><a href="{Url}">{Status}</a> </code>'
-    ETA             =            '\n<code><b>🍥ETA      : </b>{Eta}</code>'
-    SPEED           =          '\n<code><b>🚀Speed    : </b>{Speed} </code>'
-    ELAPSED         =        '\n<code><b>👻Elapsed  : </b>{Elapsed}</code>'
-    ENGINE          =         '\n<code><b>⛓️Engine   : </b>{Engine}</code>'
-    STA_MODE        =       '\n<code><b>💠Mode     :</b>{Mode}</code>'
-    SEEDERS         =       '\n<code><b>🌱Seeders  : </b>{Seeders} </code>'
-    LEECHERS        =       '| <code><b>🐌Leechers : </b>{Leechers}</code>'
+    BAR               ='💫 {Bar}\n'
+    PROCESSED         ='<b><code>🔄Sync     : </code>{Processed}</b>\n'
+    STATUS            ='<b><code>🌐Status   : </code><a href="{Url}">{Status}</a></b>\n'
+    ETA               ='<b><code>🍥ETA      : </code>{Eta}</b>\n'
+    SPEED             ='<b><code>🚀Speed    : </code>{Speed}</b>\n'
+    ELAPSED           ='<b><code>👻Elapsed  : </code>{Elapsed}</b>\n'
+    ENGINE            ='<b><code>⛓️Engine   : </code>{Engine}</b>\n'
+    STA_MODE          ='<b><code>💠Mode     :</code>{Mode}</b>\n'
+    SEEDERS           ='<b><code>🌱Seeders  : </code>{Seeders} | </b>'
+    LEECHERS          ='<b><code>🐌Leechers : </code>{Leechers}</b>\n'
 
     ####--------SEEDING----------
-    SEED_SIZE       =      '\n<<code>b>📐Size     : </b>{Size}</code>'
-    SEED_SPEED      =     '\n<code><b>🚀Speed    : </b>{Speed} </code>'
-    UPLOADED        =       '\n<code><b>📤Uploaded : </b>{Upload}</code>'                         
-    RATIO           =          '\n<code><b>📶Ratio    : </b>{Ratio} </code>'
-    TIME            =           '\n<code><b>🕒Time     : </b>{Time}</code>'
-    SEED_ENGINE     =    '\n<code><b>⛓️Engine   : </b>{Engine}</code>'
+    SEED_SIZE         ='<b><code>📐Size     : </code>{Size}</b>\n'
+    SEED_SPEED        ='<b><code>🚀Speed    : </code>{Speed}</b>\n'
+    UPLOADED          ='<b><code>📤Uploaded : </code>{Upload}</b>\n'                         
+    RATIO             ='<b><code>📶Ratio    : </code>{Ratio}</b>\n'
+    TIME              ='<b><code>🕒Time     : </code>{Time}</b>\n'
+    SEED_ENGINE       ='<b><code>⛓️Engine   : </code>{Engine}</b>\n'
 
     ####--------NON-PROGRESSIVE + NON SEEDING----------
-    STATUS_SIZE     =    '\n<code><b>📐Size     : </b>{Size}</code>'
-    NON_ENGINE      =     '\n<code><b>⛓️Engine   : </b>{Engine}</code>'
+    STATUS_SIZE       ='<b><code>📐Size     : </code>{Size}</b>\n'
+    NON_ENGINE        ='<b><code>⛓️Engine   : </code>{Engine}</b>\n'
 
     ####--------OVERALL MSG FOOTER----------
-    USER            =           '\n<code><b>👤User     : </b>{User}</code></code>'
-    ID              =             '\n<code><b>🆔ID       : </b>{Id}</code></code>'
-    BTSEL           =          '\n<b>🧲️Select :</b> {Btsel}'
-    CANCEL          =         '\n<b>❌Cancel :</b> {Cancel}\n\n'
+    USER              ='<b><code><b>👤User     : </code><tg-spoiler>{User}</tg-spoiler></b>\n'
+    ID                ='<b><code><b>🆔ID       : </code>{Id}</b>\n'
+    BTSEL             ='<b>🧲️Select : {Btsel}</b>\n'
+    CANCEL            ='<b>❌Cancel : {Cancel}</b>\n'
 
     ####------FOOTER--------
-    FOOTER          =      '<blockquote>⌬ <b><i>Bot Stats</i></b></blockquote>'
-    TASKS           =          '\n<b>🧮Tasks:</b> {Tasks}'
-    BOT_TASKS       =      '\n<b>🥏Tasks:</b> {Tasks}/{Ttask} | <b>♟️AVL:</b> {Free}'
-    Cpu             =            '\n<b>🖥CPU:</b> {cpu}% |'
-    FREE            =             '<b>💿F:</b>{free}[{free_p}%]'
-    Ram             =            '\n<b>🎟RAM:</b>{ram}% | '
-    uptime          =           '<b>🟢UPTIME:</b>{uptime}'
-    DL              =             '\n<blockquote><b>🔻DL:</b> {DL}/s | '
-    UL              =                        '<b>🔺UL:</b> {UL}/s</blockquote>'
+    FOOTER            =      '<blockquote>⌬ <b><i>Bot Stats</i></b></blockquote>'
+    TASKS             =          '\n<b>🧮Tasks:</b> {Tasks}'
+    BOT_TASKS         =      '\n<b>🥏Tasks:</b> {Tasks}/{Ttask} | <b>♟️AVL:</b> {Free}'
+    Cpu               =            '\n<b>🖥CPU:</b> {cpu}% |'
+    FREE              =             '<b>💿F:</b>{free}[{free_p}%]'
+    Ram               =            '\n<b>🎟RAM:</b>{ram}% | '
+    uptime            =           '<b>🟢UPTIME:</b>{uptime}'
+    DL                =             '\n<blockquote><b>🔻DL:</b> {DL}/s | '
+    UL                =                        '<b>🔺UL:</b> {UL}/s</blockquote>'
 
     ###--------BUTTONS-------
-    PREVIOUS        = '⏪Previous'
-    REFRESH         = 'ᴘᴀɢᴇs\n{Page}'
-    NEXT            = 'Next⏩'
+    PREVIOUS          = '⏪Previous'
+    REFRESH           = 'ᴘᴀɢᴇs\n{Page}'
+    NEXT              = 'Next⏩'
     # ---------------------
 
     #STOP_DUPLICATE_MSG: ---> clone.py, aria2_listener.py, task_manager.py
-    STOP_DUPLICATE = '<blockquote>File/Folder is already available in Drive.\nHere are {content} list results:</blockquote>'
+    STOP_DUPLICATE    = '<blockquote>File/Folder is already available in Drive.\nHere are {content} list results:</blockquote>'
     # ---------------------
 
     # async def countNode(_, message): ----> gd_count.py
-    COUNT_MSG        =  '<code><b>🔡Counting   : </b>{LINK}</code>'
-    COUNT_NAME       = '<code><b><i>{COUNT_NAME}</i></b></code>\n\n'
-    COUNT_SIZE       = '<code><b>📐Size       : </b>{COUNT_SIZE}</code>\n'
-    COUNT_TYPE       = '<code><b>🔡Type       : </b>{COUNT_TYPE}</code>\n'
-    COUNT_SUB        =  '<code><b>📁SubFolders : </b>{COUNT_SUB}</code>\n'
-    COUNT_FILE       = '<code><b>📒Files      : </b>{COUNT_FILE}</code>\n'
-    COUNT_CC         =   '<code><b>👤By         : </b>{COUNT_CC}</code>\n'
+    COUNT_MSG         ='<b><code>🔡Counting : </code>{LINK}</b>\n'
+    COUNT_NAME        ='<b><code><i>{COUNT_NAME}</i></b></b>\n'
+    COUNT_SIZE        ='<b><code>📐Size     : </code>COUNT_SIZE}</b>\n'
+    COUNT_TYPE        ='<b><code>🔡Type     : </code>{COUNT_TYPE}</b>\n'
+    COUNT_SUB         ='<b><code>📁SubFolder: </code>{COUNT_SUB}</b>\n'
+    COUNT_FILE        ='<b><code>📒Files    : </code>{COUNT_FILE}</b>\n'
+    COUNT_CC          ='<b><code>👤By       : </code>{COUNT_CC}</b>\n'
     # ---------------------
 
     # LIST ---> gd_list.py
-    LIST_SEARCHING   = '<b>Searching for <i>{NAME}</i></b>'
-    LIST_FOUND       = '<b>Found {NO} result for <i>{NAME}</i></b>'
-    LIST_NOT_FOUND   = 'No result found for <i>{NAME}</i>'
+    LIST_SEARCHING    ='<b>Searching for <i>{NAME}</i></b>'
+    LIST_FOUND        ='<b>Found {NO} result for <i>{NAME}</i></b>'
+    LIST_NOT_FOUND    ='No result found for <i>{NAME}</i>'
     # ---------------------
 
     # async def mirror_status(_, message): ----> status.py
-    NO_ACTIVE_DL = '''<blockquote><i>No Active Downloads!</i>
+    NO_ACTIVE_DL      = '''<blockquote><i>No Active Downloads!</i>
 ⌬ <b><i>Bot Stats</i></b>
 <b>CPU:</b> {cpu}% | <b>F:</b> {free} [{free_p}%]
 <b>RAM:</b> {ram} | <b>UPTIME:</b> {uptime}</blockquote>
