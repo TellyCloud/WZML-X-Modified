@@ -115,7 +115,7 @@ class MirrorLeechListener:
             if file is not None and file.media is not None:
                 mtype = file.media.value
                 media = getattr(file, mtype)
-                self.source_msg = f'<b>Name:</b> <i>{media.file_name if hasattr(media, "file_name") else f"{mtype}_{media.file_unique_id}"}</i>\n <b>Type:</b> {media.mime_type if hasattr(media, "mime_type") else "image/jpeg" if mtype == "photo" else "text/plain"}\n <b>Size:</b> {get_readable_file_size(media.file_size)}\n <b>Created Date:</b> {media.date}\n┖ <b>Media Type:</b> {mtype.capitalize()}'
+                self.source_msg = f'<b>Name:</b> <i>{media.file_name if hasattr(media, "file_name") else f"{mtype}_{media.file_unique_id}"}</i>\n <b>Type:</b> {media.mime_type if hasattr(media, "mime_type") else "image/jpeg" if mtype == "photo" else "text/plain"}\n <b>Size:</b> {get_readable_file_size(media.file_size)}\n <b>Created Date:</b> {media.date}\n <b>Media Type:</b> {mtype.capitalize()}'
             else:
                 self.source_msg = f"<code>{self.message.reply_to_message.text}</code>"
         elif self.source_url.startswith('https://t.me/share/url?url='):
@@ -617,12 +617,12 @@ class MirrorLeechListener:
             if self.sameDir and self.uid in self.sameDir['tasks']:
                 self.sameDir['tasks'].remove(self.uid)
                 self.sameDir['total'] -= 1
-        msg = f'''<i><b>Download Stopped!</b></i>
-┠ <b>Task for:</b> {self.tag}
-┃
-┠ <b>Due To:</b> {escape(error)}
-┠ <b>Mode:</b> {self.upload_details['mode']}
-┖ <b>Elapsed:</b> {get_readable_time(time() - self.message.date.timestamp())}'''
+        msg = f'''<blockquote><i><b>Download Stopped!</b></i>
+ <b>Task for:</b> {self.tag}
+
+ <b>Due To:</b> {escape(error)}
+ <b>Mode:</b> {self.upload_details['mode']}
+ <b>Elapsed:</b> {get_readable_time(time() - self.message.date.timestamp())}</blockquote>'''
         await sendMessage(self.message, msg, button)
         if count == 0:
             await self.clean()
@@ -655,12 +655,12 @@ class MirrorLeechListener:
             if self.uid in download_dict.keys():
                 del download_dict[self.uid]
             count = len(download_dict)
-        msg = f'''<i><b>Upload Stopped!</b></i>
-┠ <b>Task for:</b> {self.tag}
-┃
-┠ <b>Due To:</b> {escape(error)}
-┠ <b>Mode:</b> {self.upload_details['mode']}
-┖ <b>Elapsed:</b> {get_readable_time(time() - self.message.date.timestamp())}'''
+        msg = f'''<i><b><blockquote>Upload Stopped!</b></i>
+ <b>Task for:</b> {self.tag}
+
+ <b>Due To:</b> {escape(error)}
+ <b>Mode:</b> {self.upload_details['mode']}
+ <b>Elapsed:</b> {get_readable_time(time() - self.message.date.timestamp())}</blockquote>'''
         await sendMessage(self.message, msg)
         if count == 0:
             await self.clean()
