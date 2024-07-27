@@ -212,7 +212,7 @@ class WZMLStyle:
     USER              ='<b><code><b>👤User     : </code><tg-spoiler>{User}</tg-spoiler></b>\n'
     ID                ='<b><code><b>🆔ID       : </code>{Id}</b>\n'
     BTSEL             ='<b>🧲️Select : {Btsel}</b>\n'
-    CANCEL            ='<b>❌Cancel : {Cancel}</b>\n'
+    CANCEL            ='<b>❌Cancel : {Cancel}</b>\n\n'
 
     ####------FOOTER--------
     FOOTER            ='\n<blockquote>⌬ <b><i>Bot Stats</i></b></blockquote>'
