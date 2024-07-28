@@ -145,7 +145,7 @@ class WZMLStyle:
     L_LOG_START       ="<blockquote>➲ <b><u>Leech Started :</u></b>\n│\n <b>User :</b> {mention} ( #ID{uid} )\n<b>Source :</b> <a href='{msg_link}'>Click Here</a></blockquote>"
 
     # async def onUploadComplete(): ---> tasks_listener.py
-    NAME              ='<b><blockquote>🏷️<i>{Name}</i></b></blockquote>\n'
+    NAME              ='<b><blockquote>🏷️<i>{Name}</i></b></blockquote>\n\n'
     SIZE              ='<b><code>💾Size     : </code>{Size}</b>\n'
     ELAPSE            ='<b><code>⌛️Elapsed  : </code>{Time}</b>\n'
     MODE              ='<b><code>💠Mode     :</code>{Mode}</b>\n'
@@ -212,7 +212,7 @@ class WZMLStyle:
     USER              ='<b><code><b>👤User     : </code><tg-spoiler>{User}</tg-spoiler></b>\n'
     ID                ='<b><code><b>🆔ID       : </code>{Id}</b>\n'
     BTSEL             ='<b>🧲️Select : {Btsel}</b>\n'
-    CANCEL            ='<b>❌Cancel : {Cancel}</b>\n\n'
+    CANCEL            ='<b>❌Cancel : {Cancel}</b>\n\n\n'
 
     ####------FOOTER--------
     FOOTER            ='\n<blockquote>⌬ <b><i>Bot Stats</i></b></blockquote>'
