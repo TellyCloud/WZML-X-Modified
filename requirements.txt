@@ -1,11 +1,11 @@
-aiohttp
+aiohttp[speedups]
 aiofiles
 aioshutil
 anytree==2.8.0
 apscheduler
 aria2p
 asyncio
-beautifulsoup4 
+beautifulsoup4
 cinemagoer
 cloudscraper
 cryptography
@@ -39,6 +39,7 @@ speedtest-cli
 telegraph
 tenacity
 tgcrypto
+uv
 uvloop
 xattr
-yt-dlp
+yt-dlp==2023.10.07
