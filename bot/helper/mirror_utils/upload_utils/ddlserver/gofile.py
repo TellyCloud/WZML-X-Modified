@@ -8,6 +8,7 @@ from aiofiles.os import path as aiopath
 from aiofiles.os import rename as aiorename
 from aiohttp import ClientSession
 
+from bot import LOGGER
 from bot.helper.ext_utils.bot_utils import sync_to_async
 
 
@@ -46,7 +47,7 @@ class Gofile:
 
     async def __getServer(self):
         async with ClientSession() as session:
-            async with session.get(f"{self.api_url}getServer") as resp:
+            async with session.get(f"{self.api_url}servers") as resp:
                 return await self.__resp_handler(await resp.json())
 
     async def __getAccount(self, check_account=False):
