@@ -156,7 +156,7 @@ class WZMLStyle:
     L_CC              ='<b><code>👤User By : </code>{Tag}</b>\n\n'
     PM_BOT_MSG        ='<blockquote>➲ <b><i>File(s) have been Sent above</i></b></blockquote>'
     L_BOT_MSG         ='➲ <b><i>File(s) have been Sent to Bot PM (Private)</i></b>'
-   #----- L_LL_MSG          ='➲ <b><i>File(s) have been Sent. Access via Links...</i></b>\n'
+    L_LL_MSG          ='➲ <b><i>File(s) have been Sent. Access via Links...</i></b>\n'
     
     # ----- MIRROR -------
     M_TYPE            ='<b><code>🔡Type     : </code>{Mimetype}</b>\n'
