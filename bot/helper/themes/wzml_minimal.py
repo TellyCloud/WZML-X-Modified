@@ -101,7 +101,7 @@ class WZMLStyle:
 <code><b>Clone Limit       :</b> {CL} GB</code>
 <code><b>Leech Limit       :</b> {LL} GB</code></blockquote>
 
-<blockquote><code><b>Token Validity     :</b> {TV}</code>
+<blockquote><code><b>Token Validity    :</b> {TV}</code>
 <code><b>User Time Limit   :</b> {UTI} / task</code>
 <code><b>User Parallel Task:</b> {UT}</code>
 <code><b>Bot Parallel Tasks:</b> {BT}</code></blockquote>
@@ -151,12 +151,12 @@ class WZMLStyle:
     MODE              ='<b><code>💠Mode    :</code>{Mode}</b>\n'
 
     # ----- LEECH -------
-    L_TOTAL_FILES     ='<b><code>📂FS Total : </code>{Files}</b>\n'
-    L_CORRUPTED_FILES ='<b><code>👹Crptd Fls: </code>{Corrupt}</b>'
-    L_CC              ='<b><code>👤User By  : </code>{Tag}</b>\n\n'
+    L_TOTAL_FILES     ='<b><code>📂FS Total: </code>{Files}</b>\n'
+    L_CORRUPTED_FILES ='<b><code>👹CrptdFls: </code>{Corrupt}</b>'
+    L_CC              ='<b><code>👤User By : </code>{Tag}</b>\n\n'
     PM_BOT_MSG        ='<blockquote>➲ <b><i>File(s) have been Sent above</i></b></blockquote>'
     L_BOT_MSG         ='➲ <b><i>File(s) have been Sent to Bot PM (Private)</i></b>'
-    L_LL_MSG          ='➲ <b><i>File(s) have been Sent. Access via Links...</i></b>\n'
+   #----- L_LL_MSG          ='➲ <b><i>File(s) have been Sent. Access via Links...</i></b>\n'
     
     # ----- MIRROR -------
     M_TYPE            ='<b><code>🔡Type     : </code>{Mimetype}</b>\n'
@@ -308,7 +308,7 @@ class WZMLStyle:
 <code><b>♒️Media Group     :</b> <i>{MEDIA_GROUP}</i></code>
 <code><b>📄Leech Caption   :</b> {LCAPTION}</code>
 <code><b>🅿Leech Prefix    :</b> {LPREFIX}</code>
-<code><b>💲Leech Suffix     :</b> {LSUFFIX}</code>
+<code><b>💲Leech Suffix    :</b> {LSUFFIX}</code>
 <code><b>📦Leech Dumps     :</b> {LDUMP}</code>
 <code><b>🌈Leech Remname   :</b> {LREMNAME}</code></blockquote>
 
