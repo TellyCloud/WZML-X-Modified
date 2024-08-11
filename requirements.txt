@@ -6,10 +6,12 @@ apscheduler
 aria2p
 asyncio
 beautifulsoup4
+bencoding
 cinemagoer
 cloudscraper
 cryptography
 dnspython
+electrogram
 feedparser
 flask
 gevent
@@ -29,10 +31,12 @@ pillow
 psutil
 pybase64
 pycountry
-pymongo
-git+https://github.com/Hrishi2861/pyrofork-2.2.11-peer-fix.git
 python-dotenv
+pyshorteners
 python-magic
+pymongo
+Pyrofork==2.2.11
+quoters
 qbittorrent-api
 requests
 speedtest-cli
