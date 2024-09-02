@@ -198,7 +198,7 @@ class EngineStatus:
 
 
 def get_readable_message():
-    msg = f'<a href="https://t.me/TELLYCLOUD_Bots"><b>❖𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™❖</b></a>'
+    msg = f'<a href="https://t.me/FASTERMIRROR"><b>❖𝐅𝐀𝐒𝐓𝐄𝐑 𝐌𝐈𝐑𝐑𝐎𝐑™❖</b></a>'
     msg += f'\n\n'  
     button = None
     STATUS_LIMIT = config_dict['STATUS_LIMIT']
