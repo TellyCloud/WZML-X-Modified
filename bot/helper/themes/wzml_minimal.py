@@ -57,7 +57,7 @@ class WZMLStyle:
 <b><code>💿Total Disk Write :</code> {disk_write}</b>
     <b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}</blockquote>
     
-    <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>   
+    <a href="https://t.me/FASTERMIRROR"><b>❖𝐅𝐀𝐒𝐓𝐄𝐑 𝐌𝐈𝐑𝐑𝐎𝐑™❖</b></a>   
     '''
     SYS_STATS = '''<blockquote>⌬ <b><i>💻OS SYSTEM !</i></b>
 <b><code>⌚OS Uptime    :</code> {os_uptime}</b>
@@ -79,7 +79,7 @@ class WZMLStyle:
 <b><code>Total Core(s)  :</code> {total_core}</b>
 <b><code>Usable CPU(s)  :</code> {cpu_use}</b></blockquote>
 
-    <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
+    <a href="https://t.me/FASTERMIRROR"><b>❖𝐅𝐀𝐒𝐓𝐄𝐑 𝐌𝐈𝐑𝐑𝐎𝐑™❖</b></a>
     '''
     REPO_STATS = '''<blockquote>⌬ <b><i>REPO STATISTICS !</i></b>
 <code><b>Bot Updated    :</b> {last_commit}</code>
@@ -89,7 +89,7 @@ class WZMLStyle:
 
 ⌬ <b>REMARKS :</b> <code>{remarks}</code>
 
-    <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
+    <a href="https://t.me/FASTERMIRROR"><b>❖𝐅𝐀𝐒𝐓𝐄𝐑 𝐌𝐈𝐑𝐑𝐎𝐑™❖</b></a>
     '''
     BOT_LIMITS = '''<blockquote>⌬ <b><i>BOT LIMITATIONS !</i></b>
 <code><b>Direct Limit      :</b> {DL} GB</code>
@@ -106,7 +106,7 @@ class WZMLStyle:
 <code><b>User Parallel Task:</b> {UT}</code>
 <code><b>Bot Parallel Tasks:</b> {BT}</code></blockquote>
 
-     <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
+     <a href="https://t.me/FASTERMIRROR"><b>❖𝐅𝐀𝐒𝐓𝐄𝐑 𝐌𝐈𝐑𝐑𝐎𝐑™❖</b></a>
     '''
     # ---------------------
 
@@ -121,7 +121,7 @@ class WZMLStyle:
 <code><b>TimeZone:</b> {timz}</code>
 <code><b>Version :</b> {version}</code></blockquote>
 
-    <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>'''
+    <a href="https://t.me/FASTERMIRROR"><b>❖𝐅𝐀𝐒𝐓𝐄𝐑 𝐌𝐈𝐑𝐑𝐎𝐑™❖</b></a>'''
     RESTARTED = '''⌬ <b><i>Bot Restarted!</i></b>'''
     # ---------------------
 
@@ -257,7 +257,7 @@ class WZMLStyle:
 <b>CPU:</b> {cpu}% | <b>F:</b> {free} [{free_p}%]
 <b>RAM:</b> {ram} | <b>UPTIME:</b> {uptime}</blockquote>
 
-    <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>
+    <a href="https://t.me/FASTERMIRROR"><b>❖𝐅𝐀𝐒𝐓𝐄𝐑 𝐌𝐈𝐑𝐑𝐎𝐑™❖</b></a>
     '''
     # ---------------------
 
@@ -271,7 +271,7 @@ class WZMLStyle:
 ➲ <u><b>Available Args:</b></u>
 • <b>-s</b> or <b>-set</b>: Set Directly via Arg
 
-    <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>'''
+    <a href="https://t.me/FASTERMIRROR"><b>❖𝐅𝐀𝐒𝐓𝐄𝐑 𝐌𝐈𝐑𝐑𝐎𝐑™❖</b></a>'''
 
     UNIVERSAL = '''<blockquote>㊂ <b><u>Universal Settings : {NAME}</u></b>
 
@@ -283,7 +283,7 @@ class WZMLStyle:
 <code><b>🕵️Save Mode     :</b> {SAVE_MODE}</code>
 <code><b>✉️User Bot PM   :</b> {BOT_PM}</code><blockquote>
 
-    <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>'''
+    <a href="https://t.me/FASTERMIRROR"><b>❖𝐅𝐀𝐒𝐓𝐄𝐑 𝐌𝐈𝐑𝐑𝐎𝐑™❖</b></a>'''
 
     MIRROR = '''<blockquote>㊂ <b><u>Mirror/Clone Settings : {NAME}</u></b>
 
@@ -296,7 +296,7 @@ class WZMLStyle:
 <code><b>📝TotalUserTD(s):</b> <i>{USERTD}</i></code>
 <code><b>☁️Daily Mirror  :</b> {DM}</code> per day</blockquote>
 
-<a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>'''
+<a href="https://t.me/FASTERMIRROR"><b>❖𝐅𝐀𝐒𝐓𝐄𝐑 𝐌𝐈𝐑𝐑𝐎𝐑™❖</b></a>'''
 
     LEECH = '''<blockquote>㊂ <b><u>Leech Settings for {NAME}</u></b>
 
@@ -312,4 +312,4 @@ class WZMLStyle:
 <code><b>📦Leech Dumps     :</b> {LDUMP}</code>
 <code><b>🌈Leech Remname   :</b> {LREMNAME}</code></blockquote>
 
-    <a href="https://t.me/TELLYCLOUD_Bots"><b>🫧💗✨𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™🫧💗✨</b></a>'''
+    <a href="https://t.me/FASTERMIRROR"><b>❖𝐅𝐀𝐒𝐓𝐄𝐑 𝐌𝐈𝐑𝐑𝐎𝐑™❖</b></a>'''
