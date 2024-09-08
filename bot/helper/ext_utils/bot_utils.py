@@ -198,7 +198,8 @@ class EngineStatus:
 
 
 def get_readable_message():
-    msg = ""
+    msg = f'<blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>'
+    msg += f'\n'
     button = None
     STATUS_LIMIT = config_dict['STATUS_LIMIT']
     tasks = len(download_dict)
