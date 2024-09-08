@@ -2,30 +2,34 @@
 class WZMLStyle:
     # ----------------------
     # async def start(client, message) ---> __main__.py
-    ST_BN1_NAME = '☀️ OWNER ☀️'
-    ST_BN1_URL = 'https://t.me/hrishikesh2861'
-    ST_BN2_NAME = '🚀 Updates 🚀'
-    ST_BN2_URL = 'https://t.me/JetMirror'
-    ST_MSG = '''<i>This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram or to ddl servers. Repo used is WZML-X. And done some Modifications ❤️.</i>
-<b>Type {help_command} to get a list of available commands</b>'''
-    ST_BOTPM = '''<i>Now, This bot will send all your files and links here. Start Using ...</i>'''
-    ST_UNAUTH = '''<i>You Are not authorized user! Deploy your own WZML-X Mirror-Leech bot</i>'''
-    OWN_TOKEN_GENERATE = '''<b>Temporary Token is not yours!</b>\n\n<i>Kindly generate your own.</i>'''
-    USED_TOKEN = '''<b>Temporary Token already used!</b>\n\n<i>Kindly generate a new one.</i>'''
-    LOGGED_PASSWORD = '''<b>Bot Already Logged In via Password</b>\n\n<i>No Need to Accept Temp Tokens.</i>'''
+    ST_BN1_NAME = 'Owner'
+    ST_BN1_URL = 'https://t.me/tellyhubsupports'
+    ST_BN2_NAME = 'Updates'
+    ST_BN2_URL = 'https://t.me/tellycloud_bots'
+    ST_BN3_NAME = 'SFW Group'
+    ST_BN3_URL = 'https://t.me/LeechCloud_SFW'
+    ST_BN4_NAME = 'NSFW Group'
+    ST_BN4_URL = 'https://t.me/LeechCloud_NSFW'
+    ST_MSG = '''<blockquote><i>This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram or to ddl servers.</i>
+<b>Type {help_command} to get a list of available commands</b></blockquote>'''
+    ST_BOTPM = '''<blockquote><i>Now, This bot will send all your files and links here. Start Using ...</i></blockquote>'''
+    ST_UNAUTH = '''<blockquote><i>You Are not authorized user! Deploy your own TELLYCLOUD-BOTS Mirror-Leech bot</i></blockquote>'''
+    OWN_TOKEN_GENERATE = '''<blockquote><b>Temporary Token is not yours!</b>\n\n<i>Kindly generate your own.</i></blockquote>'''
+    USED_TOKEN = '''<blockquote><b>Temporary Token already used!</b>\n\n<i>Kindly generate a new one.</i></blockquote>'''
+    LOGGED_PASSWORD = '''<blockquote><b>Bot Already Logged In via Password</b>\n\n<i>No Need to Accept Temp Tokens.</i></blockquote>'''
     ACTIVATE_BUTTON = 'Activate Temporary Token'
-    TOKEN_MSG = '''<b><u>Generated Temporary Login Token!</u></b>
-<b>Temp Token:</b> <code>{token}</code>
-<b>Validity:</b> {validity}'''
+    TOKEN_MSG = '''<blockquote><b><u>Generated Temporary Login Token!</u></b>
+<b><code>Temp Token :</code>{token}</b>
+<b><code>Validity   :</code>{validity}</b></blockquote>'''
     # ---------------------
     # async def token_callback(_, query): ---> __main__.py
-    ACTIVATED = '✅️ Activated ✅'
+    ACTIVATED = '<blockquote>✅️ Activated ✅</blockquote>'
     # ---------------------
     # async def login(_, message): --> __main__.py
-    LOGGED_IN = '<b>Already Bot Login In!</b>'
-    INVALID_PASS = '<b>Invalid Password!</b>\n\nKindly put the correct Password .'
-    PASS_LOGGED = '<b>Bot Permanent Login Successfully!</b>'
-    LOGIN_USED = '<b>Bot Login Usage :</b>\n\n<code>/cmd [password]</code>'
+    LOGGED_IN = '<blockquote><b>Already Bot Login In!</b></blockquote>'
+    INVALID_PASS = '<blockquote><b>Invalid Password!</b>\n\nKindly put the correct Password .</blockquote>'
+    PASS_LOGGED = '<blockquote><b>Bot Permanent Login Successfully!</b></blockquote>'
+    LOGIN_USED = '</blockquote><b>Bot Login Usage :</b>\n\n<code>/cmd [password]</code></blockquote>'
     # ---------------------
     # async def log(_, message): ---> __main__.py
     LOG_DISPLAY_BT = '📑 Log Display'
@@ -37,270 +41,275 @@ class WZMLStyle:
     MICS_BT = 'Mics'
     O_S_BT = 'Owner & Sudos'
     CLOSE_BT = 'Close'
-    HELP_HEADER = "㊂ <b><i>Help Guide Menu!</i></b>\n\n<b>NOTE: <i>Click on any CMD to see more minor detalis.</i></b>"
+    HELP_HEADER = "<blockquote>㊂ <b><i>Help Guide Menu!</i></b>\n\n<b>NOTE: <i>Click on any CMD to see more minor detalis.</i></b></blockquote>"
 
     # async def stats(client, message):
-    BOT_STATS = ''' <b><i><u>🚀Jet Bot Statistics</u></i></b>
-┖ <b>Bot Uptime :</b> {bot_uptime}
+    BOT_STATS = '''<blockquote>⌬ <b><i>BOT STATISTICS !</i></b>
+<b><code>🟢Bot Uptime      :</code> {bot_uptime}</b>
+<b><code>🎮RAM ( MEMORY ):</code>{ram_bar} {ram}%</b>
+    <b>U :</b> {ram_u} | <b>F :</b> {ram_f} | <b>T :</b> {ram_t}</blockquote>
 
-┎ <b><i>🔴 RAM ( MEMORY ) :</i></b>
-┃ {ram_bar} {ram}%
-┖ <b>U :</b> {ram_u} | <b>F :</b> {ram_f} | <b>T :</b> {ram_t}
+<blockquote><b><code>🧱SWAP MEMORY :</code>{swap_bar} {swap}%</b>
+    <b>U :</b> {swap_u} | <b>F :</b> {swap_f} | <b>T :</b> {swap_t}</blockquote>
 
-┎ <b><i>⚙️ SWAP MEMORY :</i></b>
-┃ {swap_bar} {swap}%
-┖ <b>U :</b> {swap_u} | <b>F :</b> {swap_f} | <b>T :</b> {swap_t}
-
-┎ <b><i>💿 DISK :</i></b>
-┃ {disk_bar} {disk}%
-┃ <b>Total Disk Read :</b> {disk_read}
-┃ <b>Total Disk Write :</b> {disk_write}
-┖ <b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}
-
-<a href="https://t.me/JetMirror">𝑩𝒐𝒕 𝒃𝒚 🚀 𝑱𝒆𝒕-𝑴𝒊𝒓𝒓𝒐𝒓</a>
+<blockquote><b><code>💾DISK :</code> {disk_bar} {disk}%</b>
+<b><code>📀Total Disk Read  :</code> {disk_read}</b>
+<b><code>💿Total Disk Write :</code> {disk_write}</b>
+    <b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}</blockquote>
     
+    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>   
     '''
-    SYS_STATS = '''<b><i><u>🚀Jet System Statistics</u></i></b>
-┠ <b>OS Uptime :</b> {os_uptime}
-┠ <b>OS Version :</b> {os_version}
-┖ <b>OS Arch :</b> {os_arch}
+    SYS_STATS = '''<blockquote>⌬ <b><i>💻OS SYSTEM !</i></b>
+<b><code>⌚OS Uptime    :</code> {os_uptime}</b>
+<b><code>🪃OS Version   :</code> {os_version}</b>
+<b><code>🪶OS Arch      :</code> {os_arch}</b></blockquote>
 
-┎ <b><i>🛜 NETWORK STATS :</i></b>
-┠ <b>Upload Data:</b> {up_data}
-┠ <b>Download Data:</b> {dl_data}
-┠ <b>Pkts Sent:</b> {pkt_sent}k
-┠ <b>Pkts Received:</b> {pkt_recv}k
-┖ <b>Total I/O Data:</b> {tl_data}
+<blockquote><b><i>⌬ 📡NETWORK STATS !</i></b>
+<b><code>📤Upload Data  :</code> {up_data}</b>
+<b><code>📥Download Data:</code> {dl_data}</b>
+<b><code>⏳Pkts Sent    :</code> {pkt_sent}k</b>
+<b><code>⌛Pkts Received:</code> {pkt_recv}k</b>
+<b><code>🛰Total I/O Data:</code> {tl_data}</b></blockquote>
 
-┎ <b>🖥 CPU :</b>
-┃ {cpu_bar} {cpu}%
-┠ <b>CPU Frequency :</b> {cpu_freq}
-┠ <b>System Avg Load :</b> {sys_load}
-┠ <b>P-Core(s) :</b> {p_core} | <b>V-Core(s) :</b> {v_core}
-┠ <b>Total Core(s) :</b> {total_core}
-┖ <b>Usable CPU(s) :</b> {cpu_use}
+<blockquote><b><code>🖥CPU :</code> {cpu_bar} {cpu}%</b>
+<b><code>CPU Frequency  :</code> {cpu_freq}</b>
+<b><code>System Avg Load:</code> {sys_load}</b>
+<b><code>P-Core(s)      :</code> {p_core}</b>
+<b><code>V-Core(s)      :</code> {v_core}</b>
+<b><code>Total Core(s)  :</code> {total_core}</b>
+<b><code>Usable CPU(s)  :</code> {cpu_use}</b></blockquote>
 
-<a href="https://t.me/JetMirror">𝑩𝒐𝒕 𝒃𝒚 🚀 𝑱𝒆𝒕-𝑴𝒊𝒓𝒓𝒐𝒓</a>
+    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>
     '''
-    REPO_STATS = '''⌬ <b><i>WZML-X REPO STATISTICS :</i></b>
-┠ <b>Bot Updated :</b> {last_commit}
-┠ <b>Current Version :</b> {bot_version}
-┠ <b>Latest Version :</b> {lat_version}
-┖ <b>Last ChangeLog :</b> {commit_details}
+    REPO_STATS = '''<blockquote>⌬ <b><i>REPO STATISTICS !</i></b>
+<code><b>Bot Updated    :</b> {last_commit}</code>
+<code><b>Current Version:</b> {bot_version}</code>
+<code><b>Latest Version :</b> {lat_version}</code>
+<code><b>Last ChangeLog :</b> {commit_details}</code></blockquote>
 
 ⌬ <b>REMARKS :</b> <code>{remarks}</code>
 
-<a href="https://t.me/JetMirror">𝑩𝒐𝒕 𝒃𝒚 🚀 𝑱𝒆𝒕-𝑴𝒊𝒓𝒓𝒐𝒓</a>
+    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>
     '''
-    BOT_LIMITS = '''<b><i><u>🚀Jet Bot Limitations</u></i></b>
-┠ <b>Direct Limit :</b> {DL} GB
-┠ <b>Torrent Limit :</b> {TL} GB
-┠ <b>GDrive Limit :</b> {GL} GB
-┠ <b>YT-DLP Limit :</b> {YL} GB
-┠ <b>Playlist Limit :</b> {PL}
-┠ <b>Mega Limit :</b> {ML} GB
-┠ <b>Clone Limit :</b> {CL} GB
-┖ <b>Leech Limit :</b> {LL} GB
+    BOT_LIMITS = '''<blockquote>⌬ <b><i>BOT LIMITATIONS !</i></b>
+<code><b>Direct Limit      :</b> {DL} GB</code>
+<code><b>Torrent Limit     :</b> {TL} GB</code>
+<code><b>GDrive Limit      :</b> {GL} GB</code>
+<code><b>YT-DLP Limit      :</b> {YL} GB</code>
+<code><b>Playlist Limit    :</b> {PL} GB</code>
+<code><b>Mega Limit        :</b> {ML} GB</code>
+<code><b>Clone Limit       :</b> {CL} GB</code>
+<code><b>Leech Limit       :</b> {LL} GB</code></blockquote>
 
-┎ <b>Token Validity :</b> {TV}
-┠ <b>User Time Limit :</b> {UTI} / task
-┠ <b>User Parallel Tasks :</b> {UT}
-┖ <b>Bot Parallel Tasks :</b> {BT}
+<blockquote><code><b>Token Validity    :</b> {TV}</code>
+<code><b>User Time Limit   :</b> {UTI} / task</code>
+<code><b>User Parallel Task:</b> {UT}</code>
+<code><b>Bot Parallel Tasks:</b> {BT}</code></blockquote>
 
-<a href="https://t.me/JetMirror">𝑩𝒐𝒕 𝒃𝒚 🚀 𝑱𝒆𝒕-𝑴𝒊𝒓𝒓𝒐𝒓</a>
+     <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>
     '''
     # ---------------------
 
     # async def restart(client, message): ---> __main__.py
-    RESTARTING = '<i>Restarting...</i>'
+    RESTARTING = '<blockquote><i>Restarting.....</blockquote></i>'
     # ---------------------
 
     # async def restart_notification(): ---> __main__.py
-    RESTART_SUCCESS = '''⌬ <b><i>Restarted Successfully!</i></b>
-┠ <b>Date:</b> {date}
-┠ <b>Time:</b> {time}
-┠ <b>TimeZone:</b> {timz}
-┖ <b>Version:</b> {version}'''
+    RESTART_SUCCESS = '''<blockquote>⌬ <b><i>TellyCloud Bots Restarted Successfully!</i></b>
+<code><b>Date    :</b> {date}</code>
+<code><b>Time    :</b> {time}</code>
+<code><b>TimeZone:</b> {timz}</code>
+<code><b>Version :</b> {version}</code></blockquote>
+
+    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>'''
     RESTARTED = '''⌬ <b><i>Bot Restarted!</i></b>'''
     # ---------------------
 
     # async def ping(client, message): ---> __main__.py
     PING = '<i>Starting Ping..</i>'
-    PING_VALUE = '<b>Pong</b>\n<code>{value} ms..</code>'
+    PING_VALUE = '<blockquote><b>Pong</b>\n<code>🏓 {value} ms..</code></blockquote>'
     # ---------------------
 
     # async def onDownloadStart(self): --> tasks_listener.py
-    LINKS_START = """<b><i>Task Started</i></b>
-┠ <b>Mode:</b> {Mode}
-┖ <b>By:</b> {Tag}\n\n"""
-    LINKS_SOURCE = """➲ <b>Source:</b>
-┖ <b>Added On:</b> {On}
+    LINKS_START = """<blockquote><b><i>Task Started</i></b>
+<code><b>💠Mode:</b>{Mode}</code>
+<code><b>👤By  :</b> {Tag}</code></blockquote>\n\n"""
+    LINKS_SOURCE = """<blockquote>➲ <b>Source:</b>
+<b>Added On:</b> {On}
 ------------------------------------------
 {Source}
-------------------------------------------\n\n"""
+------------------------------------------</blockquote>\n\n"""
     
     # async def __msg_to_reply(self): ---> pyrogramEngine.py
-    PM_START =            "➲ <b><u>Task Started :</u></b>\n┃\n┖ <b>Link:</b> <a href='{msg_link}'>Click Here</a>"
-    L_LOG_START =           "➲ <b><u>Leech Started :</u></b>\n┃\n┠ <b>User :</b> {mention} ( #ID{uid} )\n┖ <b>Source :</b> <a href='{msg_link}'>Click Here</a>"
+    PM_START          ="<blockquote>➲ <b><u>Task Started :</u></b>\n│\n<b>Link:</b> <a href='{msg_link}'>Click Here</a></blockquote>"
+    L_LOG_START       ="<blockquote>➲ <b><u>Leech Started :</u></b>\n│\n <b>User :</b> {mention} ( #ID{uid} )\n<b>Source :</b> <a href='{msg_link}'>Click Here</a></blockquote>"
 
     # async def onUploadComplete(): ---> tasks_listener.py
-    NAME =                  '<b><i>{Name}</i></b>\n┃\n'
-    SIZE =                  '┠ <b>Size: </b>{Size}\n'
-    ELAPSE =                '┠ <b>Elapsed: </b>{Time}\n'
-    MODE =                  '┠ <b>Mode: </b>{Mode}\n'
+    NAME              ='<b><blockquote>🏷️<i>{Name}</i></b></blockquote>\n\n'
+    SIZE              ='<b><code>💾Size    : </code>{Size}</b>\n'
+    ELAPSE            ='<b><code>⌛️Elapsed : </code>{Time}</b>\n'
+    MODE              ='<b><code>💠Mode    :</code>{Mode}</b>\n'
 
     # ----- LEECH -------
-    L_TOTAL_FILES =         '┠ <b>Total Files: </b>{Files}\n'
-    L_CORRUPTED_FILES =     '┠ <b>Corrupted Files: </b>{Corrupt}\n'
-    L_CC =                  '┖ <b>By: </b>{Tag}\n\n'
-    PM_BOT_MSG =            '➲ <b><i>File(s) have been Sent above</i></b>'
-    L_BOT_MSG =             '➲ <b><i>File(s) have been Sent to Bot PM (Private)</i></b>'
-    L_LL_MSG =              '➲ <b><i>File(s) have been Sent. Access via Links...</i></b>\n'
+    L_TOTAL_FILES     ='<b><code>📂FS Total: </code>{Files}</b>\n'
+    L_CORRUPTED_FILES ='<b><code>👹CrptdFls: </code>{Corrupt}</b>'
+    L_CC              ='<b><code>👤User By : </code>{Tag}</b>\n\n'
+    PM_BOT_MSG        ='<blockquote>➲ <b><i>File(s) have been Sent above</i></b></blockquote>'
+    L_BOT_MSG         ='<blockquote>➲ <b><i>File(s) have been Sent to Bot PM (Private)</i></b></blockquote>'
+    L_LL_MSG          ='<blockquote>➲ <b><i>File(s) have been Sent. Access via Links...</i></b></blockquote>\n'
     
     # ----- MIRROR -------
-    M_TYPE =                '┠ <b>Type: </b>{Mimetype}\n'
-    M_SUBFOLD =             '┠ <b>SubFolders: </b>{Folder}\n'
-    TOTAL_FILES =           '┠ <b>Files: </b>{Files}\n'
-    RCPATH =                '┠ <b>Path: </b><code>{RCpath}</code>\n'
-    M_CC =                  '┖ <b>By: </b>{Tag}\n\n'
-    M_BOT_MSG =             '➲ <b><i>Link(s) have been Sent to Bot PM (Private)</i></b>'
+    M_TYPE            ='<b><code>🔡Type     : </code>{Mimetype}</b>\n'
+    M_SUBFOLD         ='<b><code>📁SubFolder: </code>{Folder}</b>\n'
+    TOTAL_FILES       ='<b><code>📒Files    : </code>{Files}</b>\n'
+    RCPATH            ='<b><code>📃Path     : </code>{RCpath}</b>\n'
+    M_CC              ='<b><code>👤By       : </code>{Tag}</b>\n\n'
+    M_BOT_MSG         ='<blockquote>➲ <b><i>Link(s) have been Sent to Bot PM (Private)</i></b></blockquote>'
     # ----- BUTTONS -------
-    CLOUD_LINK =      '☁️ Cloud Link'
-    SAVE_MSG =        '📨 Save Message'
-    RCLONE_LINK =     '♻️ RClone Link'
-    DDL_LINK =        '📎 {Serv} Link'
-    SOURCE_URL =      '🔐 Source Link'
-    INDEX_LINK_F =    '🗂 Index Link'
-    INDEX_LINK_D =    '⚡ Index Link'
-    VIEW_LINK =       '🌐 View Link'
-    CHECK_PM =        '📥 View in Bot PM'
-    CHECK_LL =        '🖇 View in Links Log'
-    MEDIAINFO_LINK =  '📃 MediaInfo'
-    SCREENSHOTS =     '🖼 ScreenShots'
+    CLOUD_LINK        =        '☁️ Cloud Link'
+    SAVE_MSG          =        '📨 Save Message'
+    RCLONE_LINK       =        '♻️ RClone Link'
+    DDL_LINK          =        '📎 {Serv} Link'
+    SOURCE_URL        =        '🔐 Source Link'
+    INDEX_LINK_F      =        '🗂 Index Link'
+    INDEX_LINK_D      =        '⚡ Index Link'
+    VIEW_LINK         =        '🌐 View Link'
+    CHECK_PM          =        '📥 View in Bot PM'
+    CHECK_LL          =        '🖇 View in Links Log'
+    MEDIAINFO_LINK    =        '📃 MediaInfo'
+    SCREENSHOTS       =        '🖼 ScreenShots'
     # ---------------------
 
     # def get_readable_message(): ---> bot_utilis.py
     ####--------OVERALL MSG HEADER----------
-    STATUS_NAME =       '<b><i>{Name}</i></b>'
+    STATUS_NAME       ='<blockquote><b><i>{Name}</i></b></blockquote>\n'
 
     #####---------PROGRESSIVE STATUS-------
-    BAR =               '\n┃ {Bar}'
-    PROCESSED =         '\n┠ <b>Processed:</b> {Processed}'
-    STATUS =            '\n┠ <b>Status:</b> <a href="{Url}">{Status}</a>'
-    ETA =                                                ' | <b>ETA:</b> {Eta}'
-    SPEED =             '\n┠ <b>Speed:</b> {Speed}'
-    ELAPSED =                                     ' | <b>Elapsed:</b> {Elapsed}'
-    ENGINE =            '\n┠ <b>Engine:</b> {Engine}'
-    STA_MODE =          '\n┠ <b>Mode:</b> {Mode}'
-    SEEDERS =           '\n┠ <b>Seeders:</b> {Seeders} | '
-    LEECHERS =                                           '<b>Leechers:</b> {Leechers}'
+    BAR               ='💫 {Bar}\n'
+    PROCESSED         ='<b><code>🔄Sync    : </code>{Processed}</b>\n'
+    STATUS            ='<b><code>🌐Status  : </code><a href="{Url}">{Status}</a></b>\n'
+    ETA               ='<b><code>🍥ETA     : </code>{Eta}</b>\n'
+    SPEED             ='<b><code>🚀Speed   : </code>{Speed}</b>\n'
+    ELAPSED           ='<b><code>👻Elapsed : </code>{Elapsed}</b>\n'
+    ENGINE            ='<b><code>⛓️Engine  : </code>{Engine}</b>\n'
+    STA_MODE          ='<b><code>💠Mode    :</code>{Mode}</b>\n'
+    SEEDERS           ='<b><code>🌱Seeders : </code>{Seeders} | </b>'
+    LEECHERS          ='<b><code>🐌Leechers: </code>{Leechers}</b>\n'
 
     ####--------SEEDING----------
-    SEED_SIZE =      '\n┠ <b>Size: </b>{Size}'
-    SEED_SPEED =     '\n┠ <b>Speed: </b> {Speed} | '
-    UPLOADED =                                     '<b>Uploaded: </b> {Upload}'
-    RATIO =          '\n┠ <b>Ratio: </b> {Ratio} | '
-    TIME =                                         '<b>Time: </b> {Time}'
-    SEED_ENGINE =    '\n┠ <b>Engine:</b> {Engine}'
+    SEED_SIZE         ='<b><code>📐Size    : </code>{Size}</b>\n'
+    SEED_SPEED        ='<b><code>🚀Speed   : </code>{Speed}</b>\n'
+    UPLOADED          ='<b><code>📤Uploaded: </code>{Upload}</b>\n'                         
+    RATIO             ='<b><code>📶Ratio   : </code>{Ratio}</b>\n'
+    TIME              ='<b><code>🕒Time    : </code>{Time}</b>\n'
+    SEED_ENGINE       ='<b><code>⛓️Engine  : </code>{Engine}</b>\n'
 
     ####--------NON-PROGRESSIVE + NON SEEDING----------
-    STATUS_SIZE =    '\n┠ <b>Size: </b>{Size}'
-    NON_ENGINE =     '\n┠ <b>Engine:</b> {Engine}'
+    STATUS_SIZE       ='<b><code>📐Size    : </code>{Size}</b>\n'
+    NON_ENGINE        ='<b><code>⛓️Engine  : </code>{Engine}</b>\n'
 
     ####--------OVERALL MSG FOOTER----------
-    USER =              '\n┠ <b>User:</b> {User} | '
-    ID =                                           '<b>ID:</b> <code>{Id}</code>'
-    BTSEL =          '\n┠ <b>Select:</b> {Btsel}'
-    CANCEL =         '\n┖ {Cancel}\n\n'
+    USER              ='<b><code><b>👤User    : </code><tg-spoiler>{User}</tg-spoiler></b>\n'
+    ID                ='<b><code><b>🆔ID      : </code>{Id}</b>\n'
+    BTSEL             ='<b>🧲️Select  : {Btsel}</b>\n'
+    CANCEL            ='<b>❌Cancel : {Cancel}</b>\n\n\n'
 
     ####------FOOTER--------
-    FOOTER = '⌬ <b><i>Bot Stats</i></b>\n'
-    TASKS =  '┠ <b>Tasks:</b> {Tasks}\n'
-    BOT_TASKS = '┠ <b>Tasks:</b> {Tasks}/{Ttask} | <b>AVL:</b> {Free}\n'
-    Cpu = '┠ <b>CPU:</b> {cpu}% | '
-    FREE =                      '<b>F:</b> {free} [{free_p}%]'
-    Ram = '\n┠ <b>RAM:</b> {ram}% | '
-    uptime =                     '<b>UPTIME:</b> {uptime}'
-    DL = '\n┖ <b>DL:</b> {DL}/s | '
-    UL =                        '<b>UL:</b> {UL}/s\n\n<a href="https://t.me/JetMirror">𝑩𝒐𝒕 𝒃𝒚 🚀 𝑱𝒆𝒕-𝑴𝒊𝒓𝒓𝒐𝒓</a>'
+    FOOTER            ='\n<blockquote>⌬ <b><i>Bot Stats</i></b></blockquote>'
+    TASKS             ='\n<b>🧮Tasks :</b> {Tasks}'
+    BOT_TASKS         ='\n<b>🥏Tasks :</b> {Tasks}/{Ttask} | <b>♟️AVL :</b> {Free}'
+    Cpu               ='\n<b>🖥CPU :</b> {cpu}% |'
+    FREE              ='<b>💿F :</b>{free}[{free_p}%]'
+    Ram               ='\n<b>🎟RAM :</b>{ram}% | '
+    uptime            ='<b>🟢UPTIME :</b>{uptime}'
+    DL                ='\n<blockquote><b>🔻DL :</b> {DL}/s | '
+    UL                ='<b>🔺UL :</b> {UL}/s</blockquote>'
 
     ###--------BUTTONS-------
-    PREVIOUS = '⫷'
-    REFRESH = 'ᴘᴀɢᴇs\n{Page}'
-    NEXT = '⫸'
+    PREVIOUS          = '⏪Previous'
+    REFRESH           = 'ᴘᴀɢᴇs\n{Page}'
+    NEXT              = 'Next⏩'
     # ---------------------
 
     #STOP_DUPLICATE_MSG: ---> clone.py, aria2_listener.py, task_manager.py
-    STOP_DUPLICATE = 'File/Folder is already available in Drive.\nHere are {content} list results:'
+    STOP_DUPLICATE    = '<blockquote>File/Folder is already available in Drive.\nHere are {content} list results:</blockquote>'
     # ---------------------
 
     # async def countNode(_, message): ----> gd_count.py
-    COUNT_MSG = '<b>Counting:</b> <code>{LINK}</code>'
-    COUNT_NAME = '<b><i>{COUNT_NAME}</i></b>\n┃\n'
-    COUNT_SIZE = '┠ <b>Size: </b>{COUNT_SIZE}\n'
-    COUNT_TYPE = '┠ <b>Type: </b>{COUNT_TYPE}\n'
-    COUNT_SUB =  '┠ <b>SubFolders: </b>{COUNT_SUB}\n'
-    COUNT_FILE = '┠ <b>Files: </b>{COUNT_FILE}\n'
-    COUNT_CC =   '┖ <b>By: </b>{COUNT_CC}\n'
+    COUNT_MSG         ='<b><code>🔡Counting : </code>{LINK}</b>\n'
+    COUNT_NAME        ='<b><code><i>{COUNT_NAME}</i></b></b>\n'
+    COUNT_SIZE        ='<b><code>📐Size     : </code>COUNT_SIZE}</b>\n'
+    COUNT_TYPE        ='<b><code>🔡Type     : </code>{COUNT_TYPE}</b>\n'
+    COUNT_SUB         ='<b><code>📁SubFolder: </code>{COUNT_SUB}</b>\n'
+    COUNT_FILE        ='<b><code>📒Files    : </code>{COUNT_FILE}</b>\n'
+    COUNT_CC          ='<b><code>👤By       : </code>{COUNT_CC}</b>\n'
     # ---------------------
 
     # LIST ---> gd_list.py
-    LIST_SEARCHING = '<b>Searching for <i>{NAME}</i></b>'
-    LIST_FOUND = '<b>Found {NO} result for <i>{NAME}</i></b>'
-    LIST_NOT_FOUND = 'No result found for <i>{NAME}</i>'
+    LIST_SEARCHING    ='<b>Searching for <i>{NAME}</i></b>'
+    LIST_FOUND        ='<b>Found {NO} result for <i>{NAME}</i></b>'
+    LIST_NOT_FOUND    ='No result found for <i>{NAME}</i>'
     # ---------------------
 
     # async def mirror_status(_, message): ----> status.py
-    NO_ACTIVE_DL = '''<i>No Active Downloads!</i>
-    
+    NO_ACTIVE_DL      = '''<blockquote><i>No Active Downloads!</i>
 ⌬ <b><i>Bot Stats</i></b>
-┠ <b>CPU:</b> {cpu}% | <b>F:</b> {free} [{free_p}%]
-┖ <b>RAM:</b> {ram} | <b>UPTIME:</b> {uptime}
+<b>CPU:</b> {cpu}% | <b>F:</b> {free} [{free_p}%]
+<b>RAM:</b> {ram} | <b>UPTIME:</b> {uptime}</blockquote>
+
+    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>
     '''
     # ---------------------
 
     # USER Setting --> user_setting.py 
-    USER_SETTING = '''㊂ <b><u>User Settings :</u></b>
+    USER_SETTING = '''<blockquote>㊂ <b><u>User Settings :</u></b>
         
-┎<b> Name :</b> {NAME} ( <code>{ID}</code> )
-┠<b> Username :</b> {USERNAME}
-┠<b> Telegram DC :</b> {DC}
-┖<b> Language :</b> {LANG}
+<code><b>👤Name        :</b> {NAME} [{ID}]</code> 
+<code><b>🔮Telegram DC :</b> {DC}</code> 
+<code><b>🗣️Language    :</b> {LANG}</code></blockquote>
 
 ➲ <u><b>Available Args:</b></u>
-• <b>-s</b> or <b>-set</b>: Set Directly via Arg'''
+• <b>-s</b> or <b>-set</b>: Set Directly via Arg
 
-    UNIVERSAL = '''㊂ <b><u>Universal Settings : {NAME}</u></b>
+    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>'''
 
-┎<b> YT-DLP Options :</b> <b><code>{YT}</code></b>
-┠<b> Daily Tasks :</b> <code>{DT}</code> per day
-┠<b> Last Bot Used :</b> <code>{LAST_USED}</code>
-┠<b> User Session :</b> <code>{USESS}</code>
-┠<b> MediaInfo Mode :</b> <code>{MEDIAINFO}</code>
-┠<b> Save Mode :</b> <code>{SAVE_MODE}</code>
-┖<b> User Bot PM :</b> <code>{BOT_PM}</code>'''
+    UNIVERSAL = '''<blockquote>㊂ <b><u>Universal Settings : {NAME}</u></b>
 
-    MIRROR = '''㊂ <b><u>Mirror/Clone Settings : {NAME}</u></b>
+<code><b>🎥YT-DLP Options:</b> {YT}</code>
+<code><b>🎯Daily Tasks   :</b> {DT}</code> per day
+<code><b>🔛Last Bot Used :</b> {LAST_USED}</code>
+<code><b>🔑User Session  :</b> {USESS}</code>
+<code><b>🎥MediaInfo Mode:</b> {MEDIAINFO}</code>
+<code><b>🕵️Save Mode     :</b> {SAVE_MODE}</code>
+<code><b>✉️User Bot PM   :</b> {BOT_PM}</code><blockquote>
 
-┎<b> RClone Config :</b> <i>{RCLONE}</i>
-┠<b> Mirror Prefix :</b> <code>{MPREFIX}</code>
-┠<b> Mirror Suffix :</b> <code>{MSUFFIX}</code>
-┠<b> Mirror Remname :</b> <code>{MREMNAME}</code>
-┠<b> DDL Server(s) :</b> <i>{DDL_SERVER}</i>
-┠<b> User TD Mode :</b> <i>{TMODE}</i>
-┠<b> Total User TD(s) :</b> <i>{USERTD}</i>
-┖<b> Daily Mirror :</b> <code>{DM}</code> per day'''
+    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>'''
 
-    LEECH = '''㊂ <b><u>Leech Settings for {NAME}</u></b>
+    MIRROR = '''<blockquote>㊂ <b><u>Mirror/Clone Settings : {NAME}</u></b>
 
-┎<b> Daily Leech : </b><code>{DL}</code> per day
-┠<b> Leech Type :</b> <i>{LTYPE}</i>
-┠<b> Custom Thumbnail :</b> <i>{THUMB}</i>
-┠<b> Leech Split Size :</b> <code>{SPLIT_SIZE}</code>
-┠<b> Equal Splits :</b> <i>{EQUAL_SPLIT}</i>
-┠<b> Media Group :</b> <i>{MEDIA_GROUP}</i>
-┠<b> Leech Caption :</b> <code>{LCAPTION}</code>
-┠<b> Leech Prefix :</b> <code>{LPREFIX}</code>
-┠<b> Leech Suffix :</b> <code>{LSUFFIX}</code>
-┠<b> Leech Dumps :</b> <code>{LDUMP}</code>
-┖<b> Leech Remname :</b> <code>{LREMNAME}</code>'''
+<code><b>🧬RClone Config :</b> <i>{RCLONE}</i></code>
+<code><b>🅿Mirror Prefix :</b> {MPREFIX}</code>
+<code><b>💲Mirror Suffix  :</b> {MSUFFIX}</code>
+<code><b>🌈Mirror Remname:</b> {MREMNAME}</code>
+<code><b>🧿DDL Server(s) :</b> <i>{DDL_SERVER}</i></code>
+<code><b>📮User TD Mode  :</b> <i>{TMODE}</i></code>
+<code><b>📝TotalUserTD(s):</b> <i>{USERTD}</i></code>
+<code><b>☁️Daily Mirror  :</b> {DM}</code> per day</blockquote>
+
+<blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>'''
+
+    LEECH = '''<blockquote>㊂ <b><u>Leech Settings for {NAME}</u></b>
+
+<code><b>📂Daily Leech     :</b> {DL}</code> per day
+<code><b>⚙️Leech Type      :</b> <i>{LTYPE}</i></code>
+<code><b>🖼️Custom Thumbnail:</b> <i>{THUMB}</i></code>
+<code><b>♈️Leech Split Size:</b> {SPLIT_SIZE}</code>
+<code><b>♐️Equal Splits    :</b> <i>{EQUAL_SPLIT}</i></code>
+<code><b>♒️Media Group     :</b> <i>{MEDIA_GROUP}</i></code>
+<code><b>📄Leech Caption   :</b> {LCAPTION}</code>
+<code><b>🅿Leech Prefix    :</b> {LPREFIX}</code>
+<code><b>💲Leech Suffix    :</b> {LSUFFIX}</code>
+<code><b>📦Leech Dumps     :</b> {LDUMP}</code>
+<code><b>🌈Leech Remname   :</b> {LREMNAME}</code></blockquote>
+
+    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>'''
