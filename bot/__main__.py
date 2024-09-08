@@ -46,6 +46,8 @@ async def start(client, message):
     buttons = ButtonMaker()
     buttons.ubutton(BotTheme('ST_BN1_NAME'), BotTheme('ST_BN1_URL'))
     buttons.ubutton(BotTheme('ST_BN2_NAME'), BotTheme('ST_BN2_URL'))
+    buttons.ubutton(BotTheme('ST_BN3_NAME'), BotTheme('ST_BN3_URL'))
+    buttons.ubutton(BotTheme('ST_BN4_NAME'), BotTheme('ST_BN4_URL'))
     reply_markup = buttons.build_menu(2)
     if len(message.command) > 1 and message.command[1] == "wzmlx":
         await deleteMessage(message)
@@ -201,7 +203,7 @@ async def restart_notification():
                 msg = BotTheme('RESTART_SUCCESS', time=now.strftime('%I:%M:%S %p'), date=now.strftime('%d/%m/%y'), timz=config_dict['TIMEZONE'], version=get_version()) if cid == chat_id else BotTheme('RESTARTED')
                 msg += "\n\n⌬ <b><i>Incomplete Tasks!</i></b>"
                 for tag, links in data.items():
-                    msg += f"\n➲ <b>User:</b> {tag}\n┖ <b>Tasks:</b>"
+                    msg += f"\n<b>User:</b> {tag}\n<b>Tasks:</b>"
                     for index, link in enumerate(links, start=1):
                         msg_link, source = next(iter(link.items()))
                         msg += f" {index}. <a href='{source}'>S</a> ->  <a href='{msg_link}'>L</a> |"
@@ -268,7 +270,7 @@ async def main():
         BotCommands.HelpCommand) & CustomFilters.authorized & ~CustomFilters.blacklisted))
     bot.add_handler(MessageHandler(stats, filters=command(
         BotCommands.StatsCommand) & CustomFilters.authorized & ~CustomFilters.blacklisted))
-    LOGGER.info(f"WZML-X Bot [@{bot_name}] Started!")
+    LOGGER.info(f"TELLYCLOUD Bot [@{bot_name}] Started!")
     if user:
         LOGGER.info(f"WZ's User [@{user.me.username}] Ready!")
     signal(SIGINT, exit_clean_up)
