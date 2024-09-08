@@ -137,13 +137,13 @@ def handleIndex(index, dic):
     return index
 
 def get_progress_bar_string(pct):
-    pct = float(str(pct).strip('%'))
-    p = min(max(pct, 0), 100)
+    if isinstance(pct, str):
+        pct = float(pct.strip("%"))
+    p = min(max(pct, 0),100)
     cFull = int(p // 10)
-    p_str = '★' * cFull
-    p_str += '☆' * (10 - cFull)
-    return f"[{p_str}]"
-
+    p_str = "■" * cFull
+    p_str += "□" * (10 - cFull)
+    return f'<p><a href="https://t.me/tellycloud_bots">{p_str}</a></p>'
 
 def get_all_versions():
     try:
@@ -212,7 +212,7 @@ def get_readable_message():
         elapsed = time() - download.message.date.timestamp()
         msg += BotTheme('STATUS_NAME', Name="Task is being Processed!" if config_dict['SAFE_MODE'] and elapsed >= config_dict['STATUS_UPDATE_INTERVAL'] else escape(f'{download.name()}'))
         if download.status() not in [MirrorStatus.STATUS_SPLITTING, MirrorStatus.STATUS_SEEDING]:
-            msg += BotTheme('BAR', Bar=f"{get_progress_bar_string(download.progress())} {download.progress()}")
+            msg += BotTheme('BAR', Bar=f"<b>[{get_progress_bar_string(download.progress())}]</b> » <b>{download.progress()}</b>")
             msg += BotTheme('PROCESSED', Processed=f"{download.processed_bytes()} of {download.size()}")
             msg += BotTheme('STATUS', Status=download.status(), Url=msg_link)
             msg += BotTheme('ETA', Eta=download.eta())
