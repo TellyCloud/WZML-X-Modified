@@ -198,7 +198,7 @@ class EngineStatus:
 
 
 def get_readable_message():
-    msg = f'<blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>'
+    msg = f'<blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✅ █POWER BY TELLYCLOUD BOTS█ 🤖</b></a></blockquote>'
     msg += f'\n'
     button = None
     STATUS_LIMIT = config_dict['STATUS_LIMIT']
@@ -215,9 +215,9 @@ def get_readable_message():
         if download.status() not in [MirrorStatus.STATUS_SPLITTING, MirrorStatus.STATUS_SEEDING]:
             msg += BotTheme('BAR', Bar=f"<b>[{get_progress_bar_string(download.progress())}]</b> » <b>{download.progress()}</b>")
             msg += BotTheme('PROCESSED', Processed=f"{download.processed_bytes()} of {download.size()}")
+            msg += BotTheme('SPEED', Speed=download.speed())
             msg += BotTheme('STATUS', Status=download.status(), Url=msg_link)
             msg += BotTheme('ETA', Eta=download.eta())
-            msg += BotTheme('SPEED', Speed=download.speed())
             msg += BotTheme('ELAPSED', Elapsed=get_readable_time(elapsed))
             msg += BotTheme('ENGINE', Engine=download.eng())
             msg += BotTheme('STA_MODE', Mode=download.upload_details['mode'])
