@@ -342,10 +342,10 @@ QUEUE_DOWNLOAD = '' if len(QUEUE_DOWNLOAD) == 0 else int(QUEUE_DOWNLOAD)
 QUEUE_UPLOAD = environ.get('QUEUE_UPLOAD', '')
 QUEUE_UPLOAD = '' if len(QUEUE_UPLOAD) == 0 else int(QUEUE_UPLOAD)
 
-INCOMPLETE_TASK_NOTIFIER = environ.get('INCOMPLETE_TASK_NOTIFIER', '')
+INCOMPLETE_TASK_NOTIFIER = environ.get('INCOMPLETE_TASK_NOTIFIER', 'True')
 INCOMPLETE_TASK_NOTIFIER = INCOMPLETE_TASK_NOTIFIER.lower() == 'true'
 
-STOP_DUPLICATE = environ.get('STOP_DUPLICATE', '')
+STOP_DUPLICATE = environ.get('STOP_DUPLICATE', 'True')
 STOP_DUPLICATE = STOP_DUPLICATE.lower() == 'true'
 
 IS_TEAM_DRIVE = environ.get('IS_TEAM_DRIVE', '')
@@ -375,7 +375,7 @@ SCREENSHOTS_MODE = SCREENSHOTS_MODE.lower() == 'true'
 SOURCE_LINK = environ.get('SOURCE_LINK', '')
 SOURCE_LINK = SOURCE_LINK.lower() == 'true'
 
-DELETE_LINKS = environ.get('DELETE_LINKS', '')
+DELETE_LINKS = environ.get('DELETE_LINKS', 'True')
 DELETE_LINKS = DELETE_LINKS.lower() == 'true'
 
 EQUAL_SPLITS = environ.get('EQUAL_SPLITS', '')
@@ -459,7 +459,7 @@ if len(FSUB_IDS) == 0:
 LINKS_LOG_ID = environ.get('LINKS_LOG_ID', '')
 LINKS_LOG_ID = '' if len(LINKS_LOG_ID) == 0 else int(LINKS_LOG_ID)
 
-BOT_PM = environ.get('BOT_PM', '')
+BOT_PM = environ.get('BOT_PM', 'True')
 BOT_PM = BOT_PM.lower() == 'true'
 
 DAILY_TASK_LIMIT = environ.get('DAILY_TASK_LIMIT', '')
@@ -493,21 +493,21 @@ IMG_SEARCH = (IMG_SEARCH.replace("'", '').replace('"', '').replace(
 IMG_PAGE = environ.get('IMG_PAGE', '')
 IMG_PAGE = int(IMG_PAGE) if IMG_PAGE.isdigit() else ''
 
-AUTHOR_NAME = environ.get('AUTHOR_NAME', '')
+AUTHOR_NAME = environ.get('AUTHOR_NAME', 'TELLYCLOUD/BOTS')
 if len(AUTHOR_NAME) == 0:
     AUTHOR_NAME = 'WZML-X'
 
-AUTHOR_URL = environ.get('AUTHOR_URL', '')
+AUTHOR_URL = environ.get('AUTHOR_URL', 'https://t.me/TELLYCLOUD_BOTS')
 if len(AUTHOR_URL) == 0:
     AUTHOR_URL = 'https://t.me/WZML_X'
 
-TITLE_NAME = environ.get('TITLE_NAME', '')
+TITLE_NAME = environ.get('TITLE_NAME', 'TELLYCLOUD/BOTS')
 if len(TITLE_NAME) == 0:
     TITLE_NAME = 'WZ-M/L-X'
     
 COVER_IMAGE = environ.get('COVER_IMAGE', '')
 if len(COVER_IMAGE) == 0:
-    COVER_IMAGE = 'https://graph.org/file/60f9f8bcb97d27f76f5c0.jpg'
+    COVER_IMAGE = 'https://graph.org/file/be0f4270e3431a3d83d94.jpg'
 
 GD_INFO = environ.get('GD_INFO', '')
 if len(GD_INFO) == 0:
@@ -516,7 +516,7 @@ if len(GD_INFO) == 0:
 SAVE_MSG = environ.get('SAVE_MSG', '')
 SAVE_MSG = SAVE_MSG.lower() == 'true'
 
-SAFE_MODE = environ.get('SAFE_MODE', '')
+SAFE_MODE = environ.get('SAFE_MODE', 'true')
 SAFE_MODE = SAFE_MODE.lower() == 'true'
 
 SET_COMMANDS = environ.get('SET_COMMANDS', '')
