@@ -30,7 +30,7 @@ class WZMLStyle:
     PASS_LOGGED = '<blockquote><b>Bot Permanent Login Successfully!</b></blockquote>'
     LOGIN_USED = '</blockquote><b>Bot Login Usage :</b>\n\n<code>/cmd [password]</code></blockquote>'
     # ---------------------
-b   # async def bot_help(client, message): ---> __main__.py
+   # async def bot_help(client, message): ---> __main__.py
 
     HELP_HEADER = "<blockquote>㊂ <b><i>Help Guide Menu!</i></b>\n\n<b>NOTE: <i>Click on any CMD to see more minor detalis.</i></b></blockquote>"
 
