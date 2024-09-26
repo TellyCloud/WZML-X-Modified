@@ -155,8 +155,8 @@ class WZMLStyle:
     L_CORRUPTED_FILES ='<b><code>👹CrptdFls: </code>{Corrupt}</b>'
     L_CC              ='<b><code>👤User By : </code>{Tag}</b>\n\n'
     PM_BOT_MSG        ='<blockquote>➲ <b><i>File(s) have been Sent above</i></b></blockquote>'
-    L_BOT_MSG         ='<blockquote>➲ <b><i>File(s) have been Sent to Bot PM (Private)</i></b>'
-    L_LL_MSG          ='➲ <b><i>File(s) have been Sent. Access via Links...</i></b></blockquote>\n'
+    L_BOT_MSG         ='<blockquote>➲ <b><i>File(s) have been Sent to Bot PM (Private)</i></b></blockquote>'
+    L_LL_MSG          ='<blockquote>➲ <b><i>File(s) have been Sent. Access via Links...</i></b></blockquote>\n'
     
     # ----- MIRROR -------
     M_TYPE            ='<b><code>🔡Type     : </code>{Mimetype}</b>\n'
@@ -166,18 +166,22 @@ class WZMLStyle:
     M_CC              ='<b><code>👤By       : </code>{Tag}</b>\n\n'
     M_BOT_MSG         ='<blockquote>➲ <b><i>Link(s) have been Sent to Bot PM (Private)</i></b></blockquote>'
     # ----- BUTTONS -------
-    CLOUD_LINK        =        '☁️ Cloud Link'
-    SAVE_MSG          =        '📨 Save Message'
-    RCLONE_LINK       =        '♻️ RClone Link'
-    DDL_LINK          =        '📎 {Serv} Link'
-    SOURCE_URL        =        '🔐 Source Link'
-    INDEX_LINK_F      =        '🗂 Index Link'
-    INDEX_LINK_D      =        '⚡ Index Link'
-    VIEW_LINK         =        '🌐 View Link'
-    CHECK_PM          =        '📥 View in Bot PM'
-    CHECK_LL          =        '🖇 View in Links Log'
-    MEDIAINFO_LINK    =        '📃 MediaInfo'
-    SCREENSHOTS       =        '🖼 ScreenShots'
+    CLOUD_LINK        =        '☁️ 𝐂𝐥𝐨𝐮𝐝 \n𝐋𝐢𝐧𝐤'
+    SAVE_MSG          =        '📨 𝐒𝐚𝐯𝐞 \n𝐌𝐞𝐬𝐬𝐚𝐠𝐞'
+    RCLONE_LINK       =        '♻️ 𝐑𝐂𝐥𝐨𝐧𝐞 \n𝐋𝐢𝐧𝐤'
+    DDL_LINK          =        '📎 {Serv} \n𝐋𝐢𝐧𝐤'
+    SOURCE_URL        =        '🔐 𝐒𝐨𝐮𝐫𝐜𝐞 \n𝐋𝐢𝐧𝐤'
+    INDEX_LINK_F      =        '🗂 𝐈𝐧𝐝𝐞𝐱 \n𝐋𝐢𝐧𝐤'
+    INDEX_LINK_D      =        '⚡ 𝐈𝐧𝐝𝐞𝐱 \n𝐋𝐢𝐧𝐤'
+    VIEW_LINK         =        '🌐 𝐕𝐢𝐞𝐰 \n𝐋𝐢𝐧𝐤'
+    CHECK_PM          =        '📥 𝐕𝐢𝐞𝐰 𝐢𝐧 \n 𝐁𝐨𝐭 𝐏𝐌'
+    CHECK_LL          =        '🖇 𝐕𝐢𝐞𝐰 𝐢𝐧 \n 𝐋𝐢𝐧𝐤𝐬 𝐋𝐨𝐠'
+    MEDIAINFO_LINK    =        '📃 𝐌𝐞𝐝𝐢𝐚𝐈𝐧𝐟𝐨'
+    SCREENSHOTS       =        '🖼 𝐒𝐜𝐫𝐞𝐞𝐧𝐒𝐡𝐨𝐭𝐬'
+    PREVIOUS          =        '⏪ 𝐏𝐫𝐞𝐯𝐢𝐨𝐮𝐬'
+    REFRESH           =        'ᴘᴀɢᴇs\n{Page}'
+    NEXT              =        '𝐍𝐞𝐱𝐭 ⏩'
+    # ---------------------
     # ---------------------
 
     # def get_readable_message(): ---> bot_utilis.py
@@ -224,12 +228,7 @@ class WZMLStyle:
     uptime            ='<b>🟢UPTIME :</b>{uptime}'
     DL                ='\n<blockquote><b>🔻DL :</b> {DL}/s | '
     UL                ='<b>🔺UL :</b> {UL}/s</blockquote>'
-
-    ###--------BUTTONS-------
-    PREVIOUS          = '⏪Previous'
-    REFRESH           = 'ᴘᴀɢᴇs\n{Page}'
-    NEXT              = 'Next⏩'
-    # ---------------------
+    
 
     #STOP_DUPLICATE_MSG: ---> clone.py, aria2_listener.py, task_manager.py
     STOP_DUPLICATE    = '<blockquote>File/Folder is already available in Drive.\nHere are {content} list results:</blockquote>'
