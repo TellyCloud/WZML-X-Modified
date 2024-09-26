@@ -21,9 +21,8 @@ class WZMLStyle:
     TOKEN_MSG = '''<blockquote><b><u>Generated Temporary Login Token!</u></b>
 <b><code>Temp Token :</code>{token}</b>
 <b><code>Validity   :</code>{validity}</b></blockquote>'''
-    # ---------------------
-    # async def token_callback(_, query): ---> __main__.py
-    ACTIVATED = '<blockquote>✅️ Activated ✅</blockquote>'
+
+   
     # ---------------------
     # async def login(_, message): --> __main__.py
     LOGGED_IN = '<blockquote><b>Already Bot Login In!</b></blockquote>'
@@ -31,16 +30,8 @@ class WZMLStyle:
     PASS_LOGGED = '<blockquote><b>Bot Permanent Login Successfully!</b></blockquote>'
     LOGIN_USED = '</blockquote><b>Bot Login Usage :</b>\n\n<code>/cmd [password]</code></blockquote>'
     # ---------------------
-    # async def log(_, message): ---> __main__.py
-    LOG_DISPLAY_BT = '📑 Log Display'
-    WEB_PASTE_BT = '📨 Web Paste (SB)'
-    # ---------------------
-    # async def bot_help(client, message): ---> __main__.py
-    BASIC_BT = 'Basic'
-    USER_BT = 'Users'
-    MICS_BT = 'Mics'
-    O_S_BT = 'Owner & Sudos'
-    CLOSE_BT = 'Close'
+b   # async def bot_help(client, message): ---> __main__.py
+
     HELP_HEADER = "<blockquote>㊂ <b><i>Help Guide Menu!</i></b>\n\n<b>NOTE: <i>Click on any CMD to see more minor detalis.</i></b></blockquote>"
 
     # async def stats(client, message):
@@ -57,7 +48,7 @@ class WZMLStyle:
 <b><code>💿Total Disk Write :</code> {disk_write}</b>
     <b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}</blockquote>
     
-    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>   
+    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✅ 𝗣𝗢𝗪𝗘𝗥 𝗕𝗬 𝗧𝗘𝗟𝗟𝗬𝗖𝗟𝗢𝗨𝗗 𝗕𝗢𝗧𝗦 🤖</b></a></blockquote>  
     '''
     SYS_STATS = '''<blockquote>⌬ <b><i>💻OS SYSTEM !</i></b>
 <b><code>⌚OS Uptime    :</code> {os_uptime}</b>
@@ -79,7 +70,7 @@ class WZMLStyle:
 <b><code>Total Core(s)  :</code> {total_core}</b>
 <b><code>Usable CPU(s)  :</code> {cpu_use}</b></blockquote>
 
-    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>
+    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✅ 𝗣𝗢𝗪𝗘𝗥 𝗕𝗬 𝗧𝗘𝗟𝗟𝗬𝗖𝗟𝗢𝗨𝗗 𝗕𝗢𝗧𝗦 🤖</b></a></blockquote>
     '''
     REPO_STATS = '''<blockquote>⌬ <b><i>REPO STATISTICS !</i></b>
 <code><b>Bot Updated    :</b> {last_commit}</code>
@@ -89,7 +80,7 @@ class WZMLStyle:
 
 ⌬ <b>REMARKS :</b> <code>{remarks}</code>
 
-    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>
+    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✅ 𝗣𝗢𝗪𝗘𝗥 𝗕𝗬 𝗧𝗘𝗟𝗟𝗬𝗖𝗟𝗢𝗨𝗗 𝗕𝗢𝗧𝗦 🤖</b></a></blockquote>
     '''
     BOT_LIMITS = '''<blockquote>⌬ <b><i>BOT LIMITATIONS !</i></b>
 <code><b>Direct Limit      :</b> {DL} GB</code>
@@ -106,7 +97,7 @@ class WZMLStyle:
 <code><b>User Parallel Task:</b> {UT}</code>
 <code><b>Bot Parallel Tasks:</b> {BT}</code></blockquote>
 
-     <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>
+     <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✅ 𝗣𝗢𝗪𝗘𝗥 𝗕𝗬 𝗧𝗘𝗟𝗟𝗬𝗖𝗟𝗢𝗨𝗗 𝗕𝗢𝗧𝗦 🤖</b></a></blockquote>
     '''
     # ---------------------
 
@@ -121,7 +112,7 @@ class WZMLStyle:
 <code><b>TimeZone:</b> {timz}</code>
 <code><b>Version :</b> {version}</code></blockquote>
 
-    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>'''
+    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✅ 𝗣𝗢𝗪𝗘𝗥 𝗕𝗬 𝗧𝗘𝗟𝗟𝗬𝗖𝗟𝗢𝗨𝗗 𝗕𝗢𝗧𝗦 🤖</b></a></blockquote>'''
     RESTARTED = '''⌬ <b><i>Bot Restarted!</i></b>'''
     # ---------------------
 
@@ -181,6 +172,14 @@ class WZMLStyle:
     PREVIOUS          =        '⏪ 𝐏𝐫𝐞𝐯𝐢𝐨𝐮𝐬'
     REFRESH           =        'ᴘᴀɢᴇs\n{Page}'
     NEXT              =        '𝐍𝐞𝐱𝐭 ⏩'
+    ACTIVATED         =        '✅️ 𝐀𝐜𝐭𝐢𝐯𝐚𝐭𝐞𝐝 ✅'
+    BASIC_BT          =        '𝐁𝐚𝐬𝐢𝐜'
+    USER_BT           =        '𝐔𝐬𝐞𝐫𝐬'
+    MICS_BT           =        '𝐌𝐢𝐜𝐬'
+    O_S_BT            =        '𝐎𝐰𝐧𝐞𝐫 & 𝐒𝐮𝐝𝐨𝐬'
+    CLOSE_BT          =        '𝐂𝐥𝐨𝐬𝐞'
+    LOG_DISPLAY_BT    =        '📑 𝐋𝐨𝐠 𝐃𝐢𝐬𝐩𝐥𝐚𝐲'
+    WEB_PASTE_BT      =        '📨 𝐖𝐞𝐛 𝐏𝐚𝐬𝐭𝐞 (𝐒𝐁)'
     # ---------------------
     # ---------------------
 
@@ -189,7 +188,7 @@ class WZMLStyle:
     STATUS_NAME       ='<blockquote><b><i>{Name}</i></b></blockquote>\n'
 
     #####---------PROGRESSIVE STATUS-------
-    BAR               ='💫 {Bar}\n'
+    BAR               =' {Bar}\n'
     PROCESSED         ='<b><code>🔄Sync    : </code>{Processed}</b>\n'
     STATUS            ='<b><code>🌐Status  : </code><a href="{Url}">{Status}</a></b>\n'
     ETA               ='<b><code>🍥ETA     : </code>{Eta}</b>\n'
@@ -256,7 +255,7 @@ class WZMLStyle:
 <b>CPU:</b> {cpu}% | <b>F:</b> {free} [{free_p}%]
 <b>RAM:</b> {ram} | <b>UPTIME:</b> {uptime}</blockquote>
 
-    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>
+    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✅ 𝗣𝗢𝗪𝗘𝗥 𝗕𝗬 𝗧𝗘𝗟𝗟𝗬𝗖𝗟𝗢𝗨𝗗 𝗕𝗢𝗧𝗦 🤖</b></a></blockquote>
     '''
     # ---------------------
 
@@ -270,7 +269,7 @@ class WZMLStyle:
 ➲ <u><b>Available Args:</b></u>
 • <b>-s</b> or <b>-set</b>: Set Directly via Arg
 
-    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>'''
+    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✅ 𝗣𝗢𝗪𝗘𝗥 𝗕𝗬 𝗧𝗘𝗟𝗟𝗬𝗖𝗟𝗢𝗨𝗗 𝗕𝗢𝗧𝗦 🤖</b></a></blockquote>'''
 
     UNIVERSAL = '''<blockquote>㊂ <b><u>Universal Settings : {NAME}</u></b>
 
@@ -282,7 +281,7 @@ class WZMLStyle:
 <code><b>🕵️Save Mode     :</b> {SAVE_MODE}</code>
 <code><b>✉️User Bot PM   :</b> {BOT_PM}</code><blockquote>
 
-    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>'''
+    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✅ 𝗣𝗢𝗪𝗘𝗥 𝗕𝗬 𝗧𝗘𝗟𝗟𝗬𝗖𝗟𝗢𝗨𝗗 𝗕𝗢𝗧𝗦 🤖</b></a></blockquote>'''
 
     MIRROR = '''<blockquote>㊂ <b><u>Mirror/Clone Settings : {NAME}</u></b>
 
@@ -295,7 +294,7 @@ class WZMLStyle:
 <code><b>📝TotalUserTD(s):</b> <i>{USERTD}</i></code>
 <code><b>☁️Daily Mirror  :</b> {DM}</code> per day</blockquote>
 
-<blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>'''
+<blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✅ 𝗣𝗢𝗪𝗘𝗥 𝗕𝗬 𝗧𝗘𝗟𝗟𝗬𝗖𝗟𝗢𝗨𝗗 𝗕𝗢𝗧𝗦 🤖</b></a></blockquote>'''
 
     LEECH = '''<blockquote>㊂ <b><u>Leech Settings for {NAME}</u></b>
 
@@ -311,4 +310,4 @@ class WZMLStyle:
 <code><b>📦Leech Dumps     :</b> {LDUMP}</code>
 <code><b>🌈Leech Remname   :</b> {LREMNAME}</code></blockquote>
 
-    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✩ ✅ ₱Ø₩ɆⱤ ฿Ɏ ₮ɆⱠⱠɎ₵ⱠØɄĐ ฿Ø₮₴ 🤖 </b></a></blockquote>'''
+    <blockquote><a href="https://t.me/TELLYCLOUD_Bots"><b>✅ 𝗣𝗢𝗪𝗘𝗥 𝗕𝗬 𝗧𝗘𝗟𝗟𝗬𝗖𝗟𝗢𝗨𝗗 𝗕𝗢𝗧𝗦 🤖</b></a></blockquote>'''
