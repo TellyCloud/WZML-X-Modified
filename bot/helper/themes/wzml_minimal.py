@@ -30,10 +30,34 @@ class WZMLStyle:
     PASS_LOGGED = '<blockquote><b>Bot Permanent Login Successfully!</b></blockquote>'
     LOGIN_USED = '</blockquote><b>Bot Login Usage :</b>\n\n<code>/cmd [password]</code></blockquote>'
     # ---------------------
-   # async def bot_help(client, message): ---> __main__.py
+    # async def bot_help(client, message): ---> __main__.py
 
     HELP_HEADER = "<blockquote>㊂ <b><i>Help Guide Menu!</i></b>\n\n<b>NOTE: <i>Click on any CMD to see more minor detalis.</i></b></blockquote>"
-
+    # ----- BUTTONS -------
+    CLOUD_LINK        =        '☁️ 𝐂𝐥𝐨𝐮𝐝 \n𝐋𝐢𝐧𝐤'
+    SAVE_MSG          =        '📨 𝐒𝐚𝐯𝐞 \n𝐌𝐞𝐬𝐬𝐚𝐠𝐞'
+    RCLONE_LINK       =        '♻️ 𝐑𝐂𝐥𝐨𝐧𝐞 \n𝐋𝐢𝐧𝐤'
+    DDL_LINK          =        '📎 {Serv} \n𝐋𝐢𝐧𝐤'
+    SOURCE_URL        =        '🔐 𝐒𝐨𝐮𝐫𝐜𝐞 \n𝐋𝐢𝐧𝐤'
+    INDEX_LINK_F      =        '🗂 𝐈𝐧𝐝𝐞𝐱 \n𝐋𝐢𝐧𝐤'
+    INDEX_LINK_D      =        '⚡ 𝐈𝐧𝐝𝐞𝐱 \n𝐋𝐢𝐧𝐤'
+    VIEW_LINK         =        '🌐 𝐕𝐢𝐞𝐰 \n𝐋𝐢𝐧𝐤'
+    CHECK_PM          =        '📥 𝐕𝐢𝐞𝐰 𝐢𝐧 𝐁𝐨𝐭 𝐏𝐌'
+    CHECK_LL          =        '🖇 𝐕𝐢𝐞𝐰 𝐢𝐧 \n 𝐋𝐢𝐧𝐤𝐬 𝐋𝐨𝐠'
+    MEDIAINFO_LINK    =        '📃 𝐌𝐞𝐝𝐢𝐚𝐈𝐧𝐟𝐨'
+    SCREENSHOTS       =        '🖼 𝐒𝐜𝐫𝐞𝐞𝐧𝐒𝐡𝐨𝐭𝐬'
+    PREVIOUS          =        '⏪ 𝐏𝐫𝐞𝐯𝐢𝐨𝐮𝐬'
+    REFRESH           =        'ᴘᴀɢᴇs\n{Page}'
+    NEXT              =        '𝐍𝐞𝐱𝐭 ⏩'
+    ACTIVATED         =        '✅️ 𝐀𝐜𝐭𝐢𝐯𝐚𝐭𝐞𝐝 ✅'
+    BASIC_BT          =        '𝐁𝐚𝐬𝐢𝐜'
+    USER_BT           =        '𝐔𝐬𝐞𝐫𝐬'
+    MICS_BT           =        '𝐌𝐢𝐜𝐬'
+    O_S_BT            =        '𝐎𝐰𝐧𝐞𝐫 & 𝐒𝐮𝐝𝐨𝐬'
+    CLOSE_BT          =        '𝐂𝐥𝐨𝐬𝐞'
+    LOG_DISPLAY_BT    =        '📑 𝐋𝐨𝐠 𝐃𝐢𝐬𝐩𝐥𝐚𝐲'
+    WEB_PASTE_BT      =        '📨 𝐖𝐞𝐛 𝐏𝐚𝐬𝐭𝐞 (𝐒𝐁)'
+    # ---------------------
     # async def stats(client, message):
     BOT_STATS = '''<blockquote>⌬ <b><i>BOT STATISTICS !</i></b>
 <b><code>🟢Bot Uptime      :</code> {bot_uptime}</b>
@@ -147,7 +171,7 @@ class WZMLStyle:
     L_CC              ='<b><code>👤User By : </code>{Tag}</b>\n\n'
     PM_BOT_MSG        ='<blockquote>➲ <b><i>File(s) have been Sent above</i></b></blockquote>'
     L_BOT_MSG         ='<blockquote>➲ <b><i>File(s) have been Sent to Bot PM (Private)</i></b></blockquote>'
-    L_LL_MSG          ='<blockquote>➲ <b><i>File(s) have been Sent. Access via Links...</i></b></blockquote>\n'
+    L_LL_MSG          ='<blockquote>➲ <b><i> LOVE YOU </i></b></blockquote>\n'
     
     # ----- MIRROR -------
     M_TYPE            ='<b><code>🔡Type     : </code>{Mimetype}</b>\n'
@@ -156,31 +180,7 @@ class WZMLStyle:
     RCPATH            ='<b><code>📃Path     : </code>{RCpath}</b>\n'
     M_CC              ='<b><code>👤By       : </code>{Tag}</b>\n\n'
     M_BOT_MSG         ='<blockquote>➲ <b><i>Link(s) have been Sent to Bot PM (Private)</i></b></blockquote>'
-    # ----- BUTTONS -------
-    CLOUD_LINK        =        '☁️ 𝐂𝐥𝐨𝐮𝐝 \n𝐋𝐢𝐧𝐤'
-    SAVE_MSG          =        '📨 𝐒𝐚𝐯𝐞 \n𝐌𝐞𝐬𝐬𝐚𝐠𝐞'
-    RCLONE_LINK       =        '♻️ 𝐑𝐂𝐥𝐨𝐧𝐞 \n𝐋𝐢𝐧𝐤'
-    DDL_LINK          =        '📎 {Serv} \n𝐋𝐢𝐧𝐤'
-    SOURCE_URL        =        '🔐 𝐒𝐨𝐮𝐫𝐜𝐞 \n𝐋𝐢𝐧𝐤'
-    INDEX_LINK_F      =        '🗂 𝐈𝐧𝐝𝐞𝐱 \n𝐋𝐢𝐧𝐤'
-    INDEX_LINK_D      =        '⚡ 𝐈𝐧𝐝𝐞𝐱 \n𝐋𝐢𝐧𝐤'
-    VIEW_LINK         =        '🌐 𝐕𝐢𝐞𝐰 \n𝐋𝐢𝐧𝐤'
-    CHECK_PM          =        '📥 𝐕𝐢𝐞𝐰 𝐢𝐧 \n 𝐁𝐨𝐭 𝐏𝐌'
-    CHECK_LL          =        '🖇 𝐕𝐢𝐞𝐰 𝐢𝐧 \n 𝐋𝐢𝐧𝐤𝐬 𝐋𝐨𝐠'
-    MEDIAINFO_LINK    =        '📃 𝐌𝐞𝐝𝐢𝐚𝐈𝐧𝐟𝐨'
-    SCREENSHOTS       =        '🖼 𝐒𝐜𝐫𝐞𝐞𝐧𝐒𝐡𝐨𝐭𝐬'
-    PREVIOUS          =        '⏪ 𝐏𝐫𝐞𝐯𝐢𝐨𝐮𝐬'
-    REFRESH           =        'ᴘᴀɢᴇs\n{Page}'
-    NEXT              =        '𝐍𝐞𝐱𝐭 ⏩'
-    ACTIVATED         =        '✅️ 𝐀𝐜𝐭𝐢𝐯𝐚𝐭𝐞𝐝 ✅'
-    BASIC_BT          =        '𝐁𝐚𝐬𝐢𝐜'
-    USER_BT           =        '𝐔𝐬𝐞𝐫𝐬'
-    MICS_BT           =        '𝐌𝐢𝐜𝐬'
-    O_S_BT            =        '𝐎𝐰𝐧𝐞𝐫 & 𝐒𝐮𝐝𝐨𝐬'
-    CLOSE_BT          =        '𝐂𝐥𝐨𝐬𝐞'
-    LOG_DISPLAY_BT    =        '📑 𝐋𝐨𝐠 𝐃𝐢𝐬𝐩𝐥𝐚𝐲'
-    WEB_PASTE_BT      =        '📨 𝐖𝐞𝐛 𝐏𝐚𝐬𝐭𝐞 (𝐒𝐁)'
-    # ---------------------
+
     # ---------------------
 
     # def get_readable_message(): ---> bot_utilis.py
