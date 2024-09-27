@@ -617,7 +617,7 @@ class MirrorLeechListener:
             if self.sameDir and self.uid in self.sameDir['tasks']:
                 self.sameDir['tasks'].remove(self.uid)
                 self.sameDir['total'] -= 1
-        msg = f'''<i><b>Download Stopped!</b></i>
+        msg = f'''<blockquote><i><b>Download Stopped!</b></i></blockquote>
 🌐 <b><code>Task for:</code></b> {self.tag}
 🍥 <b><code>Due To  :</code></b> {escape(error)}
 💠 <b><code>Mode    :</code></b> {self.upload_details['mode']}
@@ -654,7 +654,7 @@ class MirrorLeechListener:
             if self.uid in download_dict.keys():
                 del download_dict[self.uid]
             count = len(download_dict)
-        msg = f'''<i><b>Upload Stopped!</b></i>
+        msg = f'''<blockquote><i><b>Upload Stopped!</b></i></blockquote>
 🌐 <b><code>Task for:</code></b> {self.tag}
 🍥 <b><code>Due To  :</code></b> {escape(error)}
 💠 <b><code>Mode    :</code></b> {self.upload_details['mode']}
