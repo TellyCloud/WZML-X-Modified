@@ -211,7 +211,7 @@ def get_readable_message():
         msg_link = download.message.link if download.message.chat.type in [
             ChatType.SUPERGROUP, ChatType.CHANNEL] and not config_dict['DELETE_LINKS'] else ''
         elapsed = time() - download.message.date.timestamp()
-        msg += BotTheme('STATUS_NAME', Name="​🇹​​🇦​​🇸​​🇰​ ​🇮​​🇸​ ​🇧​​🇪​​🇮​​🇳​​🇬​ ​🇵​​🇷​​🇴​​🇨​​🇪​​🇸​​🇸​​🇮​​🇳​​🇬!" if config_dict['SAFE_MODE'] and elapsed >= config_dict['STATUS_UPDATE_INTERVAL'] else escape(f'{download.name()}'))
+        msg += BotTheme('STATUS_NAME', Name="​TASK IS BEING PROCESSING !" if config_dict['SAFE_MODE'] and elapsed >= config_dict['STATUS_UPDATE_INTERVAL'] else escape(f'{download.name()}'))
         if download.status() not in [MirrorStatus.STATUS_SPLITTING, MirrorStatus.STATUS_SEEDING]:
             msg += BotTheme('BAR', Bar=f"<b>[{get_progress_bar_string(download.progress())}]</b> » <b>{download.progress()}</b>")
             msg += BotTheme('PROCESSED', Processed=f"{download.processed_bytes()} of {download.size()}")
