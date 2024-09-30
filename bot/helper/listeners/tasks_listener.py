@@ -421,7 +421,7 @@ class MirrorLeechListener:
         user_id = self.message.from_user.id
         name, _ = await format_filename(name, user_id, isMirror=not self.isLeech)
         user_dict = user_data.get(user_id, {})
-        msg = BotTheme('NAME', Name="​𝗧𝗮𝘀𝗸 𝗵𝗮𝘀 𝗯𝗲𝗲𝗻 𝗖𝗼𝗺𝗽𝗹𝗲𝘁𝗲𝗱!"if config_dict['SAFE_MODE'] and self.isSuperGroup else escape(name))
+        msg = BotTheme('NAME', Name="Task Has Been Completed!"if config_dict['SAFE_MODE'] and self.isSuperGroup else escape(name))
         msg += BotTheme('SIZE', Size=get_readable_file_size(size))
         msg += BotTheme('ELAPSE', Time=get_readable_time(time() - self.message.date.timestamp()))
         msg += BotTheme('MODE', Mode=self.upload_details['mode'])
