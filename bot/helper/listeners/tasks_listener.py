@@ -421,7 +421,7 @@ class MirrorLeechListener:
         user_id = self.message.from_user.id
         name, _ = await format_filename(name, user_id, isMirror=not self.isLeech)
         user_dict = user_data.get(user_id, {})
-        msg = BotTheme('NAME', Name="Task has been Completed!"if config_dict['SAFE_MODE'] and self.isSuperGroup else escape(name))
+        msg = BotTheme('NAME', Name="​🇹​​🇦​​🇸​​🇰​ ​🇭​​🇦​​🇸​ ​🇧​​🇪​​🇪​​🇳​ ​🇨​​🇴​​🇲​​🇵​​🇱​​🇪​​🇹​​🇪​​🇩​❗"if config_dict['SAFE_MODE'] and self.isSuperGroup else escape(name))
         msg += BotTheme('SIZE', Size=get_readable_file_size(size))
         msg += BotTheme('ELAPSE', Time=get_readable_time(time() - self.message.date.timestamp()))
         msg += BotTheme('MODE', Mode=self.upload_details['mode'])
@@ -450,7 +450,7 @@ class MirrorLeechListener:
                 if self.isSuperGroup and not self.isPM:
                     message += BotTheme('L_LL_MSG')
                 elif self.isSuperGroup and self.isPM:
-                    message += BotTheme('L_LL_MSG')
+                   # message += BotTheme('L_LL_MSG')
                     message += BotTheme('L_BOT_MSG')
                     buttons.ibutton(BotTheme('CHECK_PM'), f"wzmlx {user_id} botpm", 'header')
                 if config_dict['SAFE_MODE'] and self.isSuperGroup:
