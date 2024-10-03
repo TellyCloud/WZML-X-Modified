@@ -117,87 +117,66 @@ MIRROR_HELP_MESSAGE = ["""<blockquote><i>Send links/files along with cmd or repl
 19. <b>-ud or -dump :</b> Dump category to Upload, Specific Name (case insensitive) or chat_id or chat_username
 20. <b>-ss or -screenshots :</b> Generate Screenshots for Leeched Files
 21. <b>-t or -thumb :</b> Custom Thumb for Specific Leech </blockquote>
-
-<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
-""", """
 <blockquote>➲ <b><i>By along the cmd</i></b>:
 <code>/cmd</code> link -n new name</blockquote>
-
 <blockquote>➲ <b><i>By replying to link/file</i></b>:
 <code>/cmd</code> -n new name -z -e -up upload_destination </blockquote>
-
 <blockquote>➲ <b><i>Custom New Name</i></b>: -n or -name
 <code>/cmd</code> link -n new name
 <b>NOTES</b>: Doesn't work with torrents. </blockquote>
-
 <blockquote>➲ <b><i>Direct Link Authorization</i></b>: -u -p or -user -pass
 <code>/cmd</code> link -u username -p password </blockquote>
- 
 <blockquote>➲ <b><i>Direct link custom headers</i></b>: -h or -headers
 <code>/cmd</code> link -h key: value key1: value1 </blockquote>
-
 <blockquote>➲ <b><i>Screenshot Generation</b>: -ss or -screenshots
 <code>/cmd</code> link -ss number ,Screenshots for each Video File </blockquote>
-
+<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
+""", """
 <blockquote>➲ <b><i>Custom Thumbnail</b>: -t or -thumb
 <code>/cmd</code> link -t tglink|dl_link
 <b>Direct Link:</b> dl_link specifies download link, where it is Image url
 <b>Tg Link:</b> Give Public/Private/Super Link to download Image from Tg </blockquote>
-
 <blockquote>➲ <b><i>Extract / Zip</i></b>: -uz -z or -zip -unzip or -e -extract
 <code>/cmd</code> link -e password (extract password protected)
 <code>/cmd</code> link -z password (zip password protected)
 <code>/cmd</code> link -z password -e (extract and zip password protected)
 <code>/cmd</code> link -e password -z password (extract password protected and zip password protected)
 <b>NOTES:</b> When both extract and zip added with cmd it will extract first and then zip, so always extract first </blockquote>
-
 <blockquote>➲ <b><i>qBittorrent selection</i></b>: -s or -select
 <code>/cmd</code> link -s or by replying to file/link </blockquote>
-
 <blockquote> ➲ <b><i>qBittorrent / Aria2 Seed</i></b>: -d or -seed
 <code>/cmd</code> link -d ratio:seed_time or by replying to file/link
 To specify ratio and seed time add -d ratio:time. Ex: -d 0.7:10 (ratio and time) or -d 0.7 (only ratio) or -d :10 (only time) where time in minutes. </blockquote>
 <blockquote> ➲ <b><i>Multi links only by replying to first link/file</i></b>: -i
 <code>/cmd</code> -i 10(number of links/files) </blockquote>
-
 <blockquote>➲ <b><i>Multi links within same upload directory only by replying to first link/file</i></b>: -m or -sd or -samedir
 <code>/cmd</code> -i 10(number of links/files) -m folder name (multi message)
 <code>/cmd</code> -b -m folder name (bulk-message/file) </blockquote>
-
 <blockquote>➲ <b><i>Upload Custom Drive:</i></b> -id & -index(Optional)
 <code>/{cmd}</code> -id <code>drive_folder_link</code> or <code>drive_id</code> -index <code>https://example.com/0:</code>
 Here, drive_id must be folder id or folder link and index must be url else it will not accept. </blockquote>
- 
 <blockquote>➲ <b><i>Custom Category Select:</i></b> -c or -category
 <code>/{cmd}</code> -c <code>category_name</code>
 This works for both Bot Categories as well as UserTDs (if enabled)
 You can also select Drive Upload from Buttons if having more than 1 and this arg not specified </blockquote>
-
 <blockquote>➲ <b><i>Custom Dump Select:</i></b> -ud or -dump
 <code>/{cmd}</code> -ud <code>dump_name</code> or <code>@username</code> or <code>-100xxxxxx chat_id</code> or all
 You can also select Dump Chat from Buttons if having more than 1 and this arg not specified
 You -ud all for Uploading in all Dump Chats of yours
 Make Sure Bot is already Admin else it will not accept. </blockquote>
-
-<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
-""", """
-
 <blockquote> ➲ <b><i>Custom Upload</i></b>: -up or -upload
 <code>/cmd</code> link -up <code>rcl</code> (To select rclone config, remote and path)
 <code>/cmd</code> link -up <code>ddl</code>
 You can directly add the upload path: -up remote:dir/subdir 
-
 If DEFAULT_UPLOAD is `rc` then you can pass up: `gd` to upload using gdrive tools to GDRIVE_ID.
 If DEFAULT_UPLOAD is `gd` then you can pass up: `rc` to upload to RCLONE_PATH.
 If DEFAULT_UPLOAD is `ddl` then you can pass up: `rc` or `gd` to upload to RCLONE_PATH or GDRIVE_ID
 If you want to add path manually from your config (uploaded from usetting) add <code>mrcc:</code> before the path without space
 <code>/cmd</code> link -up <code>mrcc:</code>main:dump </blockquote>
-
 <blockquote>➲ <b><i>RClone Flags</i></b>: -rcf
 <code>/cmd</code> link|path|rcl -up path|rcl -rcf --buffer-size:8M|--drive-starred-only|key|key:value
 This will override all other flags except --exclude
 Check here all <a href='https://rclone.org/flags/'>RcloneFlags</a>. </blockquote>
-
 <blockquote>➲ <b><i>Bulk Download</i></b>: -b or -bulk
 Bulk can be used by text message and by replying to text file contains links seperated by new line.
 You can use it only by reply to message(text/file).
