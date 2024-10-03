@@ -74,6 +74,8 @@ You can also select Dump Chat from Buttons if having more than 1 and this arg no
 You -ud all for Uploading in all Dump Chats of yours
 Make Sure Bot is already Admin else it will not accept. </blockquote>
 
+<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
+""", """
 <blockquote>➲ <b><i>Upload</i></b>: -up or -upload
 <code>/cmd</code> link -up <code>rcl</code> (To select rclone config, remote and path)
 <code>/cmd</code> link -up <code>ddl</code>
@@ -195,6 +197,9 @@ You can also select Dump Chat from Buttons if having more than 1 and this arg no
 You -ud all for Uploading in all Dump Chats of yours
 Make Sure Bot is already Admin else it will not accept. </blockquote>
 
+<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
+""", """
+
 <blockquote> ➲ <b><i>Custom Upload</i></b>: -up or -upload
 <code>/cmd</code> link -up <code>rcl</code> (To select rclone config, remote and path)
 <code>/cmd</code> link -up <code>ddl</code>
@@ -206,8 +211,6 @@ If DEFAULT_UPLOAD is `ddl` then you can pass up: `rc` or `gd` to upload to RCLON
 If you want to add path manually from your config (uploaded from usetting) add <code>mrcc:</code> before the path without space
 <code>/cmd</code> link -up <code>mrcc:</code>main:dump </blockquote>
 
-<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
-""", """
 <blockquote>➲ <b><i>RClone Flags</i></b>: -rcf
 <code>/cmd</code> link|path|rcl -up path|rcl -rcf --buffer-size:8M|--drive-starred-only|key|key:value
 This will override all other flags except --exclude
@@ -225,6 +228,8 @@ link3 -uz -n new name -up remote2:path2
 Reply to this example by this cmd <code>/cmd</code> -b(bulk)
 You can set start and end of the links from the bulk like seed, with -b start:end or only end by -b :end or only start by -b start. The default start is from zero(first link) to inf. </blockquote>
 
+<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
+""", """
 <blockquote>➲ <b><i>Join Splitted Files</i></b>: -j or -join
 This option will only work before extract and zip, so mostly it will be used with -m argument (samedir)
 This option is not Merging of Two links/files.
