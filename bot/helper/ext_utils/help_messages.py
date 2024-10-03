@@ -20,78 +20,62 @@ YT_HELP_MESSAGE = ["""<blockquote><i>Send links/files along with cmd or reply to
 13. <b>-ud or -dump :</b> Dump category to Upload, Specific Name (case insensitive) or chat_id or chat_username
 14. <b>-ss or -screenshots :</b> Generate Screenshots for Leeched Files
 15. <b>-t or -thumb :</b> Custom Thumb for Specific Leech </blockquote>
-""", """
 <blockquote>➲ <b><i>Send link along with command line</i></b>:
 <code>/cmd</code> link -s -n new name -opt x:y|x1:y1 </blockquote>
-
 <blockquote>➲ <b><i>By replying to link</i></b>:
 <code>/cmd</code> -n  new name -z password -opt x:y|x1:y1 </blockquote>
-
 <blockquote>➲ <b><i>New Name</i></b>: -n or -name
 <code>/cmd</code> link -n new name
 <b>Note:</b> Don't add file extension</blockquote>
-
 <blockquote>➲ <b><i>Screenshot Generation</b>: -ss or -screenshots
 <code>/cmd</code> link -ss number ,Screenshots for each Video File </blockquote>
-
 <blockquote>➲ <b><i>Custom Thumbnail</b>: -t or -thumb
 <code>/cmd</code> link -t tglink|dl_link
 <b>Direct Link:</b> dl_link specifies download link, where it is Image url
 <b>Tg Link:</b> Give Public/Private/Super Link to download Image from Tg </blockquote>
-
 <blockquote>➲ <b><i>Quality Buttons</i></b>: -s or -select
 Incase default quality added from yt-dlp options using format option and you need to select quality for specific link or links with multi links feature.
 <code>/cmd</code> link -s </blockquote>
-
 <blockquote>➲ <b<i>Zip files (with/without pass)</i></b>: -z or -zip password
 <code>/cmd</code> link -z (zip)
 <code>/cmd</code> link -z password (zip password protected) </blockquote>
-
 <blockquote>➲ <b><i>Options</i></b>: -opt or -options
 <code>/cmd</code> link -opt playliststart:^10|fragment_retries:^inf|matchtitle:S13|writesubtitles:true|live_from_start:true|postprocessor_args:{"ffmpeg": ["-threads", "4"]}|wait_for_video:(5, 100)
 <b>Note:</b> Add `^` before integer or float, some values must be numeric and some string.
 Like playlist_items:10 works with string, so no need to add `^` before the number but playlistend works only with integer so you must add `^` before the number like example above.
 You can add tuple and dict also. Use double quotes inside dict. </blockquote>
-
 <blockquote>➲ <b><i>Multi links only by replying to first link</i></b>: -i
 <code>/cmd</code> -i 10(number of links) </blockquote>
-
 <blockquote>➲ <b><i>Multi links within same upload directory only by replying to first link</i></b>: -m or -sd or -samedir
 <code>/cmd</code> -i 10(number of links) -m folder name </blockquote>
 
+<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
+""", """
 <blockquote>➲ <b><i>Upload Custom Drive:</i></b> -id & -index(Optional)
 <code>/{cmd}</code> -id <code>drive_folder_link</code> or <code>drive_id</code> -index <code>https://example.com/0:</code>
 Here, drive_id must be folder id or folder link and index must be url else it will not accept. </blockquote>
-
 <blockquote>➲ <b><i>Custom Category Select:</i></b> -c or -category
 <code>/{cmd}</code> -c <code>category_name</code>
 This works for both Bot Categories as well as UserTDs (if enabled)
 You can also select Drive Upload from Buttons if having more than 1 and this arg not specified </blockquote>
-
 <blockquote>➲ <b><i>Custom Dump Select:</i></b> -ud or -dump
 <code>/{cmd}</code> -ud <code>dump_name</code> or <code>@username</code> or <code>-100xxxxxx chat_id</code> or all
 You can also select Dump Chat from Buttons if having more than 1 and this arg not specified
 You -ud all for Uploading in all Dump Chats of yours
 Make Sure Bot is already Admin else it will not accept. </blockquote>
-
-<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
-""", """
 <blockquote>➲ <b><i>Upload</i></b>: -up or -upload
 <code>/cmd</code> link -up <code>rcl</code> (To select rclone config, remote and path)
 <code>/cmd</code> link -up <code>ddl</code>
 You can directly add the upload path: -up remote:dir/subdir 
-
 If DEFAULT_UPLOAD is `rc` then you can pass up: `gd` to upload using gdrive tools to GDRIVE_ID.
 If DEFAULT_UPLOAD is `gd` then you can pass up: `rc` to upload to RCLONE_PATH.
 If DEFAULT_UPLOAD is `ddl` then you can pass up: `rc` or `gd` to upload to RCLONE_PATH or GDRIVE_ID
 If you want to add path manually from your config (uploaded from usetting) add <code>mrcc:</code> before the path without space
 <code>/cmd</code> link -up <code>mrcc:</code>main:dump </blockquote>
-
 <blockquote>➲ <b><i>RClone Flags</i></b>: -rcf
 <code>/cmd</code> link -up path|rcl -rcf --buffer-size:8M|--drive-starred-only|key|key:value
 This will override all other flags except --exclude
 Check here all <a href='https://rclone.org/flags/'>RcloneFlags</a>. </blockquote>
-
 <blockquote>➲ <b><i>Bulk Download</i></b>: -b or -bulk
 Bulk can be used by text message and by replying to text file contains links seperated by new line.
 You can use it only by reply to message(text/file).
@@ -100,12 +84,10 @@ All options should be along with link!
 link1 -n new name -up remote1:path1 -rcf |key:value|key:value
 link2 -z -n new name -up remote2:path2
 link3 -z -n new name -opt ytdlpoptions </blockquote>
-
 <blockquote><b>Note:</b> You can't add -m arg for some links only, do it for all links or use multi without bulk!
 link pswd: pass(zip) opt: ytdlpoptions up: remote2:path2
 Reply to this example by this cmd <code>/cmd</code> b(bulk)
 You can set start and end of the links from the bulk with -b start:end or only end by -b :end or only start by -b start. The default start is from zero(first link) to inf.
-
 ➲ <b>NOTES:</b>
 Check all yt-dlp API options from this <a href='https://github.com/yt-dlp/yt-dlp/blob/master/yt_dlp/YoutubeDL.py#L184'>FILE</a></blockquote>
 
