@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 from bot.helper.telegram_helper.bot_commands import BotCommands
 
-YT_HELP_MESSAGE = ["""<blockquote><i>Send links/files along with cmd or reply to cmd to mirror or leech ytdl supported stes on Telegram or GDrive or DDLs with different Engines like RClone or yt-dlp</i>
-
+YT_HELP_MESSAGE = ["""<blockquote expandable><i>Send links/files along with cmd or reply to cmd to mirror or leech ytdl supported stes on Telegram or GDrive or DDLs with different Engines like RClone or yt-dlp</i></blockquote>
 ➲ <b><u>Available Args</u></b>:
-
-1.  <b>-n or -name :</b> Rename file.
+<blockquote expandable>1.  <b>-n or -name :</b> Rename file.
 2.  <b>-z or -zip :</b> Zip files or Links
 3.  <b>-up or -upload :</b> Upload to your Drive or RClone or DDL
 4.  <b>-b or -bulk :</b> Download bulk links.
@@ -19,102 +17,84 @@ YT_HELP_MESSAGE = ["""<blockquote><i>Send links/files along with cmd or reply to
 12. <b>-c or -category :</b> Gdrive category to Upload, Specific Name (case insensitive)
 13. <b>-ud or -dump :</b> Dump category to Upload, Specific Name (case insensitive) or chat_id or chat_username
 14. <b>-ss or -screenshots :</b> Generate Screenshots for Leeched Files
-15. <b>-t or -thumb :</b> Custom Thumb for Specific Leech
-""", """
-➲ <b><i>Send link along with command line</i></b>:
-<code>/cmd</code> link -s -n new name -opt x:y|x1:y1
-
-➲ <b><i>By replying to link</i></b>:
-<code>/cmd</code> -n  new name -z password -opt x:y|x1:y1
-
-➲ <b><i>New Name</i></b>: -n or -name
+15. <b>-t or -thumb :</b> Custom Thumb for Specific Leech </blockquote>
+<blockquote expandable>➲ <b><i>Send link along with command line</i></b>:
+<code>/cmd</code> link -s -n new name -opt x:y|x1:y1 </blockquote>
+<blockquote expandable>➲ <b><i>By replying to link</i></b>:
+<code>/cmd</code> -n  new name -z password -opt x:y|x1:y1 </blockquote>
+<blockquote expandable>➲ <b><i>New Name</i></b>: -n or -name
 <code>/cmd</code> link -n new name
-<b>Note:</b> Don't add file extension
-
-➲ <b><i>Screenshot Generation</b>: -ss or -screenshots
-<code>/cmd</code> link -ss number ,Screenshots for each Video File
-
-➲ <b><i>Custom Thumbnail</b>: -t or -thumb
+<b>Note:</b> Don't add file extension</blockquote>
+<blockquote expandable>➲ <b><i>Screenshot Generation</b>: -ss or -screenshots
+<code>/cmd</code> link -ss number ,Screenshots for each Video File </blockquote>
+<blockquote expandable>➲ <b><i>Custom Thumbnail</b>: -t or -thumb
 <code>/cmd</code> link -t tglink|dl_link
 <b>Direct Link:</b> dl_link specifies download link, where it is Image url
-<b>Tg Link:</b> Give Public/Private/Super Link to download Image from Tg
-
-➲ <b><i>Quality Buttons</i></b>: -s or -select
+<b>Tg Link:</b> Give Public/Private/Super Link to download Image from Tg </blockquote>
+<blockquote expandable>➲ <b><i>Quality Buttons</i></b>: -s or -select
 Incase default quality added from yt-dlp options using format option and you need to select quality for specific link or links with multi links feature.
-<code>/cmd</code> link -s
-
-➲ <b<i>Zip files (with/without pass)</i></b>: -z or -zip password
+<code>/cmd</code> link -s </blockquote>
+<blockquote expandable>➲ <b<i>Zip files (with/without pass)</i></b>: -z or -zip password
 <code>/cmd</code> link -z (zip)
-<code>/cmd</code> link -z password (zip password protected)
-
-➲ <b><i>Options</i></b>: -opt or -options
+<code>/cmd</code> link -z password (zip password protected) </blockquote>
+<blockquote expandable>➲ <b><i>Options</i></b>: -opt or -options
 <code>/cmd</code> link -opt playliststart:^10|fragment_retries:^inf|matchtitle:S13|writesubtitles:true|live_from_start:true|postprocessor_args:{"ffmpeg": ["-threads", "4"]}|wait_for_video:(5, 100)
 <b>Note:</b> Add `^` before integer or float, some values must be numeric and some string.
 Like playlist_items:10 works with string, so no need to add `^` before the number but playlistend works only with integer so you must add `^` before the number like example above.
-You can add tuple and dict also. Use double quotes inside dict.
+You can add tuple and dict also. Use double quotes inside dict. </blockquote>
+<blockquote expandable>➲ <b><i>Multi links only by replying to first link</i></b>: -i
+<code>/cmd</code> -i 10(number of links) </blockquote>
+<blockquote expandable>➲ <b><i>Multi links within same upload directory only by replying to first link</i></b>: -m or -sd or -samedir
+<code>/cmd</code> -i 10(number of links) -m folder name </blockquote>
 
-➲ <b><i>Multi links only by replying to first link</i></b>: -i
-<code>/cmd</code> -i 10(number of links)
-
-➲ <b><i>Multi links within same upload directory only by replying to first link</i></b>: -m or -sd or -samedir
-<code>/cmd</code> -i 10(number of links) -m folder name
-
-➲ <b><i>Upload Custom Drive:</i></b> -id & -index(Optional)
+<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
+""", """
+<blockquote expandable>➲ <b><i>Upload Custom Drive:</i></b> -id & -index(Optional)
 <code>/{cmd}</code> -id <code>drive_folder_link</code> or <code>drive_id</code> -index <code>https://example.com/0:</code>
-Here, drive_id must be folder id or folder link and index must be url else it will not accept.
-
-➲ <b><i>Custom Category Select:</i></b> -c or -category
+Here, drive_id must be folder id or folder link and index must be url else it will not accept. </blockquote>
+<blockquote expandable>➲ <b><i>Custom Category Select:</i></b> -c or -category
 <code>/{cmd}</code> -c <code>category_name</code>
 This works for both Bot Categories as well as UserTDs (if enabled)
-You can also select Drive Upload from Buttons if having more than 1 and this arg not specified
-
-➲ <b><i>Custom Dump Select:</i></b> -ud or -dump
+You can also select Drive Upload from Buttons if having more than 1 and this arg not specified </blockquote>
+<blockquote expandable>➲ <b><i>Custom Dump Select:</i></b> -ud or -dump
 <code>/{cmd}</code> -ud <code>dump_name</code> or <code>@username</code> or <code>-100xxxxxx chat_id</code> or all
 You can also select Dump Chat from Buttons if having more than 1 and this arg not specified
 You -ud all for Uploading in all Dump Chats of yours
-Make Sure Bot is already Admin else it will not accept.
-
-➲ <b><i>Upload</i></b>: -up or -upload
+Make Sure Bot is already Admin else it will not accept. </blockquote>
+<blockquote expandable>➲ <b><i>Upload</i></b>: -up or -upload
 <code>/cmd</code> link -up <code>rcl</code> (To select rclone config, remote and path)
 <code>/cmd</code> link -up <code>ddl</code>
-You can directly add the upload path: -up remote:dir/subdir
-
+You can directly add the upload path: -up remote:dir/subdir 
 If DEFAULT_UPLOAD is `rc` then you can pass up: `gd` to upload using gdrive tools to GDRIVE_ID.
 If DEFAULT_UPLOAD is `gd` then you can pass up: `rc` to upload to RCLONE_PATH.
 If DEFAULT_UPLOAD is `ddl` then you can pass up: `rc` or `gd` to upload to RCLONE_PATH or GDRIVE_ID
 If you want to add path manually from your config (uploaded from usetting) add <code>mrcc:</code> before the path without space
-<code>/cmd</code> link -up <code>mrcc:</code>main:dump
-
-➲ <b><i>RClone Flags</i></b>: -rcf
+<code>/cmd</code> link -up <code>mrcc:</code>main:dump </blockquote>
+<blockquote expandable>➲ <b><i>RClone Flags</i></b>: -rcf
 <code>/cmd</code> link -up path|rcl -rcf --buffer-size:8M|--drive-starred-only|key|key:value
 This will override all other flags except --exclude
-Check here all <a href='https://rclone.org/flags/'>RcloneFlags</a>.
-
-➲ <b><i>Bulk Download</i></b>: -b or -bulk
+Check here all <a href='https://rclone.org/flags/'>RcloneFlags</a>. </blockquote>
+<blockquote expandable>➲ <b><i>Bulk Download</i></b>: -b or -bulk
 Bulk can be used by text message and by replying to text file contains links seperated by new line.
 You can use it only by reply to message(text/file).
 All options should be along with link!
 <b>Example:</b>
 link1 -n new name -up remote1:path1 -rcf |key:value|key:value
 link2 -z -n new name -up remote2:path2
-link3 -z -n new name -opt ytdlpoptions
-
-<b>Note:</b> You can't add -m arg for some links only, do it for all links or use multi without bulk!
+link3 -z -n new name -opt ytdlpoptions </blockquote>
+<blockquote expandable><b>Note:</b> You can't add -m arg for some links only, do it for all links or use multi without bulk!
 link pswd: pass(zip) opt: ytdlpoptions up: remote2:path2
 Reply to this example by this cmd <code>/cmd</code> b(bulk)
 You can set start and end of the links from the bulk with -b start:end or only end by -b :end or only start by -b start. The default start is from zero(first link) to inf.
-
 ➲ <b>NOTES:</b>
 Check all yt-dlp API options from this <a href='https://github.com/yt-dlp/yt-dlp/blob/master/yt_dlp/YoutubeDL.py#L184'>FILE</a></blockquote>
 
 <a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
 """]
 
-MIRROR_HELP_MESSAGE = ["""<blockquote><i>Send links/files along with cmd or reply to cmd to mirror or leech on Telegram or GDrive or DDLs with different Engines like RClone, Aria2 or qBit</i>
-
+MIRROR_HELP_MESSAGE = ["""<blockquote expandable><i>Send links/files along with cmd or reply to cmd to mirror or leech on Telegram or GDrive or DDLs with different Engines like RClone, Aria2 or qBit</i></blockquote>
 ➲ <b><u>Available Args</u></b>:
-
-1.  <b>-n or -name :</b> Rename file.
+<blockquote expandable>1.  <b>-n or -name :</b> Rename file.
 2.  <b>-z or -zip :</b> Zip files or Links
 3.  <b>-e or -extract or -uz or -unzip :</b> Extract/Unzip files from Archive
 4.  <b>-up or -upload :</b> Upload to your Drive or RClone or DDL
@@ -132,87 +112,69 @@ MIRROR_HELP_MESSAGE = ["""<blockquote><i>Send links/files along with cmd or repl
 18. <b>-c or -category :</b> Gdrive category to Upload, Specific Name (case insensitive)
 19. <b>-ud or -dump :</b> Dump category to Upload, Specific Name (case insensitive) or chat_id or chat_username
 20. <b>-ss or -screenshots :</b> Generate Screenshots for Leeched Files
-21. <b>-t or -thumb :</b> Custom Thumb for Specific Leech</blockquote>
-
-<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
-""", """
-<blockquote>➲ <b><i>By along the cmd</i></b>:
+21. <b>-t or -thumb :</b> Custom Thumb for Specific Leech </blockquote>
+<blockquote expandable>➲ <b><i>By along the cmd</i></b>:
+<code>/cmd</code> link -n new name</blockquote>
+<blockquote expandable>➲ <b><i>By replying to link/file</i></b>:
+<code>/cmd</code> -n new name -z -e -up upload_destination </blockquote>
+<blockquote expandable>➲ <b><i>Custom New Name</i></b>: -n or -name
 <code>/cmd</code> link -n new name
-
-➲ <b><i>By replying to link/file</i></b>:
-<code>/cmd</code> -n new name -z -e -up upload_destination
-
-➲ <b><i>Custom New Name</i></b>: -n or -name
-<code>/cmd</code> link -n new name
-<b>NOTES</b>: Doesn't work with torrents.
-
-➲ <b><i>Direct Link Authorization</i></b>: -u -p or -user -pass
-<code>/cmd</code> link -u username -p password
-
-➲ <b><i>Direct link custom headers</i></b>: -h or -headers
-<code>/cmd</code> link -h key: value key1: value1
-
-➲ <b><i>Screenshot Generation</b>: -ss or -screenshots
-<code>/cmd</code> link -ss number ,Screenshots for each Video File
-
-➲ <b><i>Custom Thumbnail</b>: -t or -thumb
+<b>NOTES</b>: Doesn't work with torrents. </blockquote>
+<blockquote expandable>➲ <b><i>Direct Link Authorization</i></b>: -u -p or -user -pass
+<code>/cmd</code> link -u username -p password </blockquote>
+<blockquote expandable>➲ <b><i>Direct link custom headers</i></b>: -h or -headers
+<code>/cmd</code> link -h key: value key1: value1 </blockquote>
+<blockquote expandable>➲ <b><i>Screenshot Generation</b>: -ss or -screenshots
+<code>/cmd</code> link -ss number ,Screenshots for each Video File </blockquote>
+<blockquote expandable>➲ <b><i>Custom Thumbnail</b>: -t or -thumb
 <code>/cmd</code> link -t tglink|dl_link
 <b>Direct Link:</b> dl_link specifies download link, where it is Image url
-<b>Tg Link:</b> Give Public/Private/Super Link to download Image from Tg
-
-➲ <b><i>Extract / Zip</i></b>: -uz -z or -zip -unzip or -e -extract
+<b>Tg Link:</b> Give Public/Private/Super Link to download Image from Tg </blockquote>
+<blockquote expandable>➲ <b><i>Extract / Zip</i></b>: -uz -z or -zip -unzip or -e -extract
 <code>/cmd</code> link -e password (extract password protected)
 <code>/cmd</code> link -z password (zip password protected)
 <code>/cmd</code> link -z password -e (extract and zip password protected)
 <code>/cmd</code> link -e password -z password (extract password protected and zip password protected)
-<b>NOTES:</b> When both extract and zip added with cmd it will extract first and then zip, so always extract first
+<b>NOTES:</b> When both extract and zip added with cmd it will extract first and then zip, so always extract first </blockquote>
 
-➲ <b><i>qBittorrent selection</i></b>: -s or -select
-<code>/cmd</code> link -s or by replying to file/link
-
-➲ <b><i>qBittorrent / Aria2 Seed</i></b>: -d or -seed
+<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
+""", """
+<blockquote expandable>➲ <b><i>qBittorrent selection</i></b>: -s or -select
+<code>/cmd</code> link -s or by replying to file/link </blockquote>
+<blockquote expandable> ➲ <b><i>qBittorrent / Aria2 Seed</i></b>: -d or -seed
 <code>/cmd</code> link -d ratio:seed_time or by replying to file/link
-To specify ratio and seed time add -d ratio:time. Ex: -d 0.7:10 (ratio and time) or -d 0.7 (only ratio) or -d :10 (only time) where time in minutes.
-
-➲ <b><i>Multi links only by replying to first link/file</i></b>: -i
-<code>/cmd</code> -i 10(number of links/files)
-
-➲ <b><i>Multi links within same upload directory only by replying to first link/file</i></b>: -m or -sd or -samedir
+To specify ratio and seed time add -d ratio:time. Ex: -d 0.7:10 (ratio and time) or -d 0.7 (only ratio) or -d :10 (only time) where time in minutes. </blockquote>
+<blockquote expandable> ➲ <b><i>Multi links only by replying to first link/file</i></b>: -i
+<code>/cmd</code> -i 10(number of links/files) </blockquote>
+<blockquote expandable>➲ <b><i>Multi links within same upload directory only by replying to first link/file</i></b>: -m or -sd or -samedir
 <code>/cmd</code> -i 10(number of links/files) -m folder name (multi message)
-<code>/cmd</code> -b -m folder name (bulk-message/file)
-
-➲ <b><i>Upload Custom Drive:</i></b> -id & -index(Optional)
+<code>/cmd</code> -b -m folder name (bulk-message/file) </blockquote>
+<blockquote expandable>➲ <b><i>Upload Custom Drive:</i></b> -id & -index(Optional)
 <code>/{cmd}</code> -id <code>drive_folder_link</code> or <code>drive_id</code> -index <code>https://example.com/0:</code>
-Here, drive_id must be folder id or folder link and index must be url else it will not accept.
-
-➲ <b><i>Custom Category Select:</i></b> -c or -category
+Here, drive_id must be folder id or folder link and index must be url else it will not accept. </blockquote>
+<blockquote expandable>➲ <b><i>Custom Category Select:</i></b> -c or -category
 <code>/{cmd}</code> -c <code>category_name</code>
 This works for both Bot Categories as well as UserTDs (if enabled)
-You can also select Drive Upload from Buttons if having more than 1 and this arg not specified
-
-➲ <b><i>Custom Dump Select:</i></b> -ud or -dump
+You can also select Drive Upload from Buttons if having more than 1 and this arg not specified </blockquote>
+<blockquote expandable>➲ <b><i>Custom Dump Select:</i></b> -ud or -dump
 <code>/{cmd}</code> -ud <code>dump_name</code> or <code>@username</code> or <code>-100xxxxxx chat_id</code> or all
 You can also select Dump Chat from Buttons if having more than 1 and this arg not specified
 You -ud all for Uploading in all Dump Chats of yours
-Make Sure Bot is already Admin else it will not accept.
-
-➲ <b><i>Custom Upload</i></b>: -up or -upload
+Make Sure Bot is already Admin else it will not accept. </blockquote>
+<blockquote expandable> ➲ <b><i>Custom Upload</i></b>: -up or -upload
 <code>/cmd</code> link -up <code>rcl</code> (To select rclone config, remote and path)
 <code>/cmd</code> link -up <code>ddl</code>
-You can directly add the upload path: -up remote:dir/subdir
-
+You can directly add the upload path: -up remote:dir/subdir 
 If DEFAULT_UPLOAD is `rc` then you can pass up: `gd` to upload using gdrive tools to GDRIVE_ID.
 If DEFAULT_UPLOAD is `gd` then you can pass up: `rc` to upload to RCLONE_PATH.
 If DEFAULT_UPLOAD is `ddl` then you can pass up: `rc` or `gd` to upload to RCLONE_PATH or GDRIVE_ID
 If you want to add path manually from your config (uploaded from usetting) add <code>mrcc:</code> before the path without space
-<code>/cmd</code> link -up <code>mrcc:</code>main:dump
-
-➲ <b><i>RClone Flags</i></b>: -rcf
+<code>/cmd</code> link -up <code>mrcc:</code>main:dump </blockquote>
+<blockquote expandable>➲ <b><i>RClone Flags</i></b>: -rcf
 <code>/cmd</code> link|path|rcl -up path|rcl -rcf --buffer-size:8M|--drive-starred-only|key|key:value
 This will override all other flags except --exclude
-Check here all <a href='https://rclone.org/flags/'>RcloneFlags</a>.
-
-➲ <b><i>Bulk Download</i></b>: -b or -bulk
+Check here all <a href='https://rclone.org/flags/'>RcloneFlags</a>. </blockquote>
+<blockquote expandable>➲ <b><i>Bulk Download</i></b>: -b or -bulk
 Bulk can be used by text message and by replying to text file contains links seperated by new line.
 You can use it only by reply to message(text/file).
 All options should be along with link!
@@ -222,227 +184,181 @@ link2 -z -n new name -up remote2:path2
 link3 -uz -n new name -up remote2:path2
 <b>NOTES:</b> You can't add -m arg for some links only, do it for all links or use multi without bulk!
 Reply to this example by this cmd <code>/cmd</code> -b(bulk)
-You can set start and end of the links from the bulk like seed, with -b start:end or only end by -b :end or only start by -b start. The default start is from zero(first link) to inf.
+You can set start and end of the links from the bulk like seed, with -b start:end or only end by -b :end or only start by -b start. The default start is from zero(first link) to inf. </blockquote>
 
-➲ <b><i>Join Splitted Files</i></b>: -j or -join
+<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
+""", """
+<blockquote expandable>➲ <b><i>Join Splitted Files</i></b>: -j or -join
 This option will only work before extract and zip, so mostly it will be used with -m argument (samedir)
 This option is not Merging of Two links/files.
 <b>By Reply:</b>
 <code>/cmd</code> -i 3 -j -m folder name
 <code>/cmd</code> -b -j -m folder name
 If you have link which has splitted files:
-<code>/cmd</code> link -j
-
-➲ <b><i>RClone Download</i></b>:
+<code>/cmd</code> link -j </blockquote>
+<blockquote expandable>➲ <b><i>RClone Download</i></b>:
 Treat rclone paths exactly like links
 <code>/cmd</code> main:dump/ubuntu.iso or <code>rcl</code>(To select config, remote and path)
-Users can add their own rclone from user settings
-
-If you want to add path manually from your config add <code>mrcc:</code> before the path without space
-<code>/cmd</code> <code>mrcc:</code>main:dump/ubuntu.iso
-
-➲ <b><i>TG Links</i></b>:
+Users can add their own rclone from user settings </blockquote>
+<blockquote expandable>If you want to add path manually from your config add <code>mrcc:</code> before the path without space
+<code>/cmd</code> <code>mrcc:</code>main:dump/ubuntu.iso </blockquote>
+<blockquote expandable>➲ <b><i>TG Links</i></b>:
 Treat tg links like any direct link
 Some links need user access so sure you must add USER_SESSION_STRING for it.
 <b><u>Types of links:</u></b>
 • <b>Public:</b> <code>https://t.me/channel_name/message_id</code>
 • <b>Private:</b> <code>tg://openmessage?user_id=xxxxxx&message_id=xxxxx</code>
 • <b>Super:</b> <code>https://t.me/c/channel_id/message_id</code>
-
 ➲ <b>NOTES:</b>
 1. Commands that start with <b>qb</b> are ONLY for torrents.</blockquote>
-
 <a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
 """]
 
 RSS_HELP_MESSAGE = """
-<blockquote>➲ <b>Format to adding feed url(s):</b>
+<blockquote expandable>➲ <b>Format to adding feed url(s):</b>
 Title1 link (required)
 Title2 link -c cmd -inf xx -exf xx
-Title3 link -c cmd -d ratio:time -z password
-
-➲ <b><i>Argument Details:</i></b>
+Title3 link -c cmd -d ratio:time -z password </blockquote>
+<blockquote expandable>➲ <b><i>Argument Details:</i></b>
 -c command + any arg
 -inf For included words filter.
--exf For excluded words filter.
-
-<b>Example:</b> Title https://www.rss-url.com inf: 1080 or 720 or 144p|mkv or mp4|hevc exf: flv or web|xxx opt: up: mrcc:remote:path/subdir rcf: --buffer-size:8M|key|key:value
-This filter will parse links that it's titles contains `(1080 or 720 or 144p) and (mkv or mp4) and hevc` and doesn't conyain (flv or web) and xxx` words. You can add whatever you want.
-
-Another example: inf:  1080  or 720p|.web. or .webrip.|hvec or x264. This will parse titles that contains ( 1080  or 720p) and (.web. or .webrip.) and (hvec or x264). I have added space before and after 1080 to avoid wrong matching. If this `10805695` number in title it will match 1080 if added 1080 without spaces after it.
-
+-exf For excluded words filter. </blockquote>
+<blockquote expandable><b>Example:</b> Title https://www.rss-url.com inf: 1080 or 720 or 144p|mkv or mp4|hevc exf: flv or web|xxx opt: up: mrcc:remote:path/subdir rcf: --buffer-size:8M|key|key:value
+This filter will parse links that it's titles contains `(1080 or 720 or 144p) and (mkv or mp4) and hevc` and doesn't conyain (flv or web) and xxx` words. You can add whatever you want. </blockquote>
+<blockquote expandable>Another example: inf:  1080  or 720p|.web. or .webrip.|hvec or x264. This will parse titles that contains ( 1080  or 720p) and (.web. or .webrip.) and (hvec or x264). I have added space before and after 1080 to avoid wrong matching. If this `10805695` number in title it will match 1080 if added 1080 without spaces after it. </blockquote>
 ➲ <b><i>Filter Notes:</i></b>
-1. | means and.
+<blockquote expandable>1. | means and.
 2. Add `or` between similar keys, you can add it between qualities or between extensions, so don't add filter like this f: 1080|mp4 or 720|web because this will parse 1080 and (mp4 or 720) and web ... not (1080 and mp4) or (720 and web)."
 3. You can add `or` and `|` as much as you want."
 4. Take look on title if it has static special character after or before the qualities or extensions or whatever and use them in filter to avoid wrong match.
-
 <b>Timeout:</b> 60 sec.</blockquote>
 
 <a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
 """
 
-CLONE_HELP_MESSAGE = ["""<blockquote><i>Send Gdrive | Gdtot | Filepress | Filebee | Appdrive | Gdflix link or RClone path along with or by replying to the link/rc_path by command with args.</i>
-
+CLONE_HELP_MESSAGE = ["""<blockquote expandable><i>Send Gdrive | Gdtot | Filepress | Filebee | Appdrive | Gdflix link or RClone path along with or by replying to the link/rc_path by command with args.</i></blockquote>
 ➲ <b><u>Available Args</u></b>:
-
-1. <b>-up or -upload :</b> Upload to your Drive or RClone or DDL
+<blockquote expandable>1. <b>-up or -upload :</b> Upload to your Drive or RClone or DDL
 2. <b>-i :</b> Download multi links by reply
 3. <b>-rcf :</b> RClone additional Flags
 4. <b>-id :</b> GDrive Folder id or link
 5. <b>-index:</b> Index url for gdrive_arg
-6. <b>-c or -category :</b> Gdrive category to Upload, Specific Name (case insensitive)</blockquote>""",
+6. <b>-c or -category :</b> Gdrive category to Upload, Specific Name (case insensitive)</blockquote>
 
-                      
-"""<blockquote>➲ <b><i>Links:</i></b>
-Gdrive | Gdtot | Filepress | Filebee | Appdrive | Gdflix link or rclone path
-
-➲ <b><i>Multi Links (only by replying to first gdlink or rclone_path):</i></b>
-<code>/cmd</code> -i 10(number of links/paths)
-
-➲ <b><i>Gdrive Link:</i></b>
-<code>/cmd</code> gdrive_link
-
-➲ <b><i>RClone Path with RC Flags:</i></b> -rcf
-<code>/cmd</code> (rcl or rclone_path) -up (rcl or rclone_path) -rcf flagkey:flagvalue|flagkey|flagkey:flagvalue
-
-➲ <b><i>Upload Custom Drive:</i></b> -id & -index(Optional)
-<code>/{cmd}</code> -id <code>drive_folder_link</code> or <code>drive_id</code> -index <code>https://example.com/0:</code>
-
-➲ <b><i>Custom Category Select:</i></b> -c or -category
-<code>/{cmd}</code> -c <code>category_name</code>
-
-<b>NOTES:</b>
+<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>""",                  
+"""<blockquote expandable>➲ <b><i>Links:</i></b>
+Gdrive | Gdtot | Filepress | Filebee | Appdrive | Gdflix link or rclone path </blockquote>
+<blockquote expandable>➲ <b><i>Multi Links (only by replying to first gdlink or rclone_path):</i></b>
+<code>/cmd</code> -i 10(number of links/paths) </blockquote>
+<blockquote expandable>➲ <b><i>Gdrive Link:</i></b>
+<code>/cmd</code> gdrive_link </blockquote>
+<blockquote expandable>➲ <b><i>RClone Path with RC Flags:</i></b> -rcf
+<code>/cmd</code> (rcl or rclone_path) -up (rcl or rclone_path) -rcf flagkey:flagvalue|flagkey|flagkey:flagvalue </blockquote>
+<blockquote expandable>➲ <b><i>Upload Custom Drive:</i></b> -id & -index(Optional)
+<code>/{cmd}</code> -id <code>drive_folder_link</code> or <code>drive_id</code> -index <code>https://example.com/0:</code> </blockquote>
+<blockquote expandable>➲ <b><i>Custom Category Select:</i></b> -c or -category
+<code>/{cmd}</code> -c <code>category_name</code> </blockquote>
+<blockquote expandable><b>NOTES:</b>
 1. If -up or -upload not specified then rclone destination will be the RCLONE_PATH from <code>config.env</code>.
 2. If UserTD enabled, then only it will upload to UserTD either by direct arg or category buttons.
 3. For Multi Custom Upload always use Arg in respective msgs and then reply with /cmd -i 10(number)</blockquote>
-
 <a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
 """]
-
-CATEGORY_HELP_MESSAGE = """<blockquote>Reply to an active /{cmd} which was used to start the download or add gid along with {cmd}
+CATEGORY_HELP_MESSAGE = """<blockquote expandable>Reply to an active /{cmd} which was used to start the download or add gid along with {cmd}
 This command mainly for change category incase you decided to change category from already added download.
-But you can always use -c or -category with to select category before download start.
-
-➲ <b><i>Upload Custom Drive</i></b>
+But you can always use -c or -category with to select category before download start.</blockquote>
+<blockquote expandable>➲ <b><i>Upload Custom Drive</i></b>
 <code>/{cmd}</code> -id <code>drive_folder_link</code> or <code>drive_id</code> -index <code>https://example.com/0:</code> gid or by replying to active download
-
 <b>NOTE:</b> drive_id must be folder id or folder link and index must be url else it will not accept.</blockquote>
-
 <a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
 """
-
-help_string = [f'''<blockquote>⌬ <b><i>Basic Commands!</i></b>
-
-<b>Use Mirror commands to download your link/file/rcl</b>
+help_string = [f'''⌬ <b><i>Basic Commands!</i></b>
+<blockquote expandable><b>Use Mirror commands to download your link/file/rcl</b>
  /{BotCommands.MirrorCommand[0]} or /{BotCommands.MirrorCommand[1]}: Download via file/url/media to Upload to Cloud Drive.
- /{BotCommands.CategorySelect}: Select Custom category to Upload to Cloud Drive from UserTds or Bot Categories.
-
-<b>Use qBit commands for torrents only:</b>
+ /{BotCommands.CategorySelect}: Select Custom category to Upload to Cloud Drive from UserTds or Bot Categories.</blockquote>
+<blockquote expandable><b>Use qBit commands for torrents only:</b>
  /{BotCommands.QbMirrorCommand[0]} or /{BotCommands.QbMirrorCommand[1]}: Download using qBittorrent and Upload to Cloud Drive.
- /{BotCommands.BtSelectCommand}: Select files from torrents by btsel_gid or reply.
-
-<b>Use yt-dlp commands for YouTube or any supported sites:</b>
- /{BotCommands.YtdlCommand[0]} or /{BotCommands.YtdlCommand[1]}: Mirror yt-dlp supported link.
-
-<b>Use Leech commands for upload to Telegram:</b>
+ /{BotCommands.BtSelectCommand}: Select files from torrents by btsel_gid or reply.</blockquote>
+<blockquote expandable><b>Use yt-dlp commands for YouTube or any supported sites:</b>
+ /{BotCommands.YtdlCommand[0]} or /{BotCommands.YtdlCommand[1]}: Mirror yt-dlp supported link.</blockquote>
+<blockquote expandable><b>Use Leech commands for upload to Telegram:</b>
  /{BotCommands.LeechCommand[0]} or /{BotCommands.LeechCommand[1]}: Upload to Telegram.
  /{BotCommands.QbLeechCommand[0]} or /{BotCommands.QbLeechCommand[1]}: Download using qBittorrent and upload to Telegram(For torrents only).
- /{BotCommands.YtdlLeechCommand[0]} or /{BotCommands.YtdlLeechCommand[1]}: Download using Yt-Dlp(supported link) and upload to telegram.
-
-<b>G-Drive commands:</b>
+ /{BotCommands.YtdlLeechCommand[0]} or /{BotCommands.YtdlLeechCommand[1]}: Download using Yt-Dlp(supported link) and upload to telegram.</blockquote>
+<blockquote expandable><b>G-Drive commands:</b>
  /{BotCommands.CloneCommand[0]}: Copy file/folder to Cloud Drive.
  /{BotCommands.CountCommand} [drive_url]: Count file/folder of Google Drive.
- /{BotCommands.DeleteCommand} [drive_url]: Delete file/folder from Google Drive (Only Owner & Sudo).
-
-<b>Cancel Tasks:</b>
- /{BotCommands.CancelMirror}: Cancel task by cancel_gid or reply.</blockquote>''',
-
-f'''<blockquote>⌬ <b><i>Users Commands!</i></b>
-
-<b>Bot Settings:</b>
- /{BotCommands.UserSetCommand[0]} or /{BotCommands.UserSetCommand[1]} [query]: Open User Settings (PM also)
-
-<b>Authentication:</b>
- /login: Login to Bot to Access Bot without Temp Pass System (Private)
-
-<b>Bot Stats:</b>
+ /{BotCommands.DeleteCommand} [drive_url]: Delete file/folder from Google Drive (Only Owner & Sudo).</blockquote>
+<blockquote expandable><b>Cancel Tasks:</b>
+ /{BotCommands.CancelMirror}: Cancel task by cancel_gid or reply.</blockquote>
+ <a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>''',
+f'''⌬ <b><i>Users Commands!</i></b>
+<blockquote expandable><b>Bot Settings:</b>
+ /{BotCommands.UserSetCommand[0]} or /{BotCommands.UserSetCommand[1]} [query]: Open User Settings (PM also) </blockquote>
+<blockquote expandable><b>Authentication:</b>
+ /login: Login to Bot to Access Bot without Temp Pass System (Private) </blockquote>
+<blockquote expandable><b>Bot Stats:</b>
  /{BotCommands.StatusCommand[0]} or /{BotCommands.StatusCommand[1]}: Shows a status page of all active tasks.
  /{BotCommands.StatsCommand[0]} or /{BotCommands.StatsCommand[1]}: Show Server detailed stats.
- /{BotCommands.PingCommand[0]} or /{BotCommands.PingCommand[1]}: Check how long it takes to Ping the Bot.
-
-<b>RSS Feed:</b>
- /{BotCommands.RssCommand}: Open RSS Menu (Sub/Unsub/Start/Pause)</blockquote>''',
-
-f'''<blockquote>⌬ <b><i>Owner or Sudos Commands!</i></b>
-
-<blockquote><b>Maintainance:</b>
+ /{BotCommands.PingCommand[0]} or /{BotCommands.PingCommand[1]}: Check how long it takes to Ping the Bot. </blockquote>
+<blockquote expandable><b>RSS Feed:</b>
+ /{BotCommands.RssCommand}: Open RSS Menu (Sub/Unsub/Start/Pause)</blockquote>
+ <a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>''',
+f'''⌬ <b><i>Owner or Sudos Commands!</i></b>
+<blockquote expandable><b>Maintainance:</b>
  /{BotCommands.RestartCommand[0]} or /{BotCommands.RestartCommand[1]}: Restart and Update the Bot (Only Owner & Sudo).
  /{BotCommands.RestartCommand[2]}: Restart and Update all Bots (Only Owner & Sudo).
- /{BotCommands.LogCommand}: Get a log file of the bot. Handy for getting crash reports (Only Owner & Sudo).
-
+ /{BotCommands.LogCommand}: Get a log file of the bot. Handy for getting crash reports (Only Owner & Sudo).</blockquote>
 <b>Executors:</b>
- /{BotCommands.ShellCommand}: Run shell commands (Only Owner).
+ <blockquote expandable>/{BotCommands.ShellCommand}: Run shell commands (Only Owner).
  /{BotCommands.EvalCommand}: Run Python Code Line | Lines (Only Owner).
  /{BotCommands.ExecCommand}: Run Commands In Exec (Only Owner).
  /{BotCommands.ClearLocalsCommand}: Clear {BotCommands.EvalCommand} or {BotCommands.ExecCommand} locals (Only Owner).
- /exportsession: Generate User StringSession of Same Pyro Version (Only Owner).
-
+ /exportsession: Generate User StringSession of Same Pyro Version (Only Owner).</blockquote>
 <b>Bot Settings:</b>
- /{BotCommands.BotSetCommand[0]} or /{BotCommands.BotSetCommand[1]} [query]: Open Bot Settings (Only Owner & Sudo).
- /{BotCommands.UsersCommand}: Show User Stats Info (Only Owner & Sudo).
-
+ <blockquote expandable>/{BotCommands.BotSetCommand[0]} or /{BotCommands.BotSetCommand[1]} [query]: Open Bot Settings (Only Owner & Sudo).
+ /{BotCommands.UsersCommand}: Show User Stats Info (Only Owner & Sudo).</blockquote>
 <b>Authentication:</b>
- /{BotCommands.AuthorizeCommand[0]} or /{BotCommands.AuthorizeCommand[1]}: Authorize a chat or a user to use the bot (Only Owner & Sudo).
+ <blockquote expandable>/{BotCommands.AuthorizeCommand[0]} or /{BotCommands.AuthorizeCommand[1]}: Authorize a chat or a user to use the bot (Only Owner & Sudo).
  /{BotCommands.UnAuthorizeCommand[0]} or /{BotCommands.UnAuthorizeCommand[1]}: Unauthorize a chat or a user to use the bot (Only Owner & Sudo).
  /{BotCommands.AddSudoCommand}: Add sudo user (Only Owner).
  /{BotCommands.RmSudoCommand}: Remove sudo users (Only Owner).
  /{BotCommands.AddBlackListCommand[0]} or /{BotCommands.AddBlackListCommand[1]}: Add User in BlackListed, so that user can't use the Bot anymore.
  /{BotCommands.RmBlackListCommand[0]} or /{BotCommands.RmBlackListCommand[1]}: Remove a BlackListed User, so that user can again use the Bot.</blockquote>
-
-<blockquote><b>Bot Stats:</b>
- /{BotCommands.BroadcastCommand[0]} or /{BotCommands.BroadcastCommand[1]} [reply_msg]: Broadcast to PM users who have started the bot anytime.
-
+<b>Bot Stats:</b>
+ <blockquote expandable>/{BotCommands.BroadcastCommand[0]} or /{BotCommands.BroadcastCommand[1]} [reply_msg]: Broadcast to PM users who have started the bot anytime.</blockquote>
 <b>G-Drive commands:</b>
- /{BotCommands.GDCleanCommand[0]} or /{BotCommands.GDCleanCommand[1]} [drive_id]: Delete all files from specific folder in Google Drive.
-
+<blockquote expandable> /{BotCommands.GDCleanCommand[0]} or /{BotCommands.GDCleanCommand[1]} [drive_id]: Delete all files from specific folder in Google Drive.</blockquote>
 <b>Cancel Tasks:</b>
- /{BotCommands.CancelAllCommand[0]}: Cancel all Tasks & /{BotCommands.CancelAllCommand[1]} for Multiple Bots.</blockquote>
-
-<blockquote><b>RSS Feed:</b>
- /{BotCommands.RssCommand}: Open RSS Menu (Sub/Unsub/Start/Pause)
-
+ <blockquote expandable>/{BotCommands.CancelAllCommand[0]}: Cancel all Tasks & /{BotCommands.CancelAllCommand[1]} for Multiple Bots.</blockquote>
+<b>RSS Feed:</b>
+ <blockquote expandable>/{BotCommands.RssCommand}: Open RSS Menu (Sub/Unsub/Start/Pause)</blockquote>
 <b>Extras:</b>
- /{BotCommands.AddImageCommand} [url/photo]: Add Images in Bot
- /{BotCommands.ImagesCommand}: Generate grid of Stored Images.</blockquote>''',
-
-f'''<blockquote>⌬ <b><i>Miscellaneous Commands!</i></b>
-
+ <blockquote expandable>/{BotCommands.AddImageCommand} [url/photo]: Add Images in Bot
+ /{BotCommands.ImagesCommand}: Generate grid of Stored Images.</blockquote>
+ <a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>''',
+f'''⌬ <b><i>Miscellaneous Commands!</i></b>
 <b>Extras:</b>
- /{BotCommands.SpeedCommand[0]} or /{BotCommands.SpeedCommand[1]}: Check Speed in VPS/Server.
+ <blockquote expandable>/{BotCommands.SpeedCommand[0]} or /{BotCommands.SpeedCommand[1]}: Check Speed in VPS/Server.
  /{BotCommands.MediaInfoCommand[0]} or /{BotCommands.MediaInfoCommand[1]} [url/media]: Generate MediaInfo of Media or DL Urls</blockquote>
-
-<blockquote><b>Torrent/Drive Search:</b>
- /{BotCommands.ListCommand} [query]: Search in Google Drive(s).
+<b>Torrent/Drive Search:</b>
+ <blockquote expandable>/{BotCommands.ListCommand} [query]: Search in Google Drive(s).
  /{BotCommands.SearchCommand} [query]: Search for torrents with API.</blockquote>
-
-<blockquote><b>Movie/TV Shows/Drama Search:</b>
- /{BotCommands.IMDBCommand}: Search in IMDB.
+<b>Movie/TV Shows/Drama Search:</b>
+ <blockquote expandable>/{BotCommands.IMDBCommand}: Search in IMDB.
  /{BotCommands.AniListCommand}: Search for anime in AniList.
  /{BotCommands.AnimeHelpCommand}: Anime help guide.
  /{BotCommands.MyDramaListCommand}: Search in MyDramaList.</blockquote>
-
 <a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
 ''']
-
 PASSWORD_ERROR_MESSAGE = """
-<blockquote><b>This link requires a password!</b>
+<blockquote expandable><b>This link requires a password!</b>
 - Insert sign <b>::</b> after the link and write the password after the sign.
 <b>Example:</b> {}::love you
 Note: No spaces between the signs <b>::</b>
 For the password, you can use a space!</blockquote>
+<a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>
 """
-
 default_desp = {'AS_DOCUMENT': 'Default type of Telegram file upload. Default is False mean as media.',
                 'ANIME_TEMPLATE': 'Set template for AniList Template. HTML Tags supported',
                 'AUTHORIZED_CHATS': 'Fill user_id and chat_id of groups/users you want to authorize. Separate them by space.',
